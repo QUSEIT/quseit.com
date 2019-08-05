@@ -1,0 +1,12 @@
+.bluetitle{
+    color:#fff;
+    padding:50px 15%;
+}
+.bluetitle .title{
+    color:#fff;
+    font-size: 50px;
+    font-weight: bold;
+}
+.bluetitle .content{
+    font-size: 30px;
+}

@@ -1,0 +1,27 @@
+.ser-p1 .img-item{
+    text-align: center;
+}
+.ser-p1 .img-item img{
+    height: 80px;
+    width: auto;
+}
+.ser-p1 .img-item p{
+    font-size:20px;
+    color:#3c4d9f;
+    margin-top:25px;
+}
+
+.ser-p5 {
+    padding:80px 15%;
+    text-align: center;
+}
+.ser-p5 .title{
+    color:#3c4d9f;
+    font-size:40px;
+    line-height: 2;
+}
+.ser-p5  .btn{
+    height: 46px;
+    width:15%;
+    font-size:16px;
+}

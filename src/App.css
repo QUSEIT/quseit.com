@@ -1,0 +1,20 @@
+body{
+    margin:0;
+    padding:0;
+}
+div,p,ul,li{
+    font-size:18px;
+}
+
+.blue{
+    background-color: #3c4d9f;
+}
+.blue h1,.blue h2,.blue h3{
+    color:#fff;
+}
+.gray{
+    background-color:#f6f7fb;
+}
+.white{
+    background-color:#fff;
+}
