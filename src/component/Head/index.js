@@ -15,7 +15,7 @@ const nav = [{
     url:'/introduce',
 },{
     title:'联系我们',
-    url:'/page3',
+    url:'/cooperate',
 },{
     title:'工作向导',
     url:'/page4',

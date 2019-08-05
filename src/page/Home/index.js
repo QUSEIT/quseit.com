@@ -19,7 +19,7 @@ class Home extends React.Component{
                 {this.renderP6()}
                 {this.renderP7()}
 
-                <Contact />
+               
             </div>
             
         )
@@ -282,7 +282,16 @@ class Home extends React.Component{
             </Block1>
         )
     }
-    
+    renderP8(){
+        return (
+            <OverPack>
+                <QueueAnim type='bottom' duration='1000'>
+                    <Contact key='a'/>
+                </QueueAnim>
+            </OverPack>
+        
+        )
+    }
 }
 
 export default Home;

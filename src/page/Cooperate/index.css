@@ -1,0 +1,71 @@
+/* .cooperate{
+    
+} */
+.cooperate-title{
+    color:white;
+    font-size:19px;
+    padding:30px 15%;
+}
+.cooperate-title b{
+    font-size:30px;
+    margin-right:5px;
+}
+.cooperate-p1{
+    padding:70px 15%;
+    line-height: 2;
+    font-weight: 500;
+}
+.cooperate-p1 b{
+    color:#3c4d9f;
+}
+.cooperate-form{
+    padding:0 15%;
+}
+.cooperate-form .form-item{
+    margin-top:50px;
+}
+.cooperate-form p{
+    font-size: 30px;
+    font-weight: bold;
+    color:#333333;
+}
+.cooperate-form label{
+    display: block;
+    font-size:18px;
+    line-height: 2;
+}
+.cooperate-form input{
+    background: #f6f7fb;
+    /* color:#eeeef0; */
+    margin-top:10px;
+}
+.cooperate-form  .input-item{
+    padding-right: 20px;
+}
+
+.cooperate-form .cBox{
+    margin-top:20px;
+}
+.cooperate-form .checkBoxs{
+    margin-top:10px;
+}
+.cooperate-form .cbox{
+    font-size:18px;
+    line-height: 2;
+    margin:0;
+}
+.cooperate-form .textArea{
+    background:#f6f7fb;
+    font-size:18px;
+    margin-top:10px;
+}
+.cooperate .btn-box{
+    border-bottom:1px solid #e5e7ee;
+    padding-bottom: 100px;
+}
+.cooperate-form .btn{
+    margin-top:36px;
+    padding:15px 50px;
+    height: 54px;
+    font-size:18px;
+}

@@ -6,6 +6,7 @@ import {Row, Col, Button} from 'antd'
 import QueueAnim from 'rc-queue-anim'
 import Texty from 'rc-texty'
 import {OverPack} from 'rc-scroll-anim'
+import {Link} from 'react-router-dom'
 
 
 class Service extends React.Component{
@@ -127,7 +128,7 @@ class Service extends React.Component{
             <div className='white ser-p5'>
                 <OverPack>
                     <Texty className='title' mode='random'>与我们一起，开启一段伟大的合作</Texty>
-                <Button type='primary' ghost className='btn'>联系我们</Button>
+                <Button type='primary' ghost className='btn' href='/cooperate'>联系我们</Button>
                 </OverPack>
                 
             </div>

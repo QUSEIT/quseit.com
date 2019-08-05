@@ -7,13 +7,10 @@ import Foot from './component/Foot'
 import Index from './page/Home'
 import Introduce from './page/Introduce'
 import Service from './page/Service'
+import Cooperate from './page/Cooperate'
 
 const {Content} = Layout;
 
-
-function Page3(){
-  return <div>联系我们</div>
-}
 function Page4(){
   return <div>工作向导</div>
 }
@@ -29,9 +26,9 @@ function App() {
           <Route exact path='/' component={Index}></Route>
           <Route path='/service' component={Service}></Route>
           <Route path='/introduce' component={Introduce}></Route>
-          <Route path='/page3' component={Page3}></Route>
           <Route path='/page4' component={Page4}></Route>
           <Route path='/page5' component={Page5}></Route>
+          <Route path='/cooperate' component={Cooperate}></Route>
 
         </Content>
           

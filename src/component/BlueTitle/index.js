@@ -19,6 +19,7 @@ class BlueTitle extends React.Component{
                 >
                     {this.props.content}
                 </Texty>
+                {this.props.children}
             </Row>
         )
     }
