@@ -1,15 +1,19 @@
-/* .cooperate{
-    
-} */
 .cooperate-title{
-    color:white;
-    font-size:19px;
     padding:30px 15%;
+    color:white;
 }
-.cooperate-title b{
+.cooperate-title .t1{
     font-size:30px;
     margin-right:5px;
+    display: inline-block;
+    font-weight: bold;
 }
+.cooperate-title .t2{
+    display: inline-block;
+    font-size:19px;
+}
+
+
 .cooperate-p1{
     padding:70px 15%;
     line-height: 2;

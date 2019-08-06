@@ -6,7 +6,7 @@ import Texty from 'rc-texty'
 class BlueTitle extends React.Component{
     render(){
         return (
-            <Row className='blue bluetitle'>
+            <Row className={'blue bluetitle ' + this.props.className}>
                 <Texty 
                 className='title'
                 duration='1000'

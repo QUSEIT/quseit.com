@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Contact from '../../component/Contact'
 import {Input, Row, Col, Checkbox, Button, } from 'antd'
 import './index.css'
+import Texty from 'rc-texty'
 
 const {TextArea} = Input;
 export default class Cooperate extends Component {
@@ -25,15 +26,17 @@ export default class Cooperate extends Component {
         return (
             <div className='cooperate'>
                 <div className='cooperate-title blue'>
-                        <b>与我们合作 |</b>
-                        聘请我们帮助您构建个性化的互联网软件产品
+                        <Texty className='t1' duration="600">与我们合作 |</Texty>
+                        <Texty className='t2' duration='800'>聘请我们帮助您构建个性化的互联网软件产品</Texty>
                 </div>
                 <div className='white cooperate-p1'>
                     合作过程我们默认与您签订保密协议。 您提交给我们的所有信息将被严格保密，仅与您项目中的相关人员共享。请发送电子邮件至
                     <b>ceo@quseit.com</b>
                     或填写以下项目请求，我们通常会在1-3个工作小时内回复。
                 </div>
+                
                 {this.renderForm()}
+
                 <Contact/>
                 
             </div>

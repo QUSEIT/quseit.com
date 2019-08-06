@@ -1,0 +1,59 @@
+.join-title{
+    padding:30px 15%;
+}
+.join-title .content{
+    font-weight: bold;
+}
+
+
+.join{
+    padding:0 15%;
+}
+.join h2{
+    text-align: center;
+    font-size:30px;
+    padding:60px 0;
+    margin:0;
+}
+
+.join .item-header .ant-collapse-header{
+    font-weight: bold;
+    font-size:22px;
+    line-height: 2;
+    
+}
+.join .item-header .ant-collapse-content{
+    padding:30px 5%;
+}
+.join .header-tag{
+    border-radius: 50%;
+    background:#3c4d9f;
+    color:#fff;
+}
+.join .item-title{
+    color:#333333;
+    font-size:18px;
+}
+.join .item-con{
+    display: block;
+    list-style:disc;
+}
+.join .item-con li{
+    font-size:16px;
+    float: none;
+    line-height: 2;
+}
+
+.join .remind{
+    padding:8% 0;
+}
+.join .remind p{
+    margin:0;
+    font-size:16px;
+    line-height: 2;
+}
+.join .remind b{
+    color:#3c4d9f;
+    font-weight: 400;
+    padding:0 3px;
+}

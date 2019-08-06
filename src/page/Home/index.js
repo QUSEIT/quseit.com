@@ -18,7 +18,7 @@ class Home extends React.Component{
                 {this.renderP5()}
                 {this.renderP6()}
                 {this.renderP7()}
-
+                {this.renderP8()}
                
             </div>
             
@@ -38,7 +38,7 @@ class Home extends React.Component{
                             产业发展最新趋势和技术动态，学习掌握最新的设计理念和开发方法，
                             为客户提供一流的产品设计和技术实现方案。
                             </p>
-                            <Button type='primary' className='p1-btn'>联系我们</Button>
+                            <Button type='primary' className='p1-btn' href='/cooperate'>联系我们</Button>
                             </Col>
                             <Col md={11}>
                                 <img  src={require('../../assets/home/img_2.png')} alt=''/>
@@ -271,7 +271,7 @@ class Home extends React.Component{
                     他们会在其他人看到障碍时看到机会， <br/>
                     如果这听起来像你，欢迎联系我们。
                     </p>
-                    <Button type='primary' className='p7-btn' ghost>开放的职位  ></Button>
+                    <Button type='primary' className='p7-btn' ghost href='/join'>开放的职位  ></Button>
                     </Col>
                     <Col md={11}>
                         <img  src={require('../../assets/home/2.png')} alt=''/>

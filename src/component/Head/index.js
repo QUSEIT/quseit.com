@@ -18,10 +18,10 @@ const nav = [{
     url:'/cooperate',
 },{
     title:'工作向导',
-    url:'/page4',
+    url:'/guide',
 },{
     title:'博客',
-    url:'/page5',
+    url:'/blog',
 }];
 
 class Head extends React.Component{
