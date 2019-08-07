@@ -7,3 +7,104 @@
 .guide-title input{
     color:#3c4d9f;
 }
+
+.guide-body{
+    padding:30px 15%;
+    padding-bottom: 78px;
+}
+.guide-body .guide-breadcrumd{
+    padding-bottom:20px;
+}
+
+.guide-body ul,
+.guide-body ul li{
+    display: block;
+    float:none;
+    color:#3c4d9f;
+}
+
+
+/* 菜单 */
+.guide-menu {
+    background: transparent;
+}
+.guide-menu .guide-menuItem{
+    padding:15px 30px;
+    border:1px solid #e5e7ee;
+    color:#333333;
+    background: #fff;
+}
+.guide-menu .guide-menuItem:hover{
+    border:1px solid #e5e7ee;
+    color:#333333;
+}
+.guide-menu .guide-menuItem img{
+    margin-right: 20px;
+}
+
+.guide-menu .guide-menuItem .guide-menuItem-more{
+    color:#e5e7ee;
+    font-size:30px;
+    margin:0;
+}
+
+
+/* 向导主体 */
+.guide-content{
+    background: #fff;
+    border:1px solid #e5e7ee;
+    padding:100px 15%;
+}
+
+/* 欢迎 */
+.guide-welcome{
+    padding-bottom: 50px;
+}
+.guide-welcome h2{
+    text-align: center;
+    font-weight: bold;
+    font-size:29px;
+    margin-bottom: 30px;
+}
+.guide-welcome p{
+    line-height: 2;
+    text-indent: 2em;
+}
+
+/* 工作向导 */
+.guide-docslist{
+    border-top:1px solid #e5e7ee;
+    border-bottom:1px solid #e5e7ee;
+    padding:30px 0;
+}
+.guide-docslist .list-title{
+    padding:0;
+}
+.guide-docslist .list-title p{
+    margin:0;
+    line-height: 3;
+}
+.guide-body .list-box{
+    line-height: 2;
+}
+
+/* 最新动态 */
+.guide-update{
+    padding-top:30px;
+}
+
+/* 下一页 */
+.guide-pagination{
+    border:1px solid #e5e7ee;
+    border-top:none;
+    background: #fff;
+}
+.guide-pagination .btn{
+    border-left:1px solid #e5e7ee;
+    text-align: center;
+    color:#3c4d9f;
+    padding:20px 0;
+}
+.guide-pagination .btn:hover{
+    box-shadow: 0 0 8px 1px #52515117 inset; 
+}

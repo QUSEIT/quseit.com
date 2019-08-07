@@ -14,12 +14,6 @@ import Guide from './page/Guide'
 
 const {Content} = Layout;
 
-function Page4(){
-  return <div>工作向导</div>
-}
-function Page5(){
-  return <div>博客</div>
-}
 function App() {
   return (
     <BrowserRouter>

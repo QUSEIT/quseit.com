@@ -30,7 +30,9 @@ class Head extends React.Component{
             <Header className='app-head'>
                 <Row>
                     <Col md={9}>
-                        <div className="app-logo">优趣天下</div>
+                        <div className="app-logo">
+                            <img src={require('../../assets/guide/logo.png')} alt='优趣天下'/>
+                        </div>
                     </Col>
                     <Col md={13}>
                          <Menu theme="light" mode="horizontal" className='nav'>
