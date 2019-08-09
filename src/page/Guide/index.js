@@ -8,27 +8,52 @@ const list = [{
     id:'l1',
     icon:require('../../assets/guide/icon_2.png'),
     title:'App小组',
-    docs:['优趣安卓应用开发框架简介','ORMLite-android ORM 框架']
+    docs:[{
+        name:'优趣安卓应用开发框架简介',
+        id:'d1'
+    },{
+        name:'ORMLite-android ORM 框架',
+        id:'d2'
+    }]
 },{
     id:'l2',
     icon:require('../../assets/guide/icon_3.png'),
     title:'200小组',
-    docs:['初级Python开发工程师需要掌握','优趣 Python 编码规范整理',
-    'JavaScript 编码规范指南','优趣产品过程介绍',
-    'Django用户验证系统','django + uwsgi + nginx',
-    'Django models AES 加密、解密','支付宝Python 接入使用说明']
+    docs:[{name:'初级Python开发工程师需要掌握',id:'d1'},
+    {name:'优趣 Python 编码规范整理',id:'d2'},
+    {name:'JavaScript 编码规范指南',id:'d3'},
+    {name:'优趣产品过程介绍',id:'d4'},
+    {name:'Django用户验证系统',id:'d5'},
+    {name:'django + uwsgi + nginx',id:'d6'},
+    {name:'Django models AES 加密、解密',id:'d7'},
+    {name:'支付宝Python 接入使用说明',id:'d8'}]
 },{
     id:'l3',
     icon:require('../../assets/guide/icon.png'),
     title:'技术支持',
-    docs:['员工账号','工作时间','报销流程']
+    docs:[{
+        name:'员工账号',
+        id:'d1'
+    },{
+        name:'工作时间',
+        id:'d2'
+    },{
+        name:'报销流程',
+        id:'d3'
+    }]
 }]
+const welcome = {
+    id:'welcome',
+    title:'欢迎阅读优趣工作室工作向导',
+    content:'优趣工作室致力于为创业者提供一流的互联网产品技术开发服务。作为一个充满热情和信念的互联网创业团队，我们始终关注互联网产业发展最新趋势和技术动态，学习掌握最新的设计理念和开发方法，努力为客户提供一流的产品设计和技术实现方案。',
+
+}
 
 export default class Guide extends Component {
     constructor(props){
         super(props);
         this.state= {
-            breadItem:['欢迎阅读优趣工作室工作向导']
+            breadItem:[welcome.title]
         }
     }
     render() {
@@ -60,7 +85,7 @@ export default class Guide extends Component {
                     <Breadcrumb.Item>
                         <Link 
                         to='/guide' 
-                        onClick={()=>this.renderBreadcrumb('欢迎阅读优趣工作室工作向导')}>
+                        onClick={()=>this.renderBreadcrumb(welcome.title)}>
                             Docs  
                         </Link>
                     </Breadcrumb.Item>
@@ -90,13 +115,21 @@ export default class Guide extends Component {
                 </Menu>
                 <div className='guide-content'>
                         <Switch>
-                            {
-                                list.map((item,index)=>
-                                <Route 
-                                key = {index}
-                                path={'/guide/'+ item.id} 
-                                render={this.renderDoc.bind(this,index)}
-                                />)
+                        {
+                                list.map((item,index)=>(
+                                    <Route  
+                                    key = {index}
+                                    path={'/guide/'+ item.id} 
+                                    render={()=>this.renderDoc(index)}
+                                    />
+                                    // {  
+                                    //     item.docs.map((doc,i)=>
+                                    //     <Route 
+                                    //     key = {i}
+                                    //     path = {'/guide/'+ item.id +'/'+ doc.id}
+                                    //     />)
+                                    // }
+                                ))
                             }
                             <Route  render={this.renderWelcome}/>
                         </Switch>
@@ -119,8 +152,8 @@ export default class Guide extends Component {
         return (
             <React.Fragment>
                 <div className='guide-welcome'>
-                    <h2>欢迎阅读优趣工作室工作向导</h2>
-                    <p>	优趣工作室致力于为创业者提供一流的互联网产品技术开发服务。作为一个充满热情和信念的互联网创业团队，我们始终关注互联网产业发展最新趋势和技术动态，学习掌握最新的设计理念和开发方法，努力为客户提供一流的产品设计和技术实现方案。</p>
+                    <h2>{welcome.title}</h2>
+                    <p>	{welcome.content}</p>
                 </div>
                 <div className='guide-docslist'>
                     <h3>工作向导</h3>
@@ -128,11 +161,22 @@ export default class Guide extends Component {
                         {
                             list.map((item,index)=>
                                 <li key={index}>
-                                    <p> > {item.title}</p>
+                                    <p>
+                                        <Link to={'/guide/' + item.id}>
+                                            > {item.title}
+                                        </Link>
+                                    </p>
                                     <ul className='list-box'>
                                         {
                                             item.docs.map((doc,i)=>
-                                            <li key={i}> - {doc}</li>
+                                            <li key={i}>
+                                                <Link to={{
+                                                    pathname:'/guide/' + item.id + '/' + i
+                                                }}>
+                                                   - {doc.name}
+                                                </Link>
+                                                 
+                                                 </li>
                                             )}
                                     </ul>
                                 </li>
@@ -150,11 +194,12 @@ export default class Guide extends Component {
         )
     }
     renderDoc(index){
+        // console.log(index);
         return (
             <div>
                 <ul className='list-box'>
                     {list[index].docs.map((item,i)=>
-                        <li key={i}>{item}</li>
+                        <li key={i}>{item.name}</li>
                         )}
                 </ul>
             </div>

@@ -3,50 +3,9 @@ import './index.css'
 import {Row, Col, Pagination} from 'antd'
 import Texty from 'rc-texty'
 import QueueAnim from 'rc-queue-anim'
+import {BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom'
+import Detail from './Detail'
 
-const blogs = [{
-    title:'DO Global 旗下 app 因涉嫌廣告詐欺將遭 Google 全面下架',
-    content:'app至今下載總量已超過了六億次',
-    author:'River Yan',
-    date:'2019年4月29日',
-    label:'ad fraud, do global, gear, google'
-},{
-    title:'关于代码审计的人性化',
-    content:'通过专注代码构造，文化因素和整体状态，使代码审计更加成功。',
-    author:'River Yan',
-    date:'2019年4月29日',
-    label:'Web, Consulting, Code audit'
-},{
-    title:'关于代码审计的人性化',
-    content:'通过专注代码构造，文化因素和整体状态，使代码审计更加成功。',
-    author:'River Yan',
-    date:'2019年4月29日',
-    label:'Web, Consulting, Code audit'
-},{
-    title:'关于代码审计的人性化',
-    content:'通过专注代码构造，文化因素和整体状态，使代码审计更加成功。',
-    author:'River Yan',
-    date:'2019年4月29日',
-    label:'Web, Consulting, Code audit'
-},{
-    title:'关于代码审计的人性化',
-    content:'通过专注代码构造，文化因素和整体状态，使代码审计更加成功。',
-    author:'River Yan',
-    date:'2019年4月29日',
-    label:'Web, Consulting, Code audit'
-},{
-    title:'关于代码审计的人性化',
-    content:'通过专注代码构造，文化因素和整体状态，使代码审计更加成功。',
-    author:'River Yan',
-    date:'2019年4月29日',
-    label:'Web, Consulting, Code audit'
-},{
-    title:'关于代码审计的人性化',
-    content:'通过专注代码构造，文化因素和整体状态，使代码审计更加成功。',
-    author:'River Yan',
-    date:'2019年4月29日',
-    label:'Web, Consulting, Code audit'
-}]
 
 export default class Blog extends Component {
     constructor(props){
@@ -54,26 +13,43 @@ export default class Blog extends Component {
         this.state = {
             page:1,
             pageSize:5,
-            length:blogs.length,
+            blogs:'',
         }
         this.handlePagination = this.handlePagination.bind(this);
         this.showData = this.showData.bind(this);
+        this.renderP1 =this.renderP1.bind(this);
+        this.renderBlog =this.renderBlog.bind(this);
+    }
+    async componentDidMount() {
+        let data = await fetch('/blogs.json').then(function(response) {
+            return response.json();
+        });
+        this.setState({
+                blogs:data,
+            })
     }
     render() {
         return (
             <div>
-                <div className='white blog-header'>
-                    <Texty className='header-text' duration='1000'>
-                        BLOG
-                    </Texty>
-                </div>
-                {this.renderP1()}
+                <Router>
+                   
+                    <Switch>
+                        <Route path='/blog/:id' component={Detail}/>
+                        <Route render={this.renderP1}/>
+                    </Switch>
+                </Router>
+               
             </div>
         )
     }
     renderP1(){
         return (
             <QueueAnim type="bottom">
+                <div className='white blog-header'>
+                    <Texty className='header-text' duration='1000'>
+                        BLOG
+                    </Texty>
+                    </div>
                 <div  className='blog-contain white' key='a'>
                     <div className='blog-body'>
                         {
@@ -81,7 +57,7 @@ export default class Blog extends Component {
                         }
                     </div>
                     <Pagination 
-                    total={this.state.length} 
+                    total={this.state.blogs.length} 
                     pageSize={this.state.pageSize}
                     size='small' 
                     onChange={this.handlePagination}/>
@@ -97,32 +73,43 @@ export default class Blog extends Component {
         })
     }
     showData(page,pageSize){
-        let length = this.state.length - 1;
+        const blogs = this.state.blogs;
+        let length = blogs.length - 1;
         let start = (page - 1) * pageSize;
         let end = (page * pageSize - 1)>length? length: (page*pageSize - 1);
         let items = [];
         for(let i= start; i <= end; i++){
             items.push(
-                <Row className='blog-item' key={i}>
-                    <Col md={24}>
-                        <h4 className='item-title'>{blogs[i].title}</h4>
-                        <div className='item-content'>{blogs[i].content}</div>
-                        <Row className='item-footer'>
-                            <Col md={4} sm={12}>
-                            <div className='item-author'>{blogs[i].author}</div>
-                            </Col>
-                            <Col md={6} sm={12}>
-                            <div className='item-date'>{blogs[i].date}</div>
-                            </Col>
-                            <Col md={14} sm={24}>
-                            <div className='item-label'><b>标签：</b>{blogs[i].label}</div>
-                            </Col>
-                        </Row>
-                    </Col>
-                </Row>
+                <Link key={i} to={{
+                    pathname:'/blog/'+i,
+                    blogs:blogs}}>
+                    <Row className='blog-item'>
+                        <Col md={24}>
+                            <h4 className='item-title'>{blogs[i].title}</h4>
+                            <div className='item-content'>{blogs[i].content}</div>
+                            <Row className='item-footer'>
+                                <Col md={4} sm={12}>
+                                <div className='item-author'>{blogs[i].author}</div>
+                                </Col>
+                                <Col md={6} sm={12}>
+                                <div className='item-date'>{blogs[i].date}</div>
+                                </Col>
+                                <Col md={14} sm={24}>
+                                <div className='item-label'><b>标签：</b>{blogs[i].label}</div>
+                                </Col>
+                            </Row>
+                        </Col>
+                    </Row>
+                </Link>
             )
             
         }
         return items;
+    }
+    renderBlog(props){
+        console.log(props);
+        // return (
+        //     <idv>{blogs[id].title}</idv>
+        // )
     }
 }

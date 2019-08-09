@@ -27,6 +27,8 @@
 }
 .blog-contain .blog-item .item-content{
     line-height: 2;
+    height: 36px;
+    overflow: hidden;
 }
 .blog-contain .blog-item .item-footer{
     margin-top:50px;
