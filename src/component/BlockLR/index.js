@@ -1,7 +1,7 @@
 import React from 'react'
 import './index.css'
 import {Row, Col } from 'antd'
-import {OverPack} from 'rc-scroll-anim'
+import {OverPack, Element} from 'rc-scroll-anim'
 import QueueAnim from 'rc-queue-anim'
 
 // 左右分栏
@@ -10,7 +10,7 @@ class BlockLR extends React.Component{
         const left = this.props.children[0].key==='left'?this.props.children[0]:this.props.children[1];
         const right = this.props.children[0].key==='right'?this.props.children[0]:this.props.children[1];
         return (
-            <OverPack>
+            <Element playScale='0.4'>
                 <QueueAnim>
                     <Row 
                         className={"block2 " + this.props.className}
@@ -26,7 +26,7 @@ class BlockLR extends React.Component{
                     </Col>
             </Row>
                 </QueueAnim>
-            </OverPack>
+            </Element>
             
         )
     }

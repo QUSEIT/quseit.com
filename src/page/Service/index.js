@@ -26,7 +26,6 @@ class Service extends React.Component{
     }
     renderP1(){
         return (
-            <QueueAnim type='right'>
                 <BlockLR className='white ser-p1' key='a'>
                     <div key='left'>
                         <div className='title'>
@@ -54,7 +53,6 @@ class Service extends React.Component{
                         </Row>
                     </div>
                 </BlockLR>
-            </QueueAnim>
         )
     }
     renderP2(){
@@ -126,11 +124,8 @@ class Service extends React.Component{
     renderP5(){
         return (
             <div className='white ser-p5'>
-                <OverPack>
-                    <Texty className='title' mode='random'>与我们一起，开启一段伟大的合作</Texty>
+                <Texty className='title' mode='random'>与我们一起，开启一段伟大的合作</Texty>
                 <Button type='primary' ghost className='btn' href='/cooperate'>联系我们</Button>
-                </OverPack>
-                
             </div>
         )
     }

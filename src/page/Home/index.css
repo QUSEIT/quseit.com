@@ -136,6 +136,9 @@
     height:47px;
     font-size:16px;
 }
+.home-p7 .p7-btn span{
+    line-height: 47px;
+}
 .home-p7 img{
     width: 100%;
 }
