@@ -1,7 +1,7 @@
 import React from 'react'
 import {Button, Row, Col, Card} from 'antd'
 import './index.css'
-import { OverPack } from 'rc-scroll-anim';
+import { OverPack, Parallax } from 'rc-scroll-anim';
 import QueueAnim from 'rc-queue-anim';
 import Block1 from '../../component/Block1'
 import Contact from '../../component/Contact'
@@ -18,7 +18,8 @@ class Home extends React.Component{
                 {this.renderP5()}
                 {this.renderP6()}
                 {this.renderP7()}
-                {this.renderP8()}
+                
+            <Contact/>
                
             </div>
             
@@ -51,14 +52,11 @@ class Home extends React.Component{
     renderP2(){
         return (
             <Block1 className='blue' title='专注的领域'>
-                <OverPack>
+                <Parallax
+                animation={{ x: 0, opacity: 1, playScale: [0.2, 0.5] }}
+                style={{ transform: 'translateX(100px)', opacity: 0 }}
+                >
                     <Row gutter={64}>
-                        <QueueAnim 
-                        key="queue" 
-                        type='bottom' 
-                        duration='500' 
-                        interval='100'
-                        >
                         <Col md={8} key="a">
                             <Card hoverable='true' className='card-box'>
                             <img className='cardbox-img' alt="互联网产品" src={require('../../assets/home/icon_5.png')} />
@@ -86,18 +84,20 @@ class Home extends React.Component{
                                 </div>
                             </Card>
                         </Col>
-                        </QueueAnim>
                     </Row>
-                </OverPack>
+                </Parallax>
+                    
             </Block1>
         )
     }
     renderP3(){
         return (
             <Block1 className='grey p3' title='我们的服务'>
-            <OverPack>
                 <Row>
-                    <QueueAnim type='scaleX' >
+                <Parallax
+                animation={{ x: 0, opacity: 1, playScale: [0.2, 0.5] }}
+                style={{ transform: 'translateX(-100px)', opacity: 0 }}
+                >
                     <Col md={10} push={1} key='d1'>
                         <Row>
                             <Col md={12}>
@@ -126,6 +126,11 @@ class Home extends React.Component{
                             </Col>
                         </Row>
                     </Col>
+                    </Parallax>
+                    <Parallax
+                animation={{ x: 0, opacity: 1, playScale: [0.2, 0.5] }}
+                style={{ transform: 'translateX(100px)', opacity: 0 }}
+                >
                     <Col md={10} push={3} key='d2'>
                         <div className='right-title'>我们有您需要的经验和技能</div>
                         <p className='right-content'>
@@ -139,18 +144,19 @@ class Home extends React.Component{
                         </p>
                             
                     </Col>
-                    </QueueAnim>
+                    </Parallax>
                 </Row>
-            </OverPack>
             </Block1>
         )
     }
     renderP4(){
         return (
             <Block1 className='white p4' title='我们的案例'>
-                <OverPack>
+                 <Parallax
+                animation={{ y: 0, opacity: 1, playScale: [0.2, 0.5] }}
+                style={{ transform: 'translateY(100px)', opacity: 0 }}
+                >
                 <Row gutter={16}>
-            <QueueAnim type='bottom' duration='1000'>
                     <Col md={8} key='c1'>
                         <Card hoverable='true' className='p4-card'>
                             <img src={require('../../assets/home/logo_6.png')} alt='' className='title'/>
@@ -187,17 +193,18 @@ class Home extends React.Component{
                            <img src={require('../../assets/home/img_5.png')} alt='' className='body'/>
                         </Card>
                     </Col>
-            </QueueAnim>
                 </Row>
-            </OverPack>
+                </Parallax>
             </Block1>
         )
     }
     renderP5(){
         return (
             <Block1 className=' blue p5' title='合作伙伴'>
-                <OverPack>
-               <QueueAnim type='bottom' duration='1000'>
+               <Parallax
+                animation={{ y: 0, opacity: 1, playScale: [0.2, 0.5] }}
+                style={{ transform: 'translateY(100px)', opacity: 0 }}
+                >
                 <Row key='a'>
                     <Col md={5}>
                         <img alt='uber' src={require('../../assets/home/logo-uber.png')}/>
@@ -227,16 +234,17 @@ class Home extends React.Component{
                         <img alt='' src={require('../../assets/home/logo-rong.png')}/>
                     </Col>
                 </Row>
-            </QueueAnim>
-            </OverPack>
+            </Parallax>
             </Block1>
         )
     }
     renderP6(){
         return (
             <Block1 className='white p6' >
-            <OverPack>
-            <QueueAnim type='bottom' duration='1000'>
+            <Parallax
+                animation={{ y: 0, opacity: 1, playScale: [0.2, 0.5] }}
+                style={{ transform: 'translateY(100px)', opacity: 0 }}
+                >
                 <Row className='bgpic' type='flex' justify='end' key='a'>
                     <div className='rightbox'>
                      <h3>我们团队</h3>
@@ -246,50 +254,45 @@ class Home extends React.Component{
                     探索和快速发展
 
                     </p>
-                    <a href='#'>Full team >></a>
+                    <a href='javascript:void(0)'>Full team >></a>
                     </div>
                    
                 </Row>
-            </QueueAnim>
-            </OverPack>
+            </Parallax>
             </Block1>
         )
     }
     renderP7(){
         return (
             <Block1 className='grey home-p7' >
-                <OverPack>
-            <QueueAnim type='bottom' duration='1000'>
                 <Row type="flex" justify="space-between" key='a'>
                     <Col md={12}>
+                        <Parallax
+                    animation={{ x: 0, opacity: 1, playScale: [0.2, 0.5] }}
+                    style={{ transform: 'translateX(-100px)', opacity: 0 }}
+                    >
                         <h1>
                         我们正在招人
-                    </h1>
-                    <p>
-                    我们正在建立一支聪明，富有创造力，<br/>
-                    充满激情的乐观主义者团队，<br/>
-                    他们会在其他人看到障碍时看到机会， <br/>
-                    如果这听起来像你，欢迎联系我们。
-                    </p>
-                    <Button type='primary' className='p7-btn' ghost href='/join'>开放的职位  ></Button>
+                        </h1>
+                        <p>
+                        我们正在建立一支聪明，富有创造力，<br/>
+                        充满激情的乐观主义者团队，<br/>
+                        他们会在其他人看到障碍时看到机会， <br/>
+                        如果这听起来像你，欢迎联系我们。
+                        </p>
+                        <Button type='primary' className='p7-btn' ghost href='/join'>开放的职位  ></Button>
+                        </Parallax>
                     </Col>
                     <Col md={11}>
+                        <Parallax
+                    animation={{ x: 0, opacity: 1, playScale: [0.2, 0.5] }}
+                    style={{ transform: 'translateX(100px)', opacity: 0 }}
+                    >
                         <img  src={require('../../assets/home/2.png')} alt=''/>
+                        </Parallax>
                     </Col>
                 </Row>
-            </QueueAnim>
-            </OverPack>
             </Block1>
-        )
-    }
-    renderP8(){
-        return (
-            <OverPack>
-                <QueueAnim type='bottom' duration='1000'>
-                    <Contact key='a'/>
-                </QueueAnim>
-            </OverPack>
-        
         )
     }
 }

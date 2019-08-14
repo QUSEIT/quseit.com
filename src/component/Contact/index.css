@@ -1,14 +1,14 @@
-.contact {
+.component-contact {
     padding:100px 200px;
 }
-.contact .content-title{
+.component-contact .content-title{
     font-size:22px;
     font-weight: bold;
     line-height: 30px;
     color:#1d1d1d;
     margin-bottom:24px;
 }
-.contact .content-con{
+.component-contact .content-con{
     font-size:18px;
     color:#3c4d9f;
     line-height: 30px;

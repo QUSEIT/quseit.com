@@ -1,13 +1,18 @@
 import React from 'react'
 import './index.css'
 import {Row, Col} from 'antd'
+import {Parallax} from 'rc-scroll-anim'
 
 class Contact extends React.Component{
     render(){
         return (
-            <div className='white contact'>
+            <div className='white component-contact'>
                 <Row type="flex" justify="space-between">
                     <Col md={10} push={2}>
+                    <Parallax
+                    animation={{ x: 0, opacity: 1, playScale: [0.1, 0.3] }}
+                    style={{ transform: 'translateX(-100px)', opacity: 0 }}
+                    >
                         <Row type='flex' align='middle'>
                             <Col md={4}>
                                 <img src={require('../../assets/home/icon_8.png')} alt='合作与帮助'/>
@@ -18,8 +23,13 @@ class Contact extends React.Component{
                                 <p className='content-con'>Email: ceo@quseit.com</p>
                             </Col>
                         </Row>
+                        </Parallax>
                     </Col>
                     <Col md={10}>
+                        <Parallax
+                        animation={{ x: 0, opacity: 1, playScale: [0.1, 0.3] }}
+                        style={{ transform: 'translateX(100px)', opacity: 0 }}
+                        >
                         <Row type='flex' align='middle'>
                             <Col md={4}>
                                 <img src={require('../../assets/home/icon_9.png')} alt='通讯地址'/>
@@ -30,6 +40,7 @@ class Contact extends React.Component{
                                 <p className='content-con'>优趣天下信息有限公司</p>
                             </Col>
                         </Row>
+                        </Parallax>
                     </Col>
                 </Row>
             </div>

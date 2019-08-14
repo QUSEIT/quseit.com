@@ -51,7 +51,9 @@
     font-weight: bold;
 }
 .intro-p4 .avatar{
-    margin-top:-160px;
+    margin-top:-40%;
+    width: 50%;
+    height: 50%;
 }
 .intro-p4 .title{
     color:#3c4d9f;

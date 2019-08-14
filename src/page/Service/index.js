@@ -3,10 +3,9 @@ import BlueTitle from '../../component/BlueTitle'
 import BlockLR from '../../component/BlockLR'
 import './index.css'
 import {Row, Col, Button} from 'antd'
-import QueueAnim from 'rc-queue-anim'
 import Texty from 'rc-texty'
-import {OverPack} from 'rc-scroll-anim'
-import {Link} from 'react-router-dom'
+import {Parallax,} from 'rc-scroll-anim'
+import QueueAnim from 'rc-queue-anim'
 
 
 class Service extends React.Component{
@@ -17,15 +16,28 @@ class Service extends React.Component{
             title='我们的服务'
             content='术业专攻，成就所托&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;我们为您提供专业的互联网产品技术开发服务'/>
            {this.renderP1()}
+
             {this.renderP2()}
-            {this.renderP3()}
-            {this.renderP4()}
+           <Parallax 
+            animation={{ x: 0, opacity: 1, playScale: [0.3, 0.6] }}
+            style={{ transform: 'translateX(100px)', opacity: 0 }}
+            >
+                {this.renderP3()}
+            </Parallax>
+           <Parallax 
+            animation={{ x: 0, opacity: 1, playScale: [0.3, 0.6] }}
+            style={{ transform: 'translateX(100px)', opacity: 0 }}
+            >
+                {this.renderP4()}
+            </Parallax>
+            
             {this.renderP5()}
         </div>
         )
     }
     renderP1(){
         return (
+            <QueueAnim type='bottom'>
                 <BlockLR className='white ser-p1' key='a'>
                     <div key='left'>
                         <div className='title'>
@@ -53,6 +65,7 @@ class Service extends React.Component{
                         </Row>
                     </div>
                 </BlockLR>
+                </QueueAnim>
         )
     }
     renderP2(){
@@ -124,8 +137,13 @@ class Service extends React.Component{
     renderP5(){
         return (
             <div className='white ser-p5'>
-                <Texty className='title' mode='random'>与我们一起，开启一段伟大的合作</Texty>
-                <Button type='primary' ghost className='btn' href='/cooperate'>联系我们</Button>
+                <Parallax 
+                animation={{opacity:1,playScale:[0.1,0.4]}}
+                style={{opacity:0}}
+                >
+                    <Texty className='title' mode='random'>与我们一起，开启一段伟大的合作</Texty>
+                    <Button type='primary' ghost className='btn' href='/cooperate'>联系我们</Button>
+                </Parallax>
             </div>
         )
     }
