@@ -16,6 +16,9 @@
 .intro-p2 img{
     width: 100%;
 }
+.intro-p2 .mobile-title{
+    display: none;
+}
 .intro-box{
     border-top:1px solid #e6e6e6;
     border-bottom:1px solid #e6e6e6;
@@ -47,8 +50,11 @@
 .intro-p4 h3{
     font-size:30px;
     text-align: center;
-    margin-bottom: 236px;
+    margin-bottom: 8%;
     font-weight: bold;
+}
+.intro-p4 .intro-card-box{
+    padding-top:15%;
 }
 .intro-p4 .avatar{
     margin-top:-40%;
@@ -104,4 +110,52 @@
 }
 .intro-p5 .mess .ant-card-meta-description{
     font-size:20px;
+}
+
+/* xs sm  */
+@media only screen and (max-width:768px){
+    /* 在优趣工作 */
+    .intro-p1 h3{
+        display: none;
+    }
+    .intro-p1 img{
+        margin:15% 0;
+    }
+    /* 丰富的企业活动 */
+    .intro-p2{
+        padding:10%;
+    }
+    .intro-p2 .mobile-title{
+        display: block;
+        text-align: center;
+        margin-bottom: 10%;
+    }
+    .intro-p2 .intro-box h3{
+        display: none;
+    }
+    .intro-box{
+        border:none;
+    }
+    /* 管理团队 */
+    .intro-p4{
+        padding:10%;
+        text-align: center
+    }
+    .intro-p4 h3{
+        font-size:21px;
+        margin-bottom: 0;
+    }
+    .intro-p4 .intro-card-box{
+        padding-top:40%;
+    }
+    /* 主要成员 */
+    .intro-p5 h3{
+        margin-bottom:20%;
+    }
+    .intro-p5 .mess{
+        display: none;
+    }
+    .intro-p5 .card img{
+        border-radius: 50%;
+    }
 }

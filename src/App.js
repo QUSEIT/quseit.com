@@ -19,7 +19,7 @@ function App() {
     <BrowserRouter>
       <Layout>
         <Head />
-        <Content>
+        <Content className='app-body'>
           <Route exact path='/' component={Index}></Route>
           <Route path='/service' component={Service}></Route>
           <Route path='/introduce' component={Introduce}></Route>

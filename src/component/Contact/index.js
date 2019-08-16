@@ -14,10 +14,10 @@ class Contact extends React.Component{
                     style={{ transform: 'translateX(-100px)', opacity: 0 }}
                     >
                         <Row type='flex' align='middle'>
-                            <Col md={4}>
+                            <Col md={6} className='content-icon'>
                                 <img src={require('../../assets/home/icon_8.png')} alt='合作与帮助'/>
                             </Col>
-                            <Col md={20}>
+                            <Col md={18}>
                                 <div className='content-title'>合作与帮助</div>
                                 <p className='content-con'>Wechat: river4</p>
                                 <p className='content-con'>Email: ceo@quseit.com</p>
@@ -31,10 +31,10 @@ class Contact extends React.Component{
                         style={{ transform: 'translateX(100px)', opacity: 0 }}
                         >
                         <Row type='flex' align='middle'>
-                            <Col md={4}>
+                            <Col md={6} className='content-icon'>
                                 <img src={require('../../assets/home/icon_9.png')} alt='通讯地址'/>
                             </Col>
-                            <Col md={20}>
+                            <Col md={18}>
                                 <div className='content-title'>通讯地址</div>
                                 <p className='content-con'>北京市xxxxxxx  xxx x    邮编x xxxx</p>
                                 <p className='content-con'>优趣天下信息有限公司</p>

@@ -2,6 +2,9 @@
     background: white;
     padding:0 10%;
     height: 100px;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
 }
 .app-head .nav{
     line-height: 32px;
@@ -13,7 +16,7 @@
 }
 .app-head .nav .nav-item{
     padding:0;
-    margin:0 20px;
+    margin:0 2%;
 }
 .app-head .nav .nav-item a{
     color:#3c4d9f;
@@ -22,17 +25,55 @@
 }
 .head-btn{
     margin-top: 30px;
+    margin-left:10px;
 }
 .app-logo{
-    /* background: palegoldenrod; */
-    height: 100px;
     line-height: 100px;
 }
-
-ul{
-    list-style: none;
+.app-logo img{
+    width: 100%;
+    max-width: 237px;
 }
-ul li{
-    float:left;
+
+.app-head ul{
+    list-style: none;
+    text-align: right;
+}
+.app-head ul li{
     margin:0 5px;
+}
+
+
+@media only screen and (max-width:768px){
+    .app-head{
+        height: 80px;
+        box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.15);
+    }
+    .app-logo{
+        line-height:80px;
+    }
+    /* 移动端导航栏按钮 */
+    .moblie-dropdown{
+        height: 80px;
+        line-height: 80px;
+    }
+    .nav-btn{
+        background:url('../../assets/mobile/icon.png') no-repeat center;
+        background-size: 80%;
+        border:none;
+    }
+    .nav-btn:hover,
+    .nav-btn:focus,
+    .nav-btn:active{
+        background:url('../../assets/mobile/icon.png') no-repeat center;
+        background-size: 80%;
+    }
+
+    /* 移动端导航栏菜单 */
+    .ant-btn:empty {
+        vertical-align: middle;
+    }
+    .dropdown-menu li{
+        padding:0 40px 0 20px;
+    }
 }

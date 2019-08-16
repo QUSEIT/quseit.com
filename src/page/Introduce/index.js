@@ -3,9 +3,8 @@ import BlueTitle from '../../component/BlueTitle'
 import {Row, Col, Card, Avatar} from 'antd'
 import {Link} from 'react-router-dom'
 import './index.css'
-import {OverPack,Parallax} from 'rc-scroll-anim'
+import {Parallax} from 'rc-scroll-anim'
 import QueueAnim from 'rc-queue-anim'
-import BlockLR from '../../component/BlockLR'
 
 const {Meta} = Card;
 
@@ -47,8 +46,16 @@ class Introduce extends React.Component{
     renderP1(){
         return (
                 <QueueAnim type='bottom' duration='1000'>
-                <BlockLR  className="white intro-p1" key='a'>
-                    <div key='left'>
+                     <Row 
+                    className="block2 white intro-p1" 
+                    type='flex' 
+                    align='middle'
+                    key='a'>
+                    <Col md={{span:10,order:1}} sm={{span:24,order:2}} xs={{span:24,order:2}}>   
+                        <Parallax 
+                        animation={{ x: 0, opacity: 1, playScale: [0.2, 0.4] }}
+                        style={{ transform: 'translateX(-100px)', opacity: 0 }}
+                        >
                         <h3>关于我们</h3>
                         <div>
                             优趣天下是一家屡获殊荣的应用开发公司，拥有300多个成功发布的产品，
@@ -58,11 +65,17 @@ class Introduce extends React.Component{
                             程序开发。除DevOps咨询服务外，公司还为iOS和Android，Web开发，虚拟现实
                             开发服务提供高质量的移动应用程序开发。                   
                         </div>
-                    </div>
-                    <div key='right'>
-                        <img alt="" src={require('../../assets/introduce/img_3.png')}/>
-                    </div>
-                </BlockLR>
+                        </Parallax>    
+                    </Col>
+                    <Col md={{span:10,push:3,order:2}} sm={{span:24,order:1}} xs={{span:24,order:1}}>
+                        <Parallax 
+                        animation={{ x: 0, opacity: 1, playScale: [0.2, 0.4] }}
+                        style={{ transform: 'translateX(100px)', opacity: 0 }}
+                        >
+                            <img alt="" src={require('../../assets/introduce/img_3.png')}/>
+                        </Parallax>
+                    </Col>
+                </Row>
             </QueueAnim>
         )
     }
@@ -74,10 +87,11 @@ class Introduce extends React.Component{
             align='middle'
             key='b'
             >
-                <Col md={10}>
+                <Col md={10} sm={24} xs={24}>
+                    <h3 className='mobile-title'>在优趣工作</h3>
                     <img alt="" src={require('../../assets/introduce/img_2.png')}/>
                 </Col>
-                <Col md={10} push={3} className='intro-box'>
+                <Col md={{span:10,push:3}} sm={24} xs={24} className='intro-box'>
                     <h3>在优趣工作</h3>
                     <div>
                     我们正在努力建立世界典范：透明，快乐，好奇和快速发展。 我们的价值观很大
@@ -98,7 +112,7 @@ class Introduce extends React.Component{
             align='middle'
             key='c'
             >
-                <Col md={10}  className='intro-box'>
+                <Col md={{span:10,order:1}} sm={{span:24,order:2}} xs={{span:24,order:2}} className='intro-box'>
                     <h3>丰富的企业活动</h3>
                     <div>
                     我们是一家高速成长的互联网创业公司，我们这里不仅仅有工作，更有成长。
@@ -106,7 +120,8 @@ class Introduce extends React.Component{
                     快发展！我们优秀，我们有趣！                 
                     </div>
                 </Col>
-                <Col md={10} push={3}>
+                <Col md={{span:10,push:3,order:2}} sm={{span:24,order:1}} xs={{span:24,order:1}}>
+                    <h3 className='mobile-title'>丰富的企业活动</h3>
                     <img alt="" src={require('../../assets/introduce/img.png')}/>
                 </Col>
             </Row>
@@ -118,10 +133,10 @@ class Introduce extends React.Component{
                     <h3>管理团队</h3>
                     <Row>
                     <Parallax 
-            animation={{ x: 0, opacity: 1, playScale: [0.2, 0.5] }}
-            style={{ transform: 'translateX(-100px)', opacity: 0 }}
-            >
-                        <Col md={10} >
+                    animation={{ x: 0, opacity: 1, playScale: [0.2, 0.5] }}
+                    style={{ transform: 'translateX(-100px)', opacity: 0 }}
+                    >
+                        <Col md={10} sm={24} xs={24} className='intro-card-box'>
                             <Card hoverable='true' className='card'>
                                 <Avatar 
                                 className='avatar'
@@ -137,10 +152,10 @@ class Introduce extends React.Component{
                         </Col>
                         </Parallax>
                         <Parallax 
-            animation={{ x: 0, opacity: 1, playScale: [0.2, 0.4] }}
-            style={{ transform: 'translateX(100px)', opacity: 0 }}
-            >
-                        <Col md={10} push={3}>
+                        animation={{ x: 0, opacity: 1, playScale: [0.2, 0.4] }}
+                        style={{ transform: 'translateX(100px)', opacity: 0 }}
+                        >
+                        <Col md={{span:10,push:3}} sm={24} xs={24} className='intro-card-box'>
                             <Card hoverable='true' className='card'>
                                 <Avatar 
                                 className='avatar'
@@ -165,7 +180,7 @@ class Introduce extends React.Component{
                 <div className='white intro-p4 intro-p5'>
                     <h3>主要成员</h3>
                     <Row className='row' key='a'>
-                        <Col md={5} >
+                        <Col md={5} sm={12} xs={12}>
                             <Card 
                             className='card' 
                             bordered={false}
@@ -178,7 +193,7 @@ class Introduce extends React.Component{
                                />
                             </Card>
                         </Col>
-                        <Col md={5} push={1}>
+                        <Col md={{span:5,push:1}} sm={12} xs={12}>
                             <Card 
                             className='card' 
                             bordered={false}
@@ -191,7 +206,7 @@ class Introduce extends React.Component{
                                />
                             </Card>
                         </Col>
-                        <Col md={5}  push={2}>
+                        <Col md={{span:5,push:2}} sm={12} xs={12}>
                             <Card 
                             className='card' 
                             bordered={false}
@@ -204,7 +219,7 @@ class Introduce extends React.Component{
                                />
                             </Card>
                         </Col>
-                        <Col md={5}  push={3}>
+                        <Col md={{span:5,push:3}} sm={12} xs={12}>
                             <Card 
                             className='card' 
                             bordered={false}
@@ -219,7 +234,7 @@ class Introduce extends React.Component{
                         </Col>
                     </Row>
                     <Row className='row' key='b'>
-                        <Col md={5} push={3}>
+                        <Col md={{span:5,push:3}} sm={12} xs={12}>
                             <Card 
                             className='card' 
                             bordered={false}
@@ -232,7 +247,7 @@ class Introduce extends React.Component{
                                />
                             </Card>
                         </Col>
-                        <Col md={5}  push={4}>
+                        <Col md={{span:5,push:4}} sm={12} xs={12}>
                             <Card 
                             className='card' 
                             bordered={false}
@@ -245,7 +260,7 @@ class Introduce extends React.Component{
                                />
                             </Card>
                         </Col>
-                        <Col md={5}  push={5}>
+                        <Col md={{span:5,push:5}} sm={12} xs={12}>
                             <Card 
                             className='card' 
                             bordered={false}

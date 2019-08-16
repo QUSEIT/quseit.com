@@ -57,3 +57,21 @@
     font-weight: 400;
     padding:0 3px;
 }
+/* xs sm  */
+@media only screen and (max-width:768px){
+    .join{
+        padding:0 10%;
+    }
+    .join h2{
+        font-size:20px;
+        padding:10% 0;
+    }
+    .join .item-header .ant-collapse-header{
+        font-size:15px;
+    }
+    .join .item-title,
+    .join .item-con li,
+    .join .remind p{
+        font-size:13px;
+    }
+}

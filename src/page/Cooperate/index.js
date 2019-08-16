@@ -26,10 +26,10 @@ export default class Cooperate extends Component {
     render() {
         return (
             <div className='cooperate'>
-                <div className='cooperate-title blue'>
+                <Row className='cooperate-title blue'>
                         <Texty className='t1' duration="600">与我们合作 |</Texty>
                         <Texty className='t2' duration='800'>聘请我们帮助您构建个性化的互联网软件产品</Texty>
-                </div>
+                </Row>
                 <QueueAnim type='bottom'>
                     <div key='1'>
                          <div className='white cooperate-p1'>

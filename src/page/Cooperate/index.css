@@ -5,11 +5,11 @@
 .cooperate-title .t1{
     font-size:30px;
     margin-right:5px;
-    display: inline-block;
+    /* display: inline-block; */
     font-weight: bold;
 }
 .cooperate-title .t2{
-    display: inline-block;
+    /* display: inline-block; */
     font-size:19px;
 }
 

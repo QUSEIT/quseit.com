@@ -1,15 +1,16 @@
+/* 第一块 */
 .home-p1{
     background:#fff;
-    padding:0 10%;
-    padding-top:190px;
-    padding-bottom:200px;
+    padding:10% 10%;
+    /* padding-top:190px;
+    padding-bottom:200px; */
 }
 .home-p1 h1{
-    font-size:50px;
+    font-size:40px;
     color:#333333;
     font-weight: 900;
-    line-height: 75px;
-    margin-bottom: 60px;
+    line-height: 50px;
+    margin-bottom: 6%;
 }
 .home-p1 p{
     color:#939393;
@@ -24,13 +25,15 @@
 }
 .home-p1 img{
     width:100%;
+    padding:10%;
 }
 
-
+/* 专注的领域 */
 .card-box{
     text-align: center;
-    padding:15% 8%;
+    padding:6% 0;
     border-radius:5px;
+    margin:5%;
 }
 .card-box .cardbox-title{
     color:#3c4d9f;
@@ -42,9 +45,9 @@
     color:#333333;
     font-size:18px;
     line-height: 36px;
-    margin-top:40px;
 }
 
+/* 我们的服务 */
 .p3-card{
     text-align: center;
     padding:0;
@@ -52,7 +55,7 @@
     
 }
 .p3-card img{
-    height: 75px;
+    height: 60px;
 }
 .p3-card div{
     color:#3d4c9e;
@@ -60,7 +63,13 @@
     line-height: 30px;
     margin-top:35px;
 }
-
+.p3-card .ant-row,
+.p3-card .ant-col{
+    margin-top:0;
+}
+.p3-right{
+    padding-left:8%;
+}
 .p3 .right-title{
     font-size:30px;
     color:#333333;
@@ -74,28 +83,34 @@
     margin-top:53px;
 }
 
+/* 我们的案例 */
 .p4-card{
     padding:0;
     text-align: center;
     margin:10%;
     overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 0 rgba(112, 111, 111, 0.3);
 }
 .p4-card .title{
     margin:10% 0;
-
+    height:50px;
 }
 .p4-card .body{
-    width: 100%;
+    height: 150px;
 }
 
+/* 合作伙伴 */
 
 .p5 img{
-    margin:50px;
+    margin:10%;
+    height: 40px;
 }
 
+/* 我们的团队 */
 .p6 .bgpic{
     width: 100%;
-    height: 405px;
+    height: auto;
     background: url('../../assets/home/img.png') no-repeat;
     background-size:100%;
     color:#fff;
@@ -109,7 +124,8 @@
     color:#fff;
     font-size:30px;
     font-weight: bold;
-    margin:35px 0;
+    line-height: 2;
+    margin:0;
 }
 .p6 .bgpic p{
     font-size:18px;
@@ -143,3 +159,102 @@
     width: 100%;
 }
 
+/* xs sm  */
+@media only screen and (max-width:768px){
+    .home-p1{
+        text-align: center;
+    }
+    .home-p1 h1{
+        text-align:center;
+        margin:30px 0;
+        font-size:30px;
+    }
+    .home-p1 p{
+        display: none;
+    }
+
+    /* 专注的领域 */
+    .card-box{
+        padding: 0;
+    }
+    .card-box .ant-card-body{
+        padding:10px;
+    }
+    .card-box .cardbox-title{
+        font-size: 20px;
+    }
+    .card-box ul{
+        text-align: left;
+        list-style-type: disc;
+        padding:0px;
+    }
+    .card-box ul li{
+        margin:15px 0;
+    }
+    /* 水平居中 */
+    .flex-center{
+            display: flex;
+            justify-content: center;
+        }
+    /* 我们的服务 */
+    .p3-card{
+        width:60%;
+        
+    }
+    .p3-right{
+        text-align: center;
+        padding:0 5%;
+    }
+
+    /* 我们的案例 */
+    .p4-card{
+        width: 60%;
+        margin:5%;
+    }
+    .p4-card .title{
+        height:20px;
+    }
+    .p4-card .body{
+        height: 80px;
+    }
+
+    /* 合作伙伴 */
+    .p5 img{
+        height: 30px;
+    }
+
+    /* 我们团队 */
+    .p6 .bgpic{
+        background: none;
+        color:#333;
+        text-align: center;
+    }
+    .p6 .bgpic h3{
+        color:#333;
+    }
+    .p6 .bgpic  p{
+        padding:0 10%;
+    }
+    .p6 .bgpic a{
+        color: #333;
+    }
+    .p6 .mobile-bgpic {
+        padding:0;
+        margin-top:20%;
+    }
+    .p6 .mobile-bgpic img{
+        width: 100%; 
+    }
+
+    /* 我们在招人 */
+    .home-p7{
+        background: #fff;
+        text-align: center;
+    }
+    .home-p7 img{
+        padding:20%;
+    }
+    .home-p7 .p7-btn{
+        margin-bottom: 5%;
+    }
+}

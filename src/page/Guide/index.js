@@ -122,13 +122,7 @@ export default class Guide extends Component {
                                     path={'/guide/'+ item.id} 
                                     render={()=>this.renderDoc(index)}
                                     />
-                                    // {  
-                                    //     item.docs.map((doc,i)=>
-                                    //     <Route 
-                                    //     key = {i}
-                                    //     path = {'/guide/'+ item.id +'/'+ doc.id}
-                                    //     />)
-                                    // }
+                                   
                                 ))
                             }
                             <Route  render={this.renderWelcome}/>

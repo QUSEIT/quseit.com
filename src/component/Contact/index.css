@@ -1,5 +1,12 @@
 .component-contact {
-    padding:100px 200px;
+    padding:7% 15%;
+}
+.component-contact .content-icon{
+    padding:0 5%;
+}
+.component-contact .content-icon img{
+    width: 100%;
+    max-width: 60px;
 }
 .component-contact .content-title{
     font-size:22px;
@@ -13,4 +20,11 @@
     color:#3c4d9f;
     line-height: 30px;
     margin:0;
+}
+
+/* xs sm  */
+@media only screen and (max-width: 768px) {
+    .component-contact{
+        display: none;
+    }
 }

@@ -18,7 +18,7 @@ export default class Blog extends Component {
         this.handlePagination = this.handlePagination.bind(this);
         this.showData = this.showData.bind(this);
         this.renderP1 =this.renderP1.bind(this);
-        this.renderBlog =this.renderBlog.bind(this);
+        // this.renderBlog =this.renderBlog.bind(this);
     }
     async componentDidMount() {
         let data = await fetch('/blogs.json').then(function(response) {
@@ -49,7 +49,7 @@ export default class Blog extends Component {
                     <Texty className='header-text' duration='1000'>
                         BLOG
                     </Texty>
-                    </div>
+                </div>
                 <div  className='blog-contain white' key='a'>
                     <div className='blog-body'>
                         {
@@ -88,13 +88,13 @@ export default class Blog extends Component {
                             <h4 className='item-title'>{blogs[i].title}</h4>
                             <div className='item-content'>{blogs[i].content}</div>
                             <Row className='item-footer'>
-                                <Col md={4} sm={12}>
+                                <Col md={4} sm={0} xs={0}>
                                 <div className='item-author'>{blogs[i].author}</div>
                                 </Col>
-                                <Col md={6} sm={12}>
+                                <Col md={6} sm={24} xs={24}>
                                 <div className='item-date'>{blogs[i].date}</div>
                                 </Col>
-                                <Col md={14} sm={24}>
+                                <Col md={14} sm={0} xs={0}>
                                 <div className='item-label'><b>标签：</b>{blogs[i].label}</div>
                                 </Col>
                             </Row>
@@ -105,11 +105,5 @@ export default class Blog extends Component {
             
         }
         return items;
-    }
-    renderBlog(props){
-        console.log(props);
-        // return (
-        //     <idv>{blogs[id].title}</idv>
-        // )
     }
 }

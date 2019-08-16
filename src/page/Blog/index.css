@@ -1,6 +1,8 @@
+/* 大标题 */
 .blog-header{
+    background: url('../../assets/mobile/blog-img.png') no-repeat right;
+    background-color: #fff;
     padding:100px 20%;
-    
     border-top:1px solid #e5e7ee;
     border-bottom:1px solid #e5e7ee;
 }
@@ -9,6 +11,8 @@
     color:#333333;
     font-weight: bold;
 }
+
+/* 内容 */
 .blog-contain{
     padding:60px 20%;
 }
@@ -48,4 +52,33 @@
 .blog-contain .blog-item .item-label b{
     color:#333333;
     font-weight: bold;
+}
+
+/* xs sm  */
+@media only screen and (max-width:768px){
+    /* 大标题 */
+    .blog-header{
+        /* background: url('../../assets/mobile/blog-img.png') no-repeat right; */
+        padding:5% 10%;
+        background-size:50%;
+    }
+    .blog-header .header-text{
+        font-size:40px;
+    }
+    /* 内容 */
+    .blog-contain{
+        padding:5% 10%;
+    }
+    .blog-contain .blog-item .item-title{
+        font-size:18px;
+    }
+    .blog-contain .blog-item .item-content{
+        display: none;
+    }
+    .blog-contain .blog-item .item-footer{
+        margin-top:5%;
+    }
+    .blog-contain .blog-item .item-date{
+        color:#333;
+    }
 }
