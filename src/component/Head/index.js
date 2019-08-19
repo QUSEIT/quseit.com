@@ -1,46 +1,52 @@
 import React from 'react';
 import './index.css'
 import { Link } from 'react-router-dom'
-import {Layout, Menu, Row, Col, Button, Dropdown, Icon} from 'antd'
+import {Layout, Menu, Row, Col, Button, Dropdown} from 'antd'
 const {Header} = Layout;
 
 const nav = [{
     title:'首页',
+    enTitle:'Home',
     url:'/',
 },{
     title:'服务',
+    enTitle:'Services',
     url:'/service',
 },{
     title:'公司概况',
+    enTitle:'About Us',
     url:'/introduce',
 },{
     title:'联系我们',
+    enTitle:'Contact',
     url:'/cooperate',
 },{
     title:'工作向导',
+    enTitle:'Work guide',
     url:'/guide',
 },{
     title:'博客',
+    enTitle:'Blog',
     url:'/blog',
 }];
 
 class Head extends React.Component{
-    handleOpenMenu = (visible)=>{
-        // console.log(visible);
+    handleBtnClick = ()=>{
+        this.props.setLaungh();
     }
     render(){
         const menu = (
             <Menu className='dropdown-menu'>
                 {nav.map((item,index)=>(
                     <Menu.Item key={index}>
-                        <a href={item.url}>
-                        {item.title}
-                        </a>
+                        <Link to={item.url}  en={this.props.en}>
+                        {this.props.en?item.enTitle:item.title}
+                        </Link>
                     </Menu.Item>    
                 ))}
                 <Menu.Divider />
-                <Menu.Item key={nav.length}>
-                    English
+                <Menu.Item key={nav.length} onClick={this.handleBtnClick}>
+                    {this.props.en?'中文':'English'}
                 </Menu.Item>
             </Menu>
         )
@@ -67,15 +73,17 @@ class Head extends React.Component{
                                 <Menu theme="light" mode="horizontal" className='nav'>
                                     {nav.map((item,index)=>(
                                         <Menu.Item key={index} className='nav-item'>
-                                            <a href={item.url}>
-                                            {item.title}
-                                            </a>
+                                            <Link to={{pathname:item.url,en:this.props.en}}>
+                                            {this.props.en?item.enTitle:item.title}
+                                            </Link>
                                         </Menu.Item>
                                     ))}
                                 </Menu>
                             </Col>
                             <Col md={2}>
-                                <Button type='primary' ghost className='head-btn'>En</Button>
+                                <Button type='primary' ghost className='head-btn' onClick={this.handleBtnClick}>
+                                    {this.props.en?'中文':'En'}
+                                    </Button>
                             </Col>
                         </Row>
                     </Col>

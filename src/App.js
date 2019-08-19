@@ -14,13 +14,27 @@ import Guide from './page/Guide'
 
 const {Content} = Layout;
 
-function App() {
-  return (
+class App extends React.Component{
+  constructor(props){
+    super(props);
+    this.state={
+      isEnglish:false,
+    }
+  }
+
+  switchLaungh = () => {
+    this.setState({
+      isEnglish:!this.state.isEnglish
+    })
+  }
+
+  render(){
+    return (
     <BrowserRouter>
       <Layout>
-        <Head />
+        <Head en={this.state.isEnglish} setLaungh={this.switchLaungh}/>
         <Content className='app-body'>
-          <Route exact path='/' component={Index}></Route>
+          <Route exact path='/' component={()=><Index  en={this.state.isEnglish}/>}></Route>
           <Route path='/service' component={Service}></Route>
           <Route path='/introduce' component={Introduce}></Route>
           <Route path='/guide' component={Guide}></Route>
@@ -35,7 +49,8 @@ function App() {
       </Layout>
         
   </BrowserRouter>
-  );
+  )
+  }
 }
 
 export default App;

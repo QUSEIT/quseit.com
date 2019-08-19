@@ -67,7 +67,7 @@ class Foot extends React.Component{
                    )}
                 </Row>
                 <Row className='banquan'>
-                        Copyright © 2018 京ICP备17072685号-2
+                        Copyright © 2019 京ICP备17072685号-2
                 </Row>
                 <Row className='mobile-footbox'>
                 <p className='item-title'>联系方式</p>

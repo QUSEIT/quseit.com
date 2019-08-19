@@ -61,7 +61,7 @@
     color:#3d4c9e;
     font-size:22px;
     line-height: 30px;
-    margin-top:35px;
+    margin-top:10%;
 }
 .p3-card .ant-row,
 .p3-card .ant-col{
@@ -74,7 +74,7 @@
     font-size:30px;
     color:#333333;
     font-weight: bold;
-    margin-top:53px;
+    margin-top:5%;
 }
 .p3 .right-content{
     size:18px;
@@ -94,10 +94,14 @@
 }
 .p4-card .title{
     margin:10% 0;
-    height:50px;
+    height:40px;
+    max-height: 100%;
+    max-width: 100%;
 }
 .p4-card .body{
-    height: 150px;
+    height: 120px;
+    max-height: 100%;
+    max-width: 100%;
 }
 
 /* 合作伙伴 */
@@ -198,14 +202,25 @@
         }
     /* 我们的服务 */
     .p3-card{
-        width:60%;
+        width:70%;
         
     }
     .p3-right{
         text-align: center;
         padding:0 5%;
     }
-
+    .p3-card div{
+        font-size:18px;
+        margin-top:10%;
+    }
+    .p3-card .ant-card-body{
+        padding-left:5px;
+        padding-right:5px;
+        padding-top:0;
+    }
+    .p3 .right-title{
+        font-size:25px;
+    }
     /* 我们的案例 */
     .p4-card{
         width: 60%;

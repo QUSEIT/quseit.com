@@ -1,7 +1,7 @@
 import React from 'react'
 import {Button, Row, Col, Card} from 'antd'
 import './index.css'
-import { OverPack, Parallax } from 'rc-scroll-anim';
+import {Parallax } from 'rc-scroll-anim';
 import QueueAnim from 'rc-queue-anim';
 import Block1 from '../../component/Block1'
 import Contact from '../../component/Contact'
@@ -32,6 +32,110 @@ const p4Img=[
         body:require('../../assets/home/img_5.png')
     },
 ]
+const homeText = {
+    p1:{
+      ch:{
+        title:'我们帮助创业公司与企业家将他们的商业理念变为现实',
+        body:'作为一个充满热情和信念的互联网团队，我们始终关注了解互联网产业发展最新趋势和技术动态，学习掌握最新的设计理念和开发方法，为客户提供一流的产品设计和技术实现方案。',
+        btn:'联系我们',
+        img:require('../../assets/home/img_2.png')
+    },en:{
+        title:'We help startups and entrepreneurs transform their business ideas into reality',
+        body:'As an Internet team full of enthusiasm and conviction, we always pay attention to the latest trends and technological developments in Internet industry, learn the latest design concepts and development methods, and provide customers with first-class product design and technology realization solutions.',
+        btn:'Contact us',
+        img:require('../../assets/home/img_2.png')
+    }},
+    p2:{
+        ch:{
+            title:'专注的领域',
+            item:[
+                {
+                    img:require('../../assets/home/icon_5.png'),
+                    title:'互联网产品',
+                    body:'我们擅长于互联网产品尤其是移动互联网产品的设计。我们时刻学习并深入掌握最新的设计',
+                    mobile:['iOS应用开发','Android应用开发','微信服务应用','Web开发']
+                },{
+                    img:require('../../assets/home/icon_6.png'),
+                    title:'区块链技术',
+                    body:'我们擅长于互联网产品尤其是移动互联网产品的设计。我们时刻学习并深入掌握最新的设计',
+                    mobile:['iOS应用开发','Android应用开发','微信服务应用','Web开发']
+                },{
+                    img:require('../../assets/home/icon_3.png'),
+                    title:'编程教育',
+                    body:'我们擅长于互联网产品尤其是移动互联网产品的设计。我们时刻学习并深入掌握最新的设计',
+                    mobile:['iOS应用开发','Android应用开发','微信服务应用','Web开发']
+                }
+            ]
+        },
+        en:{
+            title:'Our Expertise',
+            item:[
+                {
+                    img:require('../../assets/home/icon_5.png'),
+                    title:'Internet Products',
+                    body:'  iOS App development,Android development,web-based apps,iOS App development',
+                    mobile:['iOS App development','Android development','web-based apps','iOS App development']
+                },{
+                    img:require('../../assets/home/icon_6.png'),
+                    title:'Blockchain Technology',
+                    body:'  iOS App development,Android development,Python',
+                    mobile:['iOS App development','Android development','Python']
+                },{
+                    img:require('../../assets/home/icon_3.png'),
+                    title:'Programming Education',
+                    body:'  iOS App development,Android development,Python',
+                    mobile:['iOS App development','Android development','Python']
+                }
+            ]
+        }
+    },
+    p3:{
+        ch:{
+            title:'我们的服务',
+            left:[{
+                img:require('../../assets/home/icon.png'),
+                title:'UI/UE设计', 
+            },{
+                img:require('../../assets/home/icon_7.png'),
+                title:'移动应用开发',
+            },{
+                img:require('../../assets/home/icon_4.png'),
+                title:'Web开发'
+            },{
+                img:require('../../assets/home/icon_2.png'),
+                title:'应用增长'
+            }],
+            right:{
+                title:'我们有您需要的经验和技能',
+                body:[
+                    '我们的首要任务是帮助创业公司和企业家将他们的商业理念变为现实。我们擅长于互联网产品尤其是移动互联网产品的设计。我们时刻学习并深入掌握最新的设计趋势和方法，如扁平化设计、Material Design、微信风格设计等。',
+                    '我们擅长的开发技术包括不限于以下：微信服务号开发、小程序、HTML5/Javascript、Django、Tornado、Android、iOS、Unity3D。'
+                ]}
+        },
+    en:{
+        title:'What We Offer',
+        left:[{
+            img:require('../../assets/home/icon.png'),
+            title:'UI/UE', 
+        },{
+            img:require('../../assets/home/icon_7.png'),
+            title:'Mobile Apps',
+        },{
+            img:require('../../assets/home/icon_4.png'),
+            title:'Web Development'
+        },{
+            img:require('../../assets/home/icon_2.png'),
+            title:'用户增长'
+        }],
+        right:{
+            title:'We Are Skillful',
+            body:[
+                'Our primary mission is to help startups and entrepreneurs transform their business ideas into reality. Developing easy-to-manage web apps and smart software solutions with the use of cutting-edge web development technologies, we help our customers achieve success.',
+                'The technology we are good at: Wechat service, HTML5 Javascript, Django, Tornado, Android, iOS, Unity3D'
+            ]}
+        }
+    }
+}
 
 class Home extends React.Component{
     render(){
@@ -52,23 +156,23 @@ class Home extends React.Component{
         )
     }
     renderP1(){
+        const p1 = homeText.p1;
+        const content = this.props.en?p1.en:p1.ch;
         return (
                 <QueueAnim type='right' duration='1000'>
                     <div className='home-p1' key="demo1">
                         <Row type="flex" justify="space-between" align="middle">
                             <Col md={{span:12,order:1}} sm={{order:2}} xs={{order:2}}>
                                 <h1>
-                                我们帮助创业公司与企业家将他们的商业理念变为现实
+                                {content.title}
                                 </h1>
                                 <p>
-                                作为一个充满热情和信念的互联网团队，我们始终关注了解互联网
-                                产业发展最新趋势和技术动态，学习掌握最新的设计理念和开发方法，
-                                为客户提供一流的产品设计和技术实现方案。
+                                {content.body}
                                 </p>
-                                <Button type='primary' className='p1-btn' href='/cooperate'>联系我们</Button>
+                                <Button type='primary' className='p1-btn' href='/cooperate'>{content.btn}</Button>
                             </Col>
                             <Col md={{span:11,order:2}} sm={{order:1}} xs={{order:1}}>
-                                <img  src={require('../../assets/home/img_2.png')} alt=''/>
+                                <img  src={content.img} alt=''/>
                             </Col>
                         </Row>
                     </div>
@@ -76,91 +180,58 @@ class Home extends React.Component{
         )
     }
     renderP2(){
+        const p2 = homeText.p2;
+        const content = this.props.en?p2.en:p2.ch;
+        // const content = p2.ch;
+        const item = content.item;
         return (
-            <Block1 className='blue' title='专注的领域'>
+            <Block1 className='blue' title={content.title}>
                 <Parallax
                 animation={{ x: 0, opacity: 1, playScale: [0.2, 0.5] }}
                 style={{ transform: 'translateX(100px)', opacity: 0 }}
                 >
                     <Row>
-                        <Col md={8} key="a">
-                            <Card hoverable='true' className='card-box'>
-                                <Row type='flex' align="middle">
-                                    <Col md={24} sm={12}  xs={10}>
-                                        <img className='cardbox-img' alt="互联网产品" src={require('../../assets/home/icon_5.png')} />
-                                        <div className='cardbox-title'>互联网产品</div>
-                                    </Col>
-                                    <Col md={0} sm={12} xs={{span:12,push:2}}>
-                                        <ul>
-                                            <li>iOS应用开发</li>
-                                            <li>Android应用开发</li>
-                                            <li>微信服务应用</li>
-                                            <li>Web开发</li>
-                                        </ul>
-                                    </Col>
-                                    <Col md={24} sm={0} xs={0}>
-                                        <div className='cardbox-content'>
-                                            我们擅长于互联网产品尤其是移动互联网产品的设计。我们时刻学习并深入掌握最新的设计
-                                        </div>
-                                    </Col>
-                                </Row>
-                                
-                            </Card>
-                        </Col>
-                        <Col md={8} key='b'>
-                            <Card hoverable='true' className='card-box'>
-                            <Row type='flex' align="middle">
-                                <Col md={24} sm={12}  xs={10}>
-                                    <img className='cardbox-img' alt="区块链技术" src={require('../../assets/home/icon_6.png')} />
-                                    <div className='cardbox-title'>区块链技术</div>
-                                </Col>
-                                <Col md={0} sm={12} xs={{span:12,push:2}}>
-                                    <ul>
-                                        <li>iOS应用开发</li>
-                                        <li>Android应用开发</li>
-                                        <li>微信服务应用</li>
-                                        <li>Web开发</li>
-                                    </ul>
-                                </Col>
-                                <Col md={24} sm={0} xs={0}>
-                                    <div className='cardbox-content'>
-                                        我们擅长于互联网产品尤其是移动互联网产品的设计。我们时刻学习并深入掌握最新的设计
-                                    </div>
-                                </Col>
-                                </Row>
-                            </Card>
-                        </Col>
-                        <Col md={8} key='c'>
-                            <Card hoverable='true' className='card-box'>
-                            <Row type='flex' align="middle">
-                                <Col md={24} sm={12}  xs={10}>
-                                    <img className='cardbox-img' alt="编程教育" src={require('../../assets/home/icon_3.png')} />
-                                    <div className='cardbox-title'>编程教育</div>
-                                </Col>
-                                <Col md={0} sm={12} xs={{span:12,push:2}}>
-                                    <ul>
-                                        <li>iOS应用开发</li>
-                                        <li>Android应用开发</li>
-                                        <li>微信服务应用</li>
-                                        <li>Web开发</li>
-                                    </ul>
-                                </Col>
-                                <Col md={24} sm={0} xs={0}>
-                                    <div className='cardbox-content'>
-                                        我们擅长于互联网产品尤其是移动互联网产品的设计。我们时刻学习并深入掌握最新的设计
-                                    </div>
-                                </Col>
-                                </Row>
-                            </Card>
-                        </Col>
+                        {
+                            item.map((a,i)=>
+                            <Col md={8} key={i}>
+                                <Card hoverable='true' className='card-box'>
+                                    <Row type='flex' align="middle">
+                                        <Col md={24} sm={12}  xs={10}>
+                                            <img className='cardbox-img' alt={a.title} src={a.img} />
+                                            <div className='cardbox-title'>{a.title}</div>
+                                        </Col>
+                                        <Col md={0} sm={12} xs={{span:12,push:2}}>
+                                            <ul>
+                                                {
+                                                    a.mobile.map((l,n)=>
+                                                     <li key={n}>{l}</li>
+                                                    )
+                                                }
+                                            </ul>
+                                        </Col>
+                                        <Col md={24} sm={0} xs={0}>
+                                            <div className='cardbox-content'>
+                                            {a.body}                                        
+                                            </div>
+                                        </Col>
+                                    </Row>
+                                </Card>
+                            </Col>
+                            )
+                        }
                     </Row>
                 </Parallax>  
             </Block1>
         )
     }
     renderP3(){
+        const p3 = homeText.p3;
+        const content = this.props.en?p3.en:p3.ch;
+        // const content = p3.ch;
+        const left = content.left;
+        const right = content.right;
         return (
-            <Block1 className='grey p3' title='我们的服务'>
+            <Block1 className='grey p3' title={content.title}>
                 <Row>
                 <Parallax
                 animation={{ x: 0, opacity: 1, playScale: [0.2, 0.5] }}
@@ -168,54 +239,22 @@ class Home extends React.Component{
                 >
                     <Col md={12} key='d1' >
                         <Row>
-                            <Col md={12}  className='flex-center'>
+                        {
+                            left.map((item,index)=>
+                            <Col md={12}  className='flex-center' key={index}>
                                 <Card hoverable='true' className='p3-card'>
                                     <Row>
-                                        <Col md={24} sm={12} xs={12}>
-                                        <img src={require('../../assets/home/icon.png')} alt=''/>
+                                        <Col md={24} sm={10} xs={10}>
+                                        <img src={item.img} alt={item.title}/>
                                         </Col>
-                                        <Col md={24} sm={12} xs={12}>
-                                        <div>UI/UE设计</div>
+                                        <Col md={24} sm={14} xs={14}>
+                                        <div>{item.title}</div>
                                         </Col>
                                     </Row>
                                 </Card>
                             </Col>
-                            <Col md={12} className='flex-center'>
-                                <Card hoverable='true' className='p3-card'>
-                                    <Row>
-                                        <Col md={24} sm={12} xs={12}>
-                                        <img src={require('../../assets/home/icon_7.png')} alt=''/>
-                                        </Col>
-                                        <Col md={24} sm={12} xs={12}>
-                                        <div>移动应用开发</div>
-                                        </Col>
-                                    </Row>
-                                </Card> 
-                            </Col>
-                            <Col md={12} className='flex-center'>
-                                <Card hoverable='true' className='p3-card'>
-                                    <Row>
-                                        <Col md={24} sm={12} xs={12}>
-                                        <img src={require('../../assets/home/icon_4.png')} alt=''/>
-                                        </Col>
-                                        <Col md={24} sm={12} xs={12}>
-                                        <div>Web开发</div>
-                                        </Col>
-                                    </Row>
-                                </Card>
-                            </Col>
-                            <Col md={12} className='flex-center'>
-                                <Card hoverable='true' className='p3-card'>
-                                    <Row>
-                                        <Col md={24} sm={12} xs={12}>
-                                        <img src={require('../../assets/home/icon_2.png')}  alt=''/>
-                                        </Col>
-                                        <Col md={24} sm={12} xs={12}>
-                                        <div>用户增长</div>
-                                        </Col>
-                                    </Row>
-                                </Card>
-                            </Col>
+                            )
+                        }
                         </Row>
                     </Col>
                 </Parallax> 
@@ -224,17 +263,10 @@ class Home extends React.Component{
                 style={{ transform: 'translateX(100px)', opacity: 0 }}
                 >
                     <Col md={12} key='d2' className='p3-right'>
-                        <div className='right-title'>我们有您需要的经验和技能</div>
-                        <p className='right-content'>
-                            我们的首要任务是帮助创业公司和企业家将他们的商业理念变为现实。我们擅长于互联网产品尤其是移动互联网产品的设计。
-                            我们时刻学习并深入掌握最新的设计趋势和方法，如扁平化设计、Material Design、微信风格设计等。
-
-                        </p>
-                        <p className='right-content'>
-                            我们擅长的开发技术包括不限于以下：微信服务号开发、小程序、
-                        HTML5/Javascript、Django、Tornado、Android、iOS、Unity3D。
-                        </p>
-                            
+                        <div className='right-title'>{right.title}</div>
+                        {right.body.map((item,index)=>
+                            <p className='right-content' key={index}>{item}</p>
+                            )}
                     </Col>
                 </Parallax>
                 </Row>
@@ -318,7 +350,7 @@ class Home extends React.Component{
                 style={{ transform: 'translateY(100px)', opacity: 0 }}
                 >
                 <Row className='bgpic' type='flex' justify='end' key='a'>
-                    <Col md={10} lg={8}>
+                    <Col md={10} lg={10}>
                         <h3>我们团队</h3>
                         <p>
                         我们是一支具有强大价值观的团队，这些价值观建立在我们做出的每一个决策

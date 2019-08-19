@@ -29,7 +29,7 @@
     list-style: none;
 }
 .footer .item-content li img{
-    margin:0 10px;
+    margin-right:10px;
 }
 .footer .banquan{
     text-align: right;
@@ -50,7 +50,7 @@
         padding:0 6%;
     }
     .footer .item-title{
-        margin-bottom: 10px;
+        margin-bottom: 15px;
     }
     .footer .item-content li{
         line-height: 3;
