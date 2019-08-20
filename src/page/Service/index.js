@@ -96,7 +96,7 @@ class Service extends React.Component{
             <Col md={{span:10,push:3,order:2}} sm={{span:24,order:2}} xs={{span:24,order:2}}>   
                 <Parallax 
                 animation={{ x: 0, opacity: 1, playScale: [0.2, 0.4] }}
-                style={{ transform: 'translateX(-100px)', opacity: 0 }}
+                style={{ transform: 'translateX(100px)', opacity: 0 }}
                 >
                     <div className='title'>
                     应用开发
@@ -109,7 +109,7 @@ class Service extends React.Component{
             <Col  md={{span:10,order:1}} sm={{span:24,order:1}} xs={{span:24,order:1}}>
                 <Parallax 
                 animation={{ x: 0, opacity: 1, playScale: [0.2, 0.4] }}
-                style={{ transform: 'translateX(100px)', opacity: 0 }}
+                style={{ transform: 'translateX(-100px)', opacity: 0 }}
                 >
                 <div className='mobile-title'>
                 应用开发
@@ -176,10 +176,10 @@ class Service extends React.Component{
                     align='middle'
                     key='a'
                 >
-                    <Col md={{span:10,order:1}} sm={{span:24,order:2}} xs={{span:24,order:2}}>   
+                    <Col md={{span:10,push:3,order:2}} sm={{span:24,order:2}} xs={{span:24,order:2}}>   
                         <Parallax 
                         animation={{ x: 0, opacity: 1, playScale: [0.2, 0.4] }}
-                        style={{ transform: 'translateX(-100px)', opacity: 0 }}
+                        style={{ transform: 'translateX(100px)', opacity: 0 }}
                         >
                         <div className='title'>
                         Python编程开发教育培训
@@ -189,10 +189,10 @@ class Service extends React.Component{
                         </div>
                         </Parallax>    
                     </Col>
-                    <Col  md={{span:10,push:3,order:2}} sm={{span:24,order:1}} xs={{span:24,order:1}}>
+                    <Col  md={{span:10,order:1}} sm={{span:24,order:1}} xs={{span:24,order:1}}>
                         <Parallax 
                         animation={{ x: 0, opacity: 1, playScale: [0.2, 0.4] }}
-                        style={{ transform: 'translateX(100px)', opacity: 0 }}
+                        style={{ transform: 'translateX(-100px)', opacity: 0 }}
                         >
                         <div className='mobile-title'>
                         产品设计

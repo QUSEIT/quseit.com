@@ -115,6 +115,7 @@
 .p6 .bgpic{
     width: 100%;
     height: auto;
+    min-height: 300px;
     background: url('../../assets/home/img.png') no-repeat;
     background-size:100%;
     color:#fff;
@@ -152,7 +153,7 @@
     margin-bottom:35px;
 }
 .home-p7 .p7-btn{
-    width:135px;
+    /* width:135px; */
     height:47px;
     font-size:16px;
 }
@@ -164,7 +165,7 @@
 }
 
 /* xs sm  */
-@media only screen and (max-width:768px){
+@media only screen and (max-width:767px){
     .home-p1{
         text-align: center;
     }

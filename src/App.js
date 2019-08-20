@@ -27,6 +27,9 @@ class App extends React.Component{
       isEnglish:!this.state.isEnglish
     })
   }
+  componentDidUpdate(){
+    sessionStorage.setItem('isEnglish',this.state.isEnglish);
+  }
 
   render(){
     return (
@@ -35,16 +38,16 @@ class App extends React.Component{
         <Head en={this.state.isEnglish} setLaungh={this.switchLaungh}/>
         <Content className='app-body'>
           <Route exact path='/' component={()=><Index  en={this.state.isEnglish}/>}></Route>
-          <Route path='/service' component={Service}></Route>
-          <Route path='/introduce' component={Introduce}></Route>
-          <Route path='/guide' component={Guide}></Route>
-          <Route path='/blog' component={Blog}></Route>
-          <Route path='/cooperate' component={Cooperate}></Route>
-          <Route path='/join' component={Join}></Route>
+          <Route path='/service' component={()=><Service  en={this.state.isEnglish}/>}></Route>
+          <Route path='/introduce' component={()=><Introduce  en={this.state.isEnglish}/>}></Route>
+          <Route path='/guide' component={()=><Guide  en={this.state.isEnglish}/>}></Route>
+          <Route path='/blog' component={()=><Blog  en={this.state.isEnglish}/>}></Route>
+          <Route path='/cooperate' component={()=><Cooperate  en={this.state.isEnglish}/>}></Route>
+          <Route path='/join' component={()=><Join  en={this.state.isEnglish}/>}></Route>
 
         </Content>
           
-        <Foot />
+        <Foot en={this.state.isEnglish} />
        
       </Layout>
         

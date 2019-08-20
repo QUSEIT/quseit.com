@@ -6,32 +6,6 @@ import QueueAnim from 'rc-queue-anim';
 import Block1 from '../../component/Block1'
 import Contact from '../../component/Contact'
 
-const p4Img=[
-    {
-        title:require('../../assets/home/logo_6.png'),
-        body:require('../../assets/home/img_5.png')
-    },
-    {
-        title:require('../../assets/home/logo_3.png'),
-        body:require('../../assets/home/img_3.png')
-    },
-    {
-        title:require('../../assets/home/logo_5.png'),
-        body:require('../../assets/home/img_4.png')
-    },
-    {
-        title:require('../../assets/home/logo_4.png'),
-        body:require('../../assets/home/img_7.png')
-    },
-    {
-        title:require('../../assets/home/logo_2.png'),
-        body:require('../../assets/home/img_6.png')
-    },
-    {
-        title:require('../../assets/home/logo.png'),
-        body:require('../../assets/home/img_5.png')
-    },
-]
 const homeText = {
     p1:{
       ch:{
@@ -134,6 +108,83 @@ const homeText = {
                 'The technology we are good at: Wechat service, HTML5 Javascript, Django, Tornado, Android, iOS, Unity3D'
             ]}
         }
+    },
+    p4:{
+        ch:{
+            title:'我们的案例'
+        },
+        en:{
+            title:'CLIENT SUCCESS'
+        },
+        imgs:[
+            {
+                title:require('../../assets/home/logo_6.png'),
+                body:require('../../assets/home/img_5.png')
+            },
+            {
+                title:require('../../assets/home/logo_3.png'),
+                body:require('../../assets/home/img_3.png')
+            },
+            {
+                title:require('../../assets/home/logo_5.png'),
+                body:require('../../assets/home/img_4.png')
+            },
+            {
+                title:require('../../assets/home/logo_4.png'),
+                body:require('../../assets/home/img_7.png')
+            },
+            {
+                title:require('../../assets/home/logo_2.png'),
+                body:require('../../assets/home/img_6.png')
+            },
+            {
+                title:require('../../assets/home/logo.png'),
+                body:require('../../assets/home/img_5.png')
+            },
+        ]
+    },
+    p5:{
+        ch:{
+            title:'合作伙伴'
+        },
+        en:{
+            title:"who we've helped so far"
+        },
+        imgs:[
+            require('../../assets/home/logo-uber.png'),
+            require('../../assets/home/logo-abs.png'),
+            require('../../assets/home/logo-origin.png'),
+            require('../../assets/home/logo-musicoin.png'),
+            require('../../assets/home/logo-rm.png'),
+            require('../../assets/home/logo-mixolo.png'),
+            require('../../assets/home/logo-ogury-5.png'),
+            require('../../assets/home/logo-cp.png'),
+            require('../../assets/home/logo-rong.png')
+        ]
+    },
+    p6:{
+        ch:{
+            title:'我们团队',
+            body:'我们是一支具有强大价值观的团队，这些价值观建立在我们做出的每一个决策以及我们所构建的一切事务之上。我们正在努力建立世界的典范：透明，快乐，探索和快速发展',
+            img:require('../../assets/mobile/home-img.png'),
+        },
+        en:{
+            title:'Our team',
+            body:'We are a team with strong values,these values are built on every decision we make and everything we build.  We are working hard to establish a model of the world: transparency, happiness, exploration and rapid development.',
+            img:require('../../assets/mobile/home-img.png'),
+        }
+    },
+    p7:{
+        ch:{
+            title:'我们正在招人',
+            body:'我们正在建立一支聪明，富有创造力，充满激情的乐观主义者团队，他们会在其他人看到障碍时看到机会，如果这听起来像你，欢迎联系我们。',
+            btn:'开放的职位  >'
+        },
+        en:{
+            title:"We're Hiring - Come Say Hello",
+            body:'We are building a team of smart, creative, passionate optimists, the kind of people who see opportunity where others see roadblocks. If this sounds like you，contact us.',
+            btn:'View all positions  >'
+        }
     }
 }
 
@@ -149,7 +200,7 @@ class Home extends React.Component{
                 {this.renderP6()}
                 {this.renderP7()}
                 
-            <Contact/>
+            <Contact en={this.props.en}/>
                
             </div>
             
@@ -182,7 +233,6 @@ class Home extends React.Component{
     renderP2(){
         const p2 = homeText.p2;
         const content = this.props.en?p2.en:p2.ch;
-        // const content = p2.ch;
         const item = content.item;
         return (
             <Block1 className='blue' title={content.title}>
@@ -274,8 +324,11 @@ class Home extends React.Component{
         )
     }
     renderP4(){
+        const p4 = homeText.p4;
+        const title = this.props.en?p4.en.title:p4.ch.title;
+        const p4Img = p4.imgs;
         return (
-            <Block1 className='white p4' title='我们的案例'>
+            <Block1 className='white p4' title={title}>
                  <Parallax
                 animation={{ y: 0, opacity: 1, playScale: [0.2, 0.5] }}
                 style={{ transform: 'translateY(100px)', opacity: 0 }}
@@ -303,46 +356,29 @@ class Home extends React.Component{
         )
     }
     renderP5(){
+        const p5 = homeText.p5;
+        const title = this.props.en?p5.en.title:p5.ch.title;
+        const p5Img = p5.imgs;
         return (
-            <Block1 className=' blue p5' title='合作伙伴'>
+            <Block1 className=' blue p5' title={title}>
                <Parallax
                 animation={{ y: 0, opacity: 1, playScale: [0.2, 0.5] }}
                 style={{ transform: 'translateY(100px)', opacity: 0 }}
                 >
                 <Row key='a'>
-                    <Col xl={5} lg={8} md={12} sm={12} xs={12}>
-                        <img alt='uber' src={require('../../assets/home/logo-uber.png')}/>
+                    {p5Img.map((item,i)=>
+                    <Col xl={(i+1)*5>24*(parseInt(i/5)+1)?4:5} lg={8} md={12} sm={12} xs={12} key={i}>
+                        <img alt={i} src={item}/>
                     </Col>
-                    <Col xl={5} lg={8} md={12}  sm={12} xs={12}>
-                        <img alt='abs' src={require('../../assets/home/logo-abs.png')}/>
-                    </Col>
-                    <Col xl={5} lg={8} md={12}  sm={12} xs={12}>
-                        <img alt='origin' src={require('../../assets/home/logo-origin.png')}/>
-                    </Col>
-                    <Col xl={5} lg={8} md={12}  sm={12} xs={12}>
-                        <img alt='musicion' src={require('../../assets/home/logo-musicoin.png')}/>
-                    </Col>
-                    <Col xl={4} lg={8} md={12}  sm={12} xs={12}>
-                        <img alt='rm' src={require('../../assets/home/logo-rm.png')}/>
-                    </Col>
-                    <Col xl={5} lg={8} md={12}  sm={12} xs={12}>
-                        <img alt='mixolo' src={require('../../assets/home/logo-mixolo.png')}/>
-                    </Col>
-                    <Col xl={5} lg={8} md={12}  sm={12} xs={12}>
-                        <img alt='ogury' src={require('../../assets/home/logo-ogury-5.png')}/>
-                    </Col>
-                    <Col xl={5} lg={8} md={12}  sm={12} xs={12}>
-                        <img alt='cp' src={require('../../assets/home/logo-cp.png')}/>
-                    </Col>
-                    <Col xl={5} lg={8} md={12}  sm={12} xs={12}>
-                        <img alt='' src={require('../../assets/home/logo-rong.png')}/>
-                    </Col>
+                    )}
                 </Row>
                 </Parallax>
             </Block1>
         )
     }
     renderP6(){
+        const p6 = homeText.p6;
+        const content = this.props.en?p6.en:p6.ch;
         return (
             <Block1 className='white p6' >
             <Parallax
@@ -350,17 +386,15 @@ class Home extends React.Component{
                 style={{ transform: 'translateY(100px)', opacity: 0 }}
                 >
                 <Row className='bgpic' type='flex' justify='end' key='a'>
-                    <Col md={10} lg={10}>
-                        <h3>我们团队</h3>
+                    <Col md={10} lg={9} xl={8}>
+                        <h3>{content.title}</h3>
                         <p>
-                        我们是一支具有强大价值观的团队，这些价值观建立在我们做出的每一个决策
-                        以及我们所构建的一切事务之上。我们正在努力建立世界的典范：透明，快乐，
-                        探索和快速发展
+                        {content.body}
                         </p>
-                        <a href='javascript:void(0)'>Full team >></a>
+                        <a href='/introduce'>Full team >></a>
                     </Col>
                     <Col md={0} sm={24} className='mobile-bgpic'>
-                        <img src={require('../../assets/mobile/home-img.png')} />
+                        <img src={content.img} />
                     </Col>
                 </Row>
             </Parallax>
@@ -368,6 +402,9 @@ class Home extends React.Component{
         )
     }
     renderP7(){
+        const p7 = homeText.p7;
+        const content = this.props.en?p7.en:p7.ch;
+   
         return (
             <Block1 className='grey home-p7' >
                 <Row type="flex" justify="space-between" key='a' align='middle'>
@@ -377,15 +414,12 @@ class Home extends React.Component{
                     style={{ transform: 'translateX(-100px)', opacity: 0 }}
                     >
                         <h1>
-                        我们正在招人
+                        {content.title}
                         </h1>
                         <p>
-                        我们正在建立一支聪明，富有创造力，<br/>
-                        充满激情的乐观主义者团队，<br/>
-                        他们会在其他人看到障碍时看到机会， <br/>
-                        如果这听起来像你，欢迎联系我们。
+                        {content.body}
                         </p>
-                        <Button type='primary' className='p7-btn' ghost href='/join'>开放的职位  ></Button>
+                        <Button type='primary' className='p7-btn' ghost href='/join'>{content.btn}</Button>
                         </Parallax>
                     </Col>
                     <Col md={{span:11,order:2}} sm={{span:24,order:1}} xs={{span:24,order:1}}>
