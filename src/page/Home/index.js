@@ -14,7 +14,7 @@ const homeText = {
         btn:'联系我们',
         img:require('../../assets/home/img_2.png')
     },en:{
-        title:'We help startups and entrepreneurs transform their business ideas into reality',
+        title:'We help ecommerce startups and entrepreneurs transform their business ideas into reality',
         body:'As an Internet team full of enthusiasm and conviction, we always pay attention to the latest trends and technological developments in Internet industry, learn the latest design concepts and development methods, and provide customers with first-class product design and technology realization solutions.',
         btn:'Contact us',
         img:require('../../assets/home/img_2.png')
@@ -45,20 +45,20 @@ const homeText = {
             title:'Our Expertise',
             item:[
                 {
-                    img:require('../../assets/home/icon_5.png'),
-                    title:'Internet Products',
-                    body:'  iOS App development,Android development,web-based apps,iOS App development',
-                    mobile:['iOS App development','Android development','web-based apps','iOS App development']
+                    img:require('../../assets/home/icon_3.png'),
+                    title:'Design',
+                    body:'  We are able to help our clients to design their own ecommerce system',
+                    mobile:['Design ecommerce system']
                 },{
                     img:require('../../assets/home/icon_6.png'),
-                    title:'Blockchain Technology',
-                    body:'  iOS App development,Android development,Python',
-                    mobile:['iOS App development','Android development','Python']
+                    title:'Develop',
+                    body:'  We are able to use kinds of development skill to develop the ecommerce system',
+                    mobile:['Development']
                 },{
-                    img:require('../../assets/home/icon_3.png'),
-                    title:'Programming Education',
-                    body:'  iOS App development,Android development,Python',
-                    mobile:['iOS App development','Android development','Python']
+                    img:require('../../assets/home/icon_5.png'),
+                    title:'Deliver',
+                    body:'  We can deliver the software in time, with good quality and maintenance service',
+                    mobile:['Deliver in time']
                 }
             ]
         }
@@ -99,12 +99,12 @@ const homeText = {
             title:'Web Development'
         },{
             img:require('../../assets/home/icon_2.png'),
-            title:'用户增长'
+            title:'User Growth'
         }],
         right:{
             title:'We Are Skillful',
             body:[
-                'Our primary mission is to help startups and entrepreneurs transform their business ideas into reality. Developing easy-to-manage web apps and smart software solutions with the use of cutting-edge web development technologies, we help our customers achieve success.',
+                'Our primary mission is to help ecommerce startups and entrepreneurs transform their business ideas into reality. Developing easy-to-manage web apps and smart software solutions with the use of cutting-edge web development technologies, we help our customers achieve success.',
                 'The technology we are good at: Wechat service, HTML5 Javascript, Django, Tornado, Android, iOS, Unity3D'
             ]}
         }
@@ -148,12 +148,10 @@ const homeText = {
             title:'合作伙伴'
         },
         en:{
-            title:"who we've helped so far"
+            title:"who we've partnered so far"
         },
         imgs:[
-            require('../../assets/home/logo-uber.png'),
             require('../../assets/home/logo-abs.png'),
-            require('../../assets/home/logo-origin.png'),
             require('../../assets/home/logo-musicoin.png'),
             require('../../assets/home/logo-rm.png'),
             require('../../assets/home/logo-mixolo.png'),
@@ -220,7 +218,7 @@ class Home extends React.Component{
                                 <p>
                                 {content.body}
                                 </p>
-                                <Button type='primary' className='p1-btn' href='/cooperate'>{content.btn}</Button>
+                                <Button type='primary' className='p1-btn' href='mailto:quseitlab@gmail.com'>{content.btn}</Button>
                             </Col>
                             <Col md={{span:11,order:2}} sm={{order:1}} xs={{order:1}}>
                                 <img  src={content.img} alt=''/>
@@ -391,7 +389,6 @@ class Home extends React.Component{
                         <p>
                         {content.body}
                         </p>
-                        <a href='/introduce'>Full team >></a>
                     </Col>
                     <Col md={0} sm={24} className='mobile-bgpic'>
                         <img src={content.img} />
@@ -419,7 +416,7 @@ class Home extends React.Component{
                         <p>
                         {content.body}
                         </p>
-                        <Button type='primary' className='p7-btn' ghost href='/join'>{content.btn}</Button>
+                        <Button type='primary' className='p7-btn' ghost href='#'>{content.btn}</Button>
                         </Parallax>
                     </Col>
                     <Col md={{span:11,order:2}} sm={{span:24,order:1}} xs={{span:24,order:1}}>

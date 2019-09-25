@@ -11,16 +11,16 @@ const text = {
     },{
         img:require('../../assets/home/icon_9.png'),
         title:'通讯地址',
-        body:['北京市xxxxxxx  xxx x    邮编x xxxx','优趣天下信息有限公司']
+        body:["Rm 1802B-A6, Fortress Tower, 250 King's Road, North Point, Hong Kong"]
     }],
     en:[{
         img:require('../../assets/home/icon_8.png'),
         title:'Support',
-        body:['Wechat: river4','Email: ceo@quseit.com']
+        body:['Email: ceo@quseit.com']
     },{
         img:require('../../assets/home/icon_9.png'),
         title:'Mailing Address',
-        body:['北京市xxxxxxx  xxx x    邮编x xxxx','优趣天下信息有限公司']
+        body:["Rm 1802B-A6, Fortress Tower, 250 King's Road, North Point, Hong Kong"]
     }]
 }
 

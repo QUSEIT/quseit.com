@@ -19,18 +19,14 @@ const foot={
         content:[{name:"设计"},{name:"设计冲刺"},{name:"UE & UI"},{name:"iOS开发"},{name:"Android开发"},{name:"微信服务开发"},{name:"网站开发"}],
     },{
         title:"工具",
-        content:[{name:"Python"},{name:"Github"},{name:"Vim"},{name:"Android studio"},{name:"Xcode"},{name:"敏捷开发"},{name:"每日构建"}],
+        content:[{name:"NodeJS"}, {name:"GraphQL"}, {name:"TypeScript"}, {name:"ReactNative"}, {name:"Python"},{name:"Github"},{name:"Vim"},{name:"Android studio"},{name:"Xcode"},{name:"敏捷开发"},{name:"每日构建"}],
     },{
         title:"学习",
         content:[{name:"设计冲刺指导"},{name:"推荐图书"},{name:"开发手册"},{name:"技术分享活动"}],
     },{
         title:"联系",
         content:[{
-            name:"与我们合作",url:"/cooperate"
-        },{
             name:"Email: ceo@quseit.com"
-        },{
-            name:"加入我们",url:"/join"
         }],
         icon: icons
     }],
@@ -50,38 +46,30 @@ const foot={
     en:{
         list : [{
         title:"Solutions",
-        content:[{name:"Cross-border logistics"},{name:"社交电商"},{name:"互动直播"}],
+        content:[{name:"Cross-border ecommerce"},{name:"Social ecommerce"}],
     },{
         title:"Services",
-        content:[{name:"Design"},{name:"设计冲刺"},{name:"UE & UI"},{name:"iOS development"},{name:"Android development"},{name:"微信服务开发"},{name:"web development"}],
+        content:[{name:"Design"},{name:"UE & UI"},{name:"Web development"},{name:"iOS & Android development"}],
     },{
         title:"Tools",
-        content:[{name:"Python"},{name:"Github"},{name:"Vim"},{name:"Android studio"},{name:"Xcode"},{name:"敏捷开发"},{name:"每日构建"}],
+        content:[{name:"NodeJS"}, {name:"GraphQL"}, {name:"TypeScript"}, {name:"ReactNative"},{name:"Python"},{name:"Github"},{name:"Vim"},{name:"Android studio"},{name:"Xcode"},{name:"CI & CD"}],
     },{
-        title:"Learning",
-        content:[{name:"设计冲刺指导"},{name:"推荐图书"},{name:"开发手册"},{name:"技术分享活动"}],
+        title:"Soical",
+        content:[{name:"Google Developer Group"},{name:"Pycon"}],
     },{
         title:"Contact",
         content:[{
-            name:"与我们合作",url:"/cooperate"
-        },{
             name:"Email: ceo@quseit.com"
-        },{
-            name:"加入我们",url:"/join"
         }],
         icon: icons
     }],
-    banquan:'Copyright © 2019 京ICP备17072685号-2',
+    banquan:'Copyright © 2019 ',
     mobile:{
-        title:'联系方式',
+        title:'How to contract su',
         content:[{
-            name:'与我们合作',url:'/cooperate',
+            name:'Email: ceo@quseit.com'
         },{
-            name:'发送邮件: ceo@quseit.com'
-        },{
-            name:'网站：https://quseit.cn',url:'https://quseit.cn'
-        },{
-            name:'与我们互动：',icon:icons
+            name:'Website：https://quseit.com',url:'https://quseit.com'
         }]}
     }
     

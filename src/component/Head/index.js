@@ -8,7 +8,8 @@ const nav = [{
     title:'首页',
     enTitle:'Home',
     url:'/',
-},{
+},
+/*,{
     title:'服务',
     enTitle:'Services',
     url:'/service',
@@ -24,11 +25,13 @@ const nav = [{
     title:'工作向导',
     enTitle:'Work guide',
     url:'/guide',
-},{
+},*/
+{
     title:'博客',
-    enTitle:'Blog',
-    url:'/blog',
-}];
+    enTitle:'Facebook',
+    url:'https://www.facebook.com/quseit',
+}
+];
 
 class Head extends React.Component{
     handleBtnClick = ()=>{
@@ -81,7 +84,7 @@ class Head extends React.Component{
                                 </Menu>
                             </Col>
                             <Col md={2}>
-                                <Button type='primary' ghost className='head-btn' onClick={this.handleBtnClick}>
+                                <Button type='primary' ghost className='head-btn' onClick={this.handleBtnClick} style={{display: 'none'}}>
                                     {this.props.en?'中文':'En'}
                                     </Button>
                             </Col>
