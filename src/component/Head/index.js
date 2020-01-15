@@ -67,7 +67,7 @@ class Head extends React.Component{
                     </Col>
                     <Col lg={5} md={5} sm={9} xs={9}>
                         <div className="app-logo">
-                            <img src={require('../../assets/guide/logo.png')} alt='优趣天下'/>
+                            <img src={require('../../assets/guide/logo.png')} alt='QUSEIT'/>
                         </div>
                     </Col>
                     <Col lg={19} md={18} sm={0} xs={0}>

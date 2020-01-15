@@ -13,8 +13,8 @@ class Introduce extends React.Component{
         return (
         <div>
             <BlueTitle 
-            title='优趣天下'
-            content='致力于为创业者和企业家提供一流的互联网产品技术开发服务'/>
+            title='QUSEIT'
+            content='Best service to start your eCommerce business'/>
             {this.renderP1()}
 
             <Parallax 
