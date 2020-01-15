@@ -56,7 +56,7 @@ const homeText = {
                 },{
                     img:require('../../assets/home/icon_5.png'),
                     title:'Growth',
-                    body:'Based on our first-class data analysis experience in eCommerce industry, we can help clients to grow the business in a technical way.',
+                    body:'Based on our first-class data analysis experience in eCommerce industry, we help clients to grow the business efficiently.',
                     mobile:['Deliver in time']
                 }
             ]
