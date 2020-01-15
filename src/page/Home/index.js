@@ -14,9 +14,8 @@ const homeText = {
         btn:'联系我们',
         img:require('../../assets/home/img_2.png')
     },en:{
-        title:'We help ecommerce startups and entrepreneurs transform their business ideas into reality',
-        body:'As an Internet team full of enthusiasm and conviction, we always pay attention to the latest trends and technological developments in Internet industry, learn the latest design concepts and development methods, and provide customers with first-class product design and technology realization solutions.',
-        btn:'Contact us',
+        title:'Best service to start your eCommerce business',
+        body:'As an technical team full of enthusiasm and conviction, we always keep in step with the latest trends and technology in eCommerce industry, learn and master the latest design concepts and development methods, and provide customers with first-class technical service.', btn:'Contact us',
         img:require('../../assets/home/img_2.png')
     }},
     p2:{
@@ -46,18 +45,18 @@ const homeText = {
             item:[
                 {
                     img:require('../../assets/home/icon_3.png'),
-                    title:'Design',
-                    body:'  We are able to help our clients to design their own ecommerce system',
-                    mobile:['Design ecommerce system']
+                    title:'Design & Develop',
+                    body: 'We can design and develop the customized website which help clients quickly setting up their professional branding website.',
+                    mobile:['Design eCommerce website']
                 },{
                     img:require('../../assets/home/icon_6.png'),
-                    title:'Develop',
-                    body:'  We are able to use kinds of development skill to develop the ecommerce system',
+                    title:'Integration',
+                    body:'We can integrate different eCommerce related systems\' APIs which make them work for clients\' eCcommerce business.',
                     mobile:['Development']
                 },{
                     img:require('../../assets/home/icon_5.png'),
-                    title:'Deliver',
-                    body:'  We can deliver the software in time, with good quality and maintenance service',
+                    title:'Growth',
+                    body:'Based on our first-class data analysis experience in eCommerce industry, we can help clients to grow the business in a technical way.',
                     mobile:['Deliver in time']
                 }
             ]
@@ -114,7 +113,7 @@ const homeText = {
             title:'我们的案例'
         },
         en:{
-            title:'CLIENT SUCCESS'
+            title:'CLIENTS SUCCESS'
         },
         imgs:[
             {
@@ -192,13 +191,13 @@ class Home extends React.Component{
             <div>
                 {this.renderP1()}
                 {this.renderP2()}
-                {this.renderP3()}
+                {/* this.renderP3() */}
                 {this.renderP4()}
-                {this.renderP5()}
-                {this.renderP6()}
-                {this.renderP7()}
+                {/* this.renderP5() */}
+                {/* this.renderP6() */}
+                {/* this.renderP7() */}
                 
-            <Contact en={this.props.en}/>
+            { /* <Contact en={this.props.en}/> */ }
                
             </div>
             

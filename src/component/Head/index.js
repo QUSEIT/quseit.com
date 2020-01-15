@@ -27,9 +27,9 @@ const nav = [{
     url:'/guide',
 },*/
 {
-    title:'博客',
-    enTitle:'Facebook',
-    url:'https://www.facebook.com/quseit',
+    title:'FreeDropship',
+    enTitle:'FreeDropship',
+    url:'https://freedropship.org',
 }
 ];
 

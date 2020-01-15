@@ -1,14 +1,14 @@
 /* 第一块 */
 .home-p1{
     background:#fff;
-    padding:10% 10%;
+    padding:5% 10%;
     /* padding-top:190px;
     padding-bottom:200px; */
 }
 .home-p1 h1{
     font-size:40px;
     color:#333333;
-    font-weight: 900;
+    font-weight: 800;
     line-height: 50px;
     margin-bottom: 6%;
 }

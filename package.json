@@ -19,7 +19,7 @@
   },
   "scripts": {
     "start": "react-app-rewired start",
-    "build": "react-app-rewired build && rm -fr docs && mv build docs",
+    "build": "react-app-rewired build && rm -fr docs && mv build docs && cp CNAME docs/CNAME",
     "test": "react-app-rewired test",
     "eject": "react-app-rewired eject"
   },

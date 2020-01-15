@@ -30,7 +30,7 @@ const foot={
         }],
         icon: icons
     }],
-    banquan:'Copyright © 2019 京ICP备17072685号-2',
+    banquan:'Copyright © 2020 京ICP备17072685号-2',
     mobile:{
         title:'联系方式',
         content:[{
@@ -46,16 +46,16 @@ const foot={
     en:{
         list : [{
         title:"Solutions",
-        content:[{name:"Cross-border ecommerce"},{name:"Social ecommerce"}],
+        content:[{name:"Dropshipping"},{name:"Cross-border Logistics"},{name:"Miniprogram Shop"},{name:"Shopify App"},{name:"Miniprogram App"}],
     },{
         title:"Services",
-        content:[{name:"Design"},{name:"UE & UI"},{name:"Web development"},{name:"iOS & Android development"}],
+        content:[{name:"UE & UI Design"},{name:"Web development"},{name:"App Development"}],
     },{
         title:"Tools",
-        content:[{name:"NodeJS"}, {name:"GraphQL"}, {name:"TypeScript"}, {name:"ReactNative"},{name:"Python"},{name:"Github"},{name:"Vim"},{name:"Android studio"},{name:"Xcode"},{name:"CI & CD"}],
+        content:[{name:"Python"},{name:"Numpy"},{name:"Pandas"},{name:"NLTK"},{name:"Spark"},{name:"PyTorch"},{name:"NodeJS"},{name:"TypeScript"},{name:"ReactJS"},{name:"GraphQL"},{name:"Git & Jenkins"}],
     },{
         title:"Soical",
-        content:[{name:"Google Developer Group"},{name:"Pycon"}],
+        content:[{name:"Github"},{name:"GDG"},{name:"Pycon"},{name:"Shopify Forum"}],
     },{
         title:"Contact",
         content:[{
@@ -63,7 +63,7 @@ const foot={
         }],
         icon: icons
     }],
-    banquan:'Copyright © 2019 ',
+    banquan:'Copyright © 2020 QUSEIT',
     mobile:{
         title:'How to contract su',
         content:[{
