@@ -11,6 +11,7 @@ import Cooperate from './page/Cooperate'
 import Join from './page/Join'
 import Blog from './page/Blog'
 import Guide from './page/Guide'
+import Freedropship from './page/Freedropship'
 
 const {Content} = Layout;
 
@@ -44,13 +45,14 @@ class App extends React.Component{
           <Route path='/blog' component={()=><Blog  en={this.state.isEnglish}/>}></Route>
           <Route path='/cooperate' component={()=><Cooperate  en={this.state.isEnglish}/>}></Route>
           <Route path='/join' component={()=><Join  en={this.state.isEnglish}/>}></Route>
+          <Route path='/freedropship' component={()=><Freedropship  en={this.state.isEnglish}/>}></Route>
 
         </Content>
-          
+
         <Foot en={this.state.isEnglish} />
-       
+
       </Layout>
-        
+
   </BrowserRouter>
   )
   }
