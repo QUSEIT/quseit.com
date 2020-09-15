@@ -9,7 +9,7 @@ const nav = [{
     enTitle:'Home',
     url:'/',
 },
-/*,{
+,{
     title:'服务',
     enTitle:'Services',
     url:'/service',
@@ -25,11 +25,11 @@ const nav = [{
     title:'工作向导',
     enTitle:'Work guide',
     url:'/guide',
-},*/
+},
 {
     title:'FreeDropship',
     enTitle:'FreeDropship',
-    url:'https://freedropship.org',
+    url:'/freedropship',
 }
 ];
 
@@ -45,7 +45,7 @@ class Head extends React.Component{
                         <Link to={item.url}  en={this.props.en}>
                         {this.props.en?item.enTitle:item.title}
                         </Link>
-                    </Menu.Item>    
+                    </Menu.Item>
                 ))}
                 <Menu.Divider />
                 <Menu.Item key={nav.length} onClick={this.handleBtnClick}>
@@ -57,10 +57,10 @@ class Head extends React.Component{
             <Header className='app-head'>
                 <Row>
                     <Col lg={0} md={0} sm={8} xs={8} className='moblie-dropdown'>
-                        <Dropdown 
-                        onVisibleChange={this.handleOpenMenu} 
-                        overlay={menu} 
-                        placement="bottomLeft" 
+                        <Dropdown
+                        onVisibleChange={this.handleOpenMenu}
+                        overlay={menu}
+                        placement="bottomLeft"
                         trigger={['click']}>
                             <Button className='nav-btn'></Button>
                         </Dropdown>
