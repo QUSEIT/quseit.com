@@ -41,7 +41,7 @@
 }
 
 .intro-p4{
-    padding:70px 15%;
+    padding:50px 15%;
     text-align: center
 }
 .intro-p4 .card{
@@ -50,11 +50,11 @@
 .intro-p4 h3{
     font-size:30px;
     text-align: center;
-    margin-bottom: 8%;
+    /*margin-bottom: 8%;*/
     font-weight: bold;
 }
 .intro-p4 .intro-card-box{
-    padding-top:15%;
+    padding-top:0%;
 }
 .intro-p4 .avatar{
     margin-top:-40%;

@@ -51,7 +51,7 @@ class Freedropship extends React.Component{
                     type='flex'
                     align='middle'
                     key='a'>
-                    <Col md={{span:10,order:1}} sm={{span:24,order:2}} xs={{span:24,order:2}}>
+                    <Col md={{span:16,order:1}} sm={{span:24,order:2}} xs={{span:24,order:2}}>
                         <Parallax
                         animation={null}
                         style={{ transform: 'translateX(0px)', opacity: 1 }}
@@ -64,12 +64,13 @@ class Freedropship extends React.Component{
                         </div>
                         </Parallax>
                     </Col>
-                    <Col md={{span:10,push:3,order:2}} sm={{span:24,order:1}} xs={{span:24,order:1}}>
+                    <Col md={{span:4,push:3,order:2}} sm={{span:24,order:1}} xs={{span:24,order:1}}>
+                      <div style={{top:200}}> </div>
                         <Parallax
                         animation={null}
-                        style={{ transform: 'translateX(0px)', opacity: 1 }}
+                        style={{ transform: 'translateY(50px)', opacity: 1 }}
                         >
-                            <img alt="" src={require('../../assets/introduce/img_3.png')}/>
+                            <img alt="" src={require('../../assets/freedropship/freedropship-600.jpeg')} style={{width:150,height:150}}/>
                         </Parallax>
                     </Col>
                 </Row>
@@ -86,7 +87,7 @@ class Freedropship extends React.Component{
             >
                 <Col md={10} sm={24} xs={24}>
                     <h3 className='mobile-title'>在优趣工作</h3>
-                    <img alt="" src={require('../../assets/introduce/img_2.png')}/>
+                    <img alt="" src={require('../../assets/home/img_2.png')}/>
                 </Col>
                 <Col md={{span:10,push:3}} sm={24} xs={24} className='intro-box'>
                     <h3>核心功能1 - 商品上架</h3>
@@ -113,7 +114,7 @@ class Freedropship extends React.Component{
                 </Col>
                 <Col md={{span:10,push:3,order:2}} sm={{span:24,order:1}} xs={{span:24,order:1}}>
                     <h3 className='mobile-title'>丰富的企业活动</h3>
-                    <img alt="" src={require('../../assets/introduce/img.png')}/>
+                    <img alt="" src={require('../../assets/introduce/img_3.png')}/>
                 </Col>
             </Row>
         )
@@ -129,16 +130,17 @@ class Freedropship extends React.Component{
                     >
                         <Col md={10} sm={24} xs={24} className='intro-card-box'>
                             <Card hoverable='true' className='card'>
-                                <Avatar
-                                className='avatar'
-                                src={require('../../assets/introduce/img_4.png')}/>
+
                                 <div className='title'>免费版</div>
-                                <div className='label'>CTO</div>
-                                <div className='body'>优趣天下创始人，负责公司全球化的服务及产品研发策略以及公司的技术架构，全球最流行的安卓Python应用QPython作者，Google开发者南宁社区活跃组织者，前Zynga高级开发工程师、前绿盟科技产品经理、前新浪邮件高级开发工程师。</div>
-                                <div className='contact'>
-                                    <i className='git'></i>
-                                    <i className='weibo'></i>
+                                <div className='label'>永久免费</div>
+                                <div className='body'>
+                                  <ul>
+                                    <li> 无限制地导入商品</li>
+                                    <li> 无限制地发布商品到你的网店上</li>
+                                    <li> 无限制地履行直邮订单</li>
+                                </ul>
                                 </div>
+
                             </Card>
                         </Col>
                         </Parallax>
@@ -148,16 +150,18 @@ class Freedropship extends React.Component{
                         >
                         <Col md={{span:10,push:3}} sm={24} xs={24} className='intro-card-box'>
                             <Card hoverable='true' className='card'>
-                                <Avatar
-                                className='avatar'
-                                src={require('../../assets/introduce/img_5.png')}/>
                                 <div className='title'>付费版</div>
-                                <div className='label'>COO</div>
-                                <div className='body'>优趣天下联合创始人，著名开源邮件系统Exmail创始人、前zynga高级系统工程师、前platform系统运维经理、前智联招聘系统运维经理、前新浪邮件高级系统工程师。</div>
-                                <div className='contact'>
-                                    <i className='git'></i>
-                                    <i className='weibo'></i>
+                                <div className='label'>PLUS</div>
+                                <div className='body'>
+                                  <ul>
+                                    <li> 无限制地导入商品</li>
+                                    <li> 无限制地发布商品到你的网店上</li>
+                                    <li> 无限制地履行直邮订单</li>
+                                    <li> 访问畅销产品数据库</li>
+
+                                </ul>
                                 </div>
+
                             </Card>
                         </Col>
                         </Parallax>
@@ -169,102 +173,64 @@ class Freedropship extends React.Component{
     renderP5(){
         return (
                 <div className='white intro-p4 intro-p5'>
-                    <h3>优质服务</h3>
+                    <h3>涵盖产品类别</h3>
                     <Row className='row' key='a'>
                         <Col md={5} sm={12} xs={12}>
-                            <Card
-                            className='card'
-                            bordered={false}
-                            cover={<img alt='' src={require('../../assets/introduce/img_6.png')}/>}
-                            >
-                               <Meta
-                               title='Huang Mei'
-                               description='Product Manager'
-                               className='mess'
-                               />
-                            </Card>
+                          <Card
+                          className='card'
+                          bordered={false}
+                          cover={<img alt='' src={require('../../assets/home/img_4.png')}/>}
+                          >
+                             <Meta
+                             title='3C数码'
+                             description=''
+                             className='mess'
+                             />
+                          </Card>
+
                         </Col>
                         <Col md={{span:5,push:1}} sm={12} xs={12}>
-                            <Card
-                            className='card'
-                            bordered={false}
-                            cover={<img alt='' src={require('../../assets/introduce/img_11.png')}/>}
-                            >
-                               <Meta
-                               title='Wei Zhang'
-                               description='Product Manager'
-                               className='mess'
-                               />
-                            </Card>
+                          <Card
+                          className='card'
+                          bordered={false}
+                          cover={<img alt='' src={require('../../assets/home/img_5.png')}/>}
+                          >
+                             <Meta
+                             title='家居用品'
+                             description=''
+                             className='mess'
+                             />
+                          </Card>
+
                         </Col>
                         <Col md={{span:5,push:2}} sm={12} xs={12}>
                             <Card
                             className='card'
                             bordered={false}
-                            cover={<img alt='' src={require('../../assets/introduce/img_9.png')}/>}
+                            cover={<img alt='' src={require('../../assets/home/img_7.png')}/>}
                             >
                                <Meta
-                               title='Qiu Weiming'
-                               description='Fullstack Developer'
+                               title='美容化妆'
+                               description=''
                                className='mess'
                                />
                             </Card>
                         </Col>
                         <Col md={{span:5,push:3}} sm={12} xs={12}>
-                            <Card
-                            className='card'
-                            bordered={false}
-                            cover={<img alt='' src={require('../../assets/introduce/img_12.png')}/>}
-                            >
-                               <Meta
-                               title='Meng Cunfang'
-                               description='Python Developer'
-                               className='mess'
-                               />
-                            </Card>
+                          <Card
+                          className='card'
+                          bordered={false}
+                          cover={<img alt='' src={require('../../assets/home/img_6.png')}/>}
+                          >
+                             <Meta
+                             title='潮流服装'
+                             description=''
+                             className='mess'
+                             />
+                          </Card>
                         </Col>
                     </Row>
-                    <Row className='row' key='b'>
-                        <Col md={{span:5,push:3}} sm={12} xs={12}>
-                            <Card
-                            className='card'
-                            bordered={false}
-                            cover={<img alt='' src={require('../../assets/introduce/img_8.png')}/>}
-                            >
-                               <Meta
-                               title='He Qiuling'
-                               description='React Developer'
-                               className='mess'
-                               />
-                            </Card>
-                        </Col>
-                        <Col md={{span:5,push:4}} sm={12} xs={12}>
-                            <Card
-                            className='card'
-                            bordered={false}
-                            cover={<img alt='' src={require('../../assets/introduce/img_10.png')}/>}
-                            >
-                               <Meta
-                               title='Yan Fufeng'
-                               description='React Developer'
-                               className='mess'
-                               />
-                            </Card>
-                        </Col>
-                        <Col md={{span:5,push:5}} sm={12} xs={12}>
-                            <Card
-                            className='card'
-                            bordered={false}
-                            cover={<img alt='' src={require('../../assets/introduce/img_7.png')}/>}
-                            >
-                               <Meta
-                               title='Vince  Chou'
-                               description='Marketing Analyst'
-                               className='mess'
-                               />
-                            </Card>
-                        </Col>
-                    </Row>
+
                 </div>
 
         )

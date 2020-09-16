@@ -2,6 +2,8 @@
 .bluetitle{
     color:#fff;
     padding:5% 15%;
+    background-image: url(../../assets/freedropship/panda-bg2.png)
+
 }
 .bluetitle .title{
     color:#fff;
@@ -43,7 +45,7 @@
     .bluetitle .content{
         font-size: 12px;
     }
-    
+
     .block2{
         padding:10%;
     }
