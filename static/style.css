@@ -52,12 +52,19 @@
 
 body{
     color: #fff;
+    padding-top: 4em;
     background: #101010;
 }
 
 
 header.q-header{
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    position: fixed;
     line-height: 4em;
+    background: var(--darker-background);
 }
 
 header.q-header .wrap{
@@ -69,6 +76,7 @@ header.q-header .wrap{
 }
 
 header.q-header .head-logo{
+    z-index: 1;
     display: inline-block;
 }
 
