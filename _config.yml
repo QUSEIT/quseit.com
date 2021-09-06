@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Quseit
+title: 优趣天下
 subtitle: ''
 description: ''
 keywords:
 author: John Doe
-language: en
+language: zh
 timezone: ''
 
 # URL
@@ -72,7 +72,7 @@ tag_map:
 
 # Metadata elements
 ## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
-meta_generator: true
+meta_generator: false
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date

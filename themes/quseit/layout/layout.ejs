@@ -3,7 +3,9 @@
 <%- partial("_partial/head") %>
 <body>
 <%- partial("_partial/header") %>
-<%- body %>
-<%- partial("_partial/footer") %>
+<main class="q-main">
+  <%- body %>
+</main>
+<%- partial("_partial/footer", {}, { cache: true }) %>
 </body>
 </html>

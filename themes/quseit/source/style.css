@@ -64,6 +64,7 @@ header.q-header{
     z-index: 2;
     position: fixed;
     line-height: 4em;
+    border-bottom: 1px solid #292f3a;
     background: var(--darker-background);
 }
 
