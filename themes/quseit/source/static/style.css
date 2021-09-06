@@ -125,14 +125,15 @@ header.q-header .head-menu .active:after{
 @media screen and (max-width: 900px){
     header.q-header .head-menu{
         order: 1;
-        display: none;
+        max-height: 0;
         flex: 0 0 100%;
         position: static;
-        transition: min-height .3s;
+        overflow: hidden;
+        transition: max-height .3s;
     }
 
     header.q-header.active .head-menu{
-        display: block;
+        max-height: 20em;
     }
 
     header.q-header .head-menu a{
