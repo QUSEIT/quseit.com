@@ -48,8 +48,28 @@
     margin: auto;
     background-position-x: center;
 }
-
-
+.column {
+    display: flex;
+    flex-direction: column;
+}
+.row .spacing-title{
+    letter-spacing: 0.2em;
+}
+.row .spacing-article{
+    letter-spacing: 0.1em;
+}
+.row .padding-tb-4{
+    padding: 4em 0;
+}
+.padding-1{
+    padding: 1em 0;
+}
+.pd-b-1{
+    padding-bottom: 1em;
+}
+.ftsz-20{
+    font-size: 20px;
+}
 body{
     color: #fff;
     padding-top: 4em;
@@ -113,7 +133,6 @@ header.q-header .head-menu .active:after{
     left: 0;
     right: 0;
     bottom: .7em;
-
     width: 6em;
     height: .5em;
     margin: auto;
@@ -162,9 +181,6 @@ header.q-header .head-menu .active:after{
     box-shadow: 0 -.5em 0 var(--blue), 0 .5em 0 var(--blue);
 }
 
-
-
-
 main.q-main .section-item{
     padding: 5em 0;
 }
@@ -179,7 +195,6 @@ main.q-main .section-item.section-blue{
     font-weight: 300;
     background: var(--blue);
 }
-
 .section-blue h2{
     letter-spacing: .3em;
     font-weight: inherit;
@@ -188,13 +203,21 @@ main.q-main .section-item.section-blue{
 /* Skills */
 .section-home-skills img{
     max-height: 8em;
-    margin-bottom: 2em;
+}
+.section-item-size{
+    width: 316px;
+    height: 308px;
+}
+.section-home-skills .skills-item{
+    padding: 6em 3em;
+    text-align: center;
+    background: #252A36;
 }
 
-.section-home-skills .skills-item{
-    padding: 3em 2em;
+.section-home-skills .skills-item-bottom{
+    padding: 1em 3em;
     text-align: center;
-    background: #292f3a;
+    background: #1F232C;
 }
 
 
@@ -249,7 +272,106 @@ main.q-main .section-item.section-blue{
     box-shadow: 1.25em 0px 0 #fcbd3f, 2.5em 0px 0 #3dc94a;
 }
 
+/* 方案 */
+.slide {
+    position: relative;
+    margin: auto;
+    width: 850px;
+    text-align: center;
+    font-family: Arial;
+    color: #FFF;
+    overflow: hidden;
+}
 
+.slide .slide-auto {
+    margin: 10px 0;
+    padding: 0;
+    width: 9999px;
+    animation: move 8s infinite;
+    animation-timing-function: cubic-bezier(0, 1, 0, 0.99);
+    animation-delay: 1s;
+}
+.slide .slide-auto li {
+    float: left;
+    width: 850px;
+    height: 545px;
+    list-style: none;
+    line-height: 200px;
+    font-size: 36px;
+}
+@keyframes move {
+    0% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: -850px;
+    }
+
+    50% {
+        margin-left: -1700px;
+    }
+
+    75% {
+        margin-left: -2550px;
+    }    
+    100% {
+        margin-left: 0px;
+    }
+}
+#slider_nav {
+    width: 100%;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px; 
+    }
+#slider_nav li {
+    width: 40px;
+    height: 7.8px;
+    display: block;
+    margin: 0 10px;
+    float: left;
+    background-color: #202020;
+    border-radius: 4px;
+    /* cursor: pointer; */
+}
+#slider_nav #active{
+    position: absolute;
+    width: 40px;
+    height: 7.8px;
+    display: block;
+    margin: 0 10px;
+    float: left;
+    background-color:#1140e3;
+    border-radius: 4px;
+    margin-left: -170px;
+    animation: navmove 8s infinite;
+    animation-timing-function: cubic-bezier(0, 1, 0, 0.99);
+    animation-delay: 1s;
+}
+@keyframes navmove {
+    0% {
+        margin-left: -170px;
+    }
+    25% {
+        margin-left: -48px;
+    }
+    50% {
+        margin-left: 72px;
+    }
+    75% {
+        margin-left: 190px;
+    }    
+    100% {
+        margin-left: -170px;
+    }
+}
+
+/* 导航按钮活动样式*/
+/* #slider_nav .active{
+    background-color: #1140E3;
+} */
 /* Partners */
 .section-home-partners img{
     width: 15em;
