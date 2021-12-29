@@ -283,50 +283,34 @@ main.q-main .section-item.section-blue{
     overflow: hidden;
 }
 
-.slide .slide-auto {
+
+/* 轮播图 */
+#all {
+    width: 850px;
+    margin: 100px auto;
+    position: relative;
+    overflow: hidden;
+}
+ul {
+    list-style: none;
+}
+#show {
+    position: absolute;
     margin: 10px 0;
     padding: 0;
     width: 9999px;
-    animation: move 8s infinite;
-    animation-timing-function: cubic-bezier(0, 1, 0, 0.99);
-    animation-delay: 1s;
 }
-.slide .slide-auto li {
-    float: left;
+
+#show li img {
     width: 850px;
     height: 545px;
-    list-style: none;
-    line-height: 200px;
-    font-size: 36px;
+    cursor: pointer;
 }
-@keyframes move {
-    0% {
-        margin-left: 0;
-    }
-
-    25% {
-        margin-left: -850px;
-    }
-
-    50% {
-        margin-left: -1700px;
-    }
-
-    75% {
-        margin-left: -2550px;
-    }    
-    100% {
-        margin-left: 0px;
-    }
+#show li {
+    float: left;
 }
-#slider_nav {
-    width: 100%;
-    bottom: 0px;
-    display: flex;
-    justify-content: center;
-    margin-top: 30px; 
-    }
-#slider_nav li {
+
+#pot li {
     width: 40px;
     height: 7.8px;
     display: block;
@@ -334,44 +318,70 @@ main.q-main .section-item.section-blue{
     float: left;
     background-color: #202020;
     border-radius: 4px;
-    /* cursor: pointer; */
 }
-#slider_nav #active{
+#pot {
+    width: 100%;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    margin-top:70%;
+}
+#next {
+    width: 30px;
+    height: 30px;
     position: absolute;
-    width: 40px;
-    height: 7.8px;
-    display: block;
-    margin: 0 10px;
-    float: left;
-    background-color:#1140e3;
-    border-radius: 4px;
-    margin-left: -170px;
-    animation: navmove 8s infinite;
-    animation-timing-function: cubic-bezier(0, 1, 0, 0.99);
-    animation-delay: 1s;
-}
-@keyframes navmove {
-    0% {
-        margin-left: -170px;
-    }
-    25% {
-        margin-left: -48px;
-    }
-    50% {
-        margin-left: 72px;
-    }
-    75% {
-        margin-left: 190px;
-    }    
-    100% {
-        margin-left: -170px;
-    }
+    top: 40%;
+    left: 97%;
+    background-color: rgba(26, 25, 25, .5);
+    z-index: 50;
 }
 
-/* 导航按钮活动样式*/
-/* #slider_nav .active{
-    background-color: #1140E3;
-} */
+#next:hover {
+    cursor: pointer;
+    background-color: rgba(88, 82, 82, 0.5);
+}
+
+#pre:hover {
+    cursor: pointer;
+    background-color: rgba(88, 82, 82, 0.5);
+}
+
+#pre {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 40%;
+    left: 0px;
+    background-color: rgba(26, 25, 25, .5);
+    z-index: 99;
+}
+
+.p1 {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 15px;
+    left: 2px;
+    border-left: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    -webkit-transform: translate(0, -50%) rotate(-135deg);
+    transform: translate(0, -50%) rotate(-135deg);
+    z-index: 100;
+}
+
+.p2 {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    border-right: 2px solid #fff;
+    border-top: 2px solid #fff;
+    -webkit-transform: translate(0, -50%) rotate(-135deg);
+    transform: translate(0, -50%) rotate(-135deg);
+    z-index: 99;
+}
+
 /* Partners */
 .section-home-partners img{
     width: 15em;
@@ -416,8 +426,6 @@ main.q-main .section-item.section-blue{
         margin-top: 0;
     }
 }
-
-
 
 footer.q-footer .sub-footer{
     color: #fff;
