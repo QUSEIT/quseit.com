@@ -1,17 +1,30 @@
 /* Variables */
 :root{
     --blue: #1140e3;
-
     --dark-background: #292f3a;
     --darker-background: #101010;
 }
-
+@media screen and (max-width: 950px){
+    .section-home-skills .row {
+        display: flex;
+        flex-wrap: nowrap;
+        margin: 0 -1em -2em;
+    }
+}
+@media screen and (max-width: 950px) {
+    .section-home-skills .wrap {
+        padding: 0em;
+    } 
+}
+/*ul li*/
+.wide-list li{ margin-bottom: 0.8em}
+/* .wide-list li:last-child{ margin-bottom: 0} */
+.subTitle{ margin-bottom: 1.5em;}
 
 /* Helpers */
 .text-blue{
     color: var(--blue);
 }
-
 
 /* Button */
 .btn{
@@ -58,17 +71,13 @@
 .row .spacing-article{
     letter-spacing: 0.1em;
 }
-.row .padding-tb-4{
-    padding: 4em 0;
-}
-.padding-1{
-    padding: 1em 0;
-}
-.pd-b-1{
-    padding-bottom: 1em;
-}
 .ftsz-20{
     font-size: 20px;
+}
+@media screen and (max-width: 950px) {
+    .ftsz-20{
+        font-size: 16px;
+    }
 }
 body{
     color: #fff;
@@ -171,6 +180,15 @@ header.q-header .head-menu .active:after{
     }
 }
 
+@media screen and (min-width: 901px){
+    #all {
+        width: 850px;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 10px;
+    }
+}
+
 .head-toggle span{
     top: 1em;
     width: 1.5em;
@@ -185,6 +203,14 @@ main.q-main .section-item{
     padding: 5em 0;
 }
 
+@media screen and (max-width: 900px){
+    main.q-main .section-item{
+        padding: 5em 2em;
+    }
+    .section-home-skills main.q-main .section-item{
+        padding: 5em 0em;
+    }
+}
 main.q-main .section-item.section-dark{
     background: #292f3a;
 }
@@ -195,6 +221,7 @@ main.q-main .section-item.section-blue{
     font-weight: 300;
     background: var(--blue);
 }
+
 .section-blue h2{
     letter-spacing: .3em;
     font-weight: inherit;
@@ -206,7 +233,6 @@ main.q-main .section-item.section-blue{
 }
 .section-item-size{
     width: 316px;
-    height: 308px;
 }
 .section-home-skills .skills-item{
     padding: 6em 3em;
@@ -287,18 +313,15 @@ main.q-main .section-item.section-blue{
 /* 轮播图 */
 #all {
     width: 850px;
-    margin: 10px auto;
     position: relative;
     overflow: hidden;
-}
-ul {
-    list-style: none;
 }
 #show {
     position: absolute;
     margin: 10px 0;
     padding: 0;
     width: 9999px;
+    list-style: none;
 }
 
 #show li img {
@@ -331,7 +354,7 @@ ul {
     height: 30px;
     position: absolute;
     top: 40%;
-    left: 97%;
+    right: 0;
     background-color: rgba(26, 25, 25, .5);
     z-index: 50;
 }
