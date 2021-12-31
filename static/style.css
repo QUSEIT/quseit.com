@@ -91,13 +91,6 @@
         padding: 5em 0em;
     }
 }
-@media screen and (max-width:950px) {
-    .section-home-skills .skills-item-bottom{
-        /* padding: 1em 0;
-        text-align: center; */
-        width: 8em;
-    } 
-}
 
 @media screen and (max-width: 900px){
     .section-home-team .team-image{
