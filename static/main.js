@@ -1,3 +1,11 @@
+window.addEventListener('scroll',function(){
+    let tou = document.querySelector('.q-header'); 
+    tou.classList.toggle("q-header-change", window.scrollY>0);
+
+   
+})
+
+//轮播图
 var show = document.querySelector("#show");
 var imgList = document.getElementsByTagName("img");
 show.style.width = imgList.length * 850 + "px";

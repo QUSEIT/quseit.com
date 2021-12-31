@@ -169,8 +169,18 @@ header.q-header{
     z-index: 2;
     position: fixed;
     line-height: 4em;
-    border-bottom: 1px solid #292f3a;
     background: var(--darker-background);
+}
+
+header.q-header-change{
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    position: fixed;
+    line-height: 4em;
+    background: var(--darker-background);
+    opacity: 0.9;
 }
 
 header.q-header .wrap{
@@ -267,7 +277,7 @@ main.q-main .section-item.section-blue{
 
 /* Skills */
 .section-home-skills img{
-    max-height: 8em;
+    max-height: 10em;
 }
 
 .section-home-skills .skills-item-bottom{
