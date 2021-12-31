@@ -1,8 +1,6 @@
 window.addEventListener('scroll',function(){
     let tou = document.querySelector('.q-header'); 
     tou.classList.toggle("q-header-change", window.scrollY>0);
-
-   
 })
 
 //轮播图
