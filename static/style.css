@@ -248,6 +248,10 @@ main.q-main .section-item{
 main.q-main .section-item.section-dark{
     background: #292f3a;
 }
+div.section-dark{
+    background: #292f3a;
+}
+
 
 main.q-main .section-item.section-blue{
     color: #fff;
