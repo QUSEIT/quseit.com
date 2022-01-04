@@ -100,6 +100,12 @@
 .mb-5em{
     margin-bottom: 5em;
 }
+.fs-24{
+    font-size: 24px;
+}
+.fw-thin{
+    font-weight: 200;
+}
 /*ul li*/
 .wide-list li{ margin-bottom: 0.8em}
 
@@ -185,7 +191,6 @@ header.q-header-change{
     background: var(--darker-background);
     opacity: 0.9;
 }
-.test
 
 header.q-header .wrap{
     display: flex;
