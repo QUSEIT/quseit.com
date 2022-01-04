@@ -185,6 +185,7 @@ header.q-header-change{
     background: var(--darker-background);
     opacity: 0.9;
 }
+.test
 
 header.q-header .wrap{
     display: flex;
