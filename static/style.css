@@ -100,12 +100,16 @@
 .mb-5em{
     margin-bottom: 5em;
 }
+.mt-5em{
+    margin-top: 5em;
+}
 .fs-24{
     font-size: 24px;
 }
 .fw-thin{
     font-weight: 200;
 }
+.row.left{ justify-content: flex-start; }
 /*ul li*/
 .wide-list li{ margin-bottom: 0.8em}
 
