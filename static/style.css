@@ -111,7 +111,10 @@
 }
 .indexSubTitle{
     font-size: 32px;
-    margin-bottom: 1em;
+    margin-bottom: 1.3em;
+}
+.nowrap{
+    flex-wrap: nowrap;
 }
 .mb-5em{
     margin-bottom: 5em;
@@ -179,6 +182,9 @@
 }
 .row .spacing-title{
     letter-spacing: 0.2em;
+}
+.row .spacing-title-s{
+    letter-spacing: 0.1em;
 }
 .row .spacing-article{
     letter-spacing: 0.13em;
