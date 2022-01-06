@@ -97,6 +97,22 @@
         margin-top: -2em;
     }
 }
+.title{
+    font-size: 40px;
+    margin-bottom: 1em;
+}
+.subTitle{
+    font-size: 36px;
+    margin-bottom: 1em;
+}
+.pTitle{
+    font-size: 1.2em;
+    line-height: 3em;
+}
+.indexSubTitle{
+    font-size: 32px;
+    margin-bottom: 0.8em;
+}
 .mb-5em{
     margin-bottom: 5em;
 }
@@ -116,8 +132,6 @@
 /*ul li*/
 .wide-list li{ margin-bottom: 0.8em}
 
-.subTitle{ margin-bottom: 1.5em;}
-
 /* Helpers */
 .text-blue{
     color: var(--blue);
@@ -126,6 +140,7 @@
 /* Button */
 .btn{
     border-radius: 2em;
+    margin-top: 1em;
 }
 .btn.white{
     color: var(--blue);
@@ -166,10 +181,11 @@
     letter-spacing: 0.2em;
 }
 .row .spacing-article{
-    letter-spacing: 0.1em;
+    letter-spacing: 0.13em;
 }
 .ftsz-20{
     font-size: 20px;
+    line-height: 3em;
 }
 
 body{
@@ -293,7 +309,7 @@ main.q-main .section-item.section-blue{
 
 /* Skills */
 .section-home-skills img{
-    max-height: 10em;
+    max-height: 20em;
 }
 
 .section-home-skills .skills-item-bottom{
@@ -400,7 +416,7 @@ main.q-main .section-item.section-blue{
     top: 40%;
     right: 0;
     background-color: rgba(26, 25, 25, .5);
-    z-index: 50;
+    /* z-index: 50; */
 }
 
 #next:hover {
@@ -420,7 +436,7 @@ main.q-main .section-item.section-blue{
     top: 40%;
     left: 0px;
     background-color: rgba(26, 25, 25, .5);
-    z-index: 99;
+    /* z-index: 99; */
 }
 
 .p1 {
@@ -433,7 +449,7 @@ main.q-main .section-item.section-blue{
     border-bottom: 2px solid #fff;
     -webkit-transform: translate(0, -50%) rotate(-135deg);
     transform: translate(0, -50%) rotate(-135deg);
-    z-index: 100;
+    /* z-index: 100; */
 }
 
 .p2 {
@@ -446,7 +462,7 @@ main.q-main .section-item.section-blue{
     border-top: 2px solid #fff;
     -webkit-transform: translate(0, -50%) rotate(-135deg);
     transform: translate(0, -50%) rotate(-135deg);
-    z-index: 99;
+    /* z-index: 99; */
 }
 
 /* Partners */
