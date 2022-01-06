@@ -75,9 +75,9 @@ function run() {
 //设置圆点颜色的变化
 function changeColor(index) {
   for (var i = 0; i < liList.length; i++) {
-      liList[i].style.backgroundColor = "";
+    liList[i].firstChild.style.backgroundColor = "";
   }
-  liList[index].style.backgroundColor = "#1140e3";
+  liList[index].firstChild.style.backgroundColor = "#1140e3";
 }
 
 //设置点击圆点事件

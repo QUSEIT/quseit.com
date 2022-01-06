@@ -107,7 +107,6 @@
 }
 .pTitle{
     font-size: 1.5em;
-    line-height: 3em;
 }
 .indexSubTitle{
     font-size: 32px;
@@ -397,9 +396,14 @@ main.q-main .section-item.section-blue{
 }
 #show li {
     float: left;
+    
 }
 
-#pot li {
+#pot li{
+    list-style-type: none;
+}
+
+#pot li span{
     width: 40px;
     height: 7.8px;
     display: block;
@@ -414,6 +418,9 @@ main.q-main .section-item.section-blue{
     display: flex;
     justify-content: center;
     margin-top:70%;
+}
+#pot span{
+    margin: 5px;
 }
 #next {
     width: 30px;
@@ -470,7 +477,12 @@ main.q-main .section-item.section-blue{
     transform: translate(0, -50%) rotate(-135deg);
     /* z-index: 99; */
 }
-
+.cenports{
+    background: url(/images/home/cenports.png);
+    background-size: 69%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 /* Partners */
 .section-home-partners img{
     width: 15em;
