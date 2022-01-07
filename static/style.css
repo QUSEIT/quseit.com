@@ -388,7 +388,10 @@ main.q-main .section-item.section-blue{
     overflow: hidden;
 }
 
+/* 轮播文字 */
+/* #allText {
 
+} */
 /* 轮播图 */
 #all {
     width: 850px;
@@ -514,7 +517,29 @@ main.q-main .section-item.section-blue{
     margin-top: -10em;
     pointer-events: none;
 }
-
+.flex{
+    display: flex;
+}
+.flexWrap {
+    flex-wrap: wrap;
+}
+.teamBoss{
+    overflow: hidden;
+    padding-right: 1px;
+    padding-bottom: 0px;
+}
+.teamBoss img{
+    position: relative;
+    top: -1px;
+}
+.teammate{
+    display: flex;
+    width: 100%;
+    gap:1px;
+}
+.mb-1px{
+    margin: 0 0 1px 0
+}
 /* Card */
 .section-card .card-block{
     padding: 2em;
@@ -541,4 +566,7 @@ footer .bottom-footer{
     padding: 1em 0;
     background: #1f232c;
     text-align: center;
+}
+.lineHeight-init{
+    line-height: initial;
 }
