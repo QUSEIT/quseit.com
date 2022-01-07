@@ -132,6 +132,12 @@
 .fs-18{
     font-size: 18px;
 }
+.p-0{
+    padding: 0px;
+}
+.pb-1px{
+    padding-bottom: 2px;
+}
 .fw-thin{
     font-weight: 200;
 }
