@@ -98,7 +98,8 @@
     }
 }
 .title{
-    font-size: 40px;
+    font-size: 46px;
+    letter-spacing: 0.2em;
     margin-bottom: 1em;
 }
 .serviceTitle{
@@ -107,12 +108,13 @@
 .subTitle{
     font-size: 36px;
     margin-bottom: 1em;
+    letter-spacing: 0.1em;
 }
 .pTitle{
     font-size: 1.5em;
 }
 .indexSubTitle{
-    font-size: 32px;
+    font-size: 36px;
     margin-bottom: 1.3em;
 }
 .nowrap{
@@ -182,10 +184,13 @@
     display: flex;
     flex-direction: column;
 }
-.row .spacing-title{
+.spacing-title{
     letter-spacing: 0.2em;
 }
-.row .spacing-title-s{
+.spacing-p{
+    letter-spacing: 0.1em;
+}
+p{
     letter-spacing: 0.1em;
 }
 .row .spacing-article{
@@ -410,7 +415,7 @@ main.q-main .section-item.section-blue{
     width: 40px;
     height: 7.8px;
     display: block;
-    margin: 0 10px;
+    margin: 10px;
     float: left;
     background-color: #202020;
     border-radius: 4px;
@@ -422,8 +427,8 @@ main.q-main .section-item.section-blue{
     justify-content: center;
     margin-top:70%;
 }
-#pot span{
-    margin: 5px;
+.lisp{
+    margin: 10px;
 }
 #next {
     width: 30px;
@@ -516,7 +521,7 @@ main.q-main .section-item.section-blue{
 
 footer.q-footer .sub-footer{
     color: #fff;
-    padding: 5em 0;
+    padding: 2em 0;
     background: #292f3a;
 }
 
