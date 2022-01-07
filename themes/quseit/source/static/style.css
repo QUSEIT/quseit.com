@@ -415,8 +415,7 @@ main.q-main .section-item.section-blue{
 
 /* 轮播图 */
 #all {
-    width: 100%;
-    /* width: 100%; */
+    width: 850px;
     position: relative;
     overflow: hidden;
 }
@@ -429,7 +428,7 @@ main.q-main .section-item.section-blue{
 }
 
 #show li img {
-    width: 100%;
+    width: 850px;
     height: 545px;
     cursor: pointer;
 }
@@ -451,7 +450,7 @@ main.q-main .section-item.section-blue{
     border-radius: 4px;
 }
 #pot {
-    width: 100%;
+    width: 850px;
     bottom: 0px;
     display: flex;
     justify-content: center;
