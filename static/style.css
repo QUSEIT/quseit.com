@@ -123,23 +123,8 @@ li{
 .nowrap{
     flex-wrap: nowrap;
 }
-.mb-5em{
-    margin-bottom: 5em;
-}
-.mt-5em{
-    margin-top: 5em;
-}
-.fs-24{
-    font-size: 24px;
-}
 .fs-18{
     font-size: 18px;
-}
-.p-0{
-    padding: 0px;
-}
-.pb-1px{
-    padding-bottom: 2px;
 }
 .fw-thin{
     font-weight: 200;
@@ -513,61 +498,7 @@ main.q-main .section-item.section-blue{
 .lisp{
     margin: 10px;
 }
-#next {
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    top: 40%;
-    right: 0;
-    background-color: rgba(26, 25, 25, .5);
-    /* z-index: 50; */
-}
 
-#next:hover {
-    cursor: pointer;
-    background-color: rgba(88, 82, 82, 0.5);
-}
-
-#pre:hover {
-    cursor: pointer;
-    background-color: rgba(88, 82, 82, 0.5);
-}
-
-#pre {
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    top: 40%;
-    left: 0px;
-    background-color: rgba(26, 25, 25, .5);
-    /* z-index: 99; */
-}
-
-.p1 {
-    width: 15px;
-    height: 15px;
-    position: absolute;
-    top: 15px;
-    left: 2px;
-    border-left: 2px solid #fff;
-    border-bottom: 2px solid #fff;
-    -webkit-transform: translate(0, -50%) rotate(-135deg);
-    transform: translate(0, -50%) rotate(-135deg);
-    /* z-index: 100; */
-}
-
-.p2 {
-    width: 15px;
-    height: 15px;
-    position: absolute;
-    top: 15px;
-    left: 10px;
-    border-right: 2px solid #fff;
-    border-top: 2px solid #fff;
-    -webkit-transform: translate(0, -50%) rotate(-135deg);
-    transform: translate(0, -50%) rotate(-135deg);
-    /* z-index: 99; */
-}
 .cenports{
     background: url(/images/home/cenports.png);
     background-size: 69%;
@@ -578,7 +509,6 @@ main.q-main .section-item.section-blue{
 .section-home-partners img{
     width: 15em;
 }
-
 
 /* Team */
 .section-home-team .team-text{
@@ -644,4 +574,3 @@ footer .bottom-footer{
 .lineHeight-init{
     line-height: initial;
 }
-/*About*/
