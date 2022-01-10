@@ -197,10 +197,10 @@ li{
     letter-spacing: 0.2em;
 }
 .spacing-p{
-    letter-spacing: 0.1em;
+    letter-spacing: 0.13em;
 }
 p{
-    letter-spacing: 0.1em;
+    letter-spacing: 0.13em;
 }
 .row .spacing-article{
     letter-spacing: 0.13em;
@@ -414,6 +414,60 @@ main.q-main .section-item.section-blue{
 }
 
 /* 轮播图 */
+.ourService .slick-dots {
+    position: absolute;
+    bottom: -65px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+.cover{
+    width:100%;
+}
+.cover img{
+    width: 100%;
+}
+.content{
+    width:30%
+}
+.server-item{
+    display: flex;
+    gap:90px;
+    align-items: center;
+}
+.ourService .slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 7.8px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+    background-color:  #202020;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.ourService  .slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 6px;
+    line-height: 20px;
+    position: absolute;
+    width: 40px;
+    height: 7.8px;
+    content: '';
+    text-align: center;
+    opacity: .25;
+    color: rgb(155, 49, 49);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.ourService  .slick-dots li.slick-active button:before{
+    background-color:  #1140e3;
+}
 #all {
     width: 850px;
     position: relative;
@@ -590,3 +644,4 @@ footer .bottom-footer{
 .lineHeight-init{
     line-height: initial;
 }
+/*About*/
