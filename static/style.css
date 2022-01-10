@@ -413,14 +413,14 @@ main.q-main .section-item.section-blue{
     width:100%;
 }
 .cover img{
-    width: 100%;
+    width: 94%;
 }
 .content{
-    width:30%
+    width:43%
 }
 .server-item{
     display: flex;
-    gap:90px;
+    gap:40px;
     align-items: center;
 }
 .ourService .slick-dots li {
