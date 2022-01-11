@@ -129,6 +129,9 @@ li{
 .fw-thin{
     font-weight: 200;
 }
+.mb-2em{
+    margin-bottom: 2em;
+}
 .row.left{ justify-content: flex-start; }
 /*ul li*/
 .wide-list li{ margin-bottom: 0.8em}
