@@ -17,7 +17,7 @@ jQuery("#changeLang").mouseover(function () {
   if (ul) {
     jQuery("#changeLangBox").children().show();
   } else {
-    jQuery("#changeLangBox").append('<ul id="changeLangUl"><li><span>🇺🇸英文</span></li><li><span>🇺🇸马来西亚</span></li></ul>');
+    jQuery("#changeLangBox").append('<ul id="changeLangUl"><li id="en"><span>English</span></li><li id="zh"><span>Chinese</span></li></ul>');
   }
 });
 jQuery("#changeLang").mouseout(function () {
@@ -29,3 +29,8 @@ jQuery("#changeLangBox").mouseover(function () {
 jQuery("#changeLangBox").mouseout(function () {
   jQuery("#changeLangBox").children().hide();
 });
+
+jQuery("#changeLangBox ul li").click(function () {
+  console.log("aaaa")
+  jQuery("#en").css({ "background-color": "red" });
+})
