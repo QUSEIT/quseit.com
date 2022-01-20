@@ -1,99 +1,31 @@
-window.addEventListener('scroll',function(){
-    let tou = document.querySelector('.q-header'); 
-    tou.classList.toggle("q-header-change", window.scrollY>0);
+window.addEventListener('scroll', function () {
+  let tou = document.querySelector('.q-header');
+  tou.classList.toggle("q-header-change", window.scrollY > 0);
 })
 
-//文字
-var show = document.querySelector("#show");
-var imgList = document.getElementsByTagName("img");
-show.style.width = imgList.length * 850 + "px";
-var pot = document.getElementById("pot");
-var liList = document.getElementById("pot").getElementsByTagName("li");
-var timer;
-move();
+jQuery('.single-item').slick({
+  dots: true,
+  arrows: false,
+  fade: true,
+  cssEase: 'linear',
+  autoplay: true,
+  autoplaySpeed: 10000
+});
 
-function move() {
-  clearInterval(timer);
-  var index = 0;
-  next.onclick = function() {
-      clearInterval(timer);
-      index++;
-      if (index === 5) {
-          setTimeout(function() {
-              show.style.transition = "none";
-              show.style.left = 0;
-              index = 0;
-          },0);
-      }
-      show.style.left = -index * 850 + "px";
-      run();
+jQuery("#changeLang").mouseover(function () {
+  const ul = document.querySelector('#changeLangUl');
+  if (ul) {
+    jQuery("#changeLangBox").children().show();
+  } else {
+    jQuery("#changeLangBox").append('<ul id="changeLangUl"><li><span>🇺🇸英文</span></li><li><span>🇺🇸马来西亚</span></li></ul>');
   }
-
-  pre.onclick = function() {
-      clearInterval(timer);
-      if (index === 0) {
-          show.style.transition = "none";
-          show.style.left = -2551 + "px";
-          setTimeout(function() {
-              index = 3;
-              show.style.left = -index * 850 + "px";
-          }, 0)
-          changeColor(3);  
-      } else {
-          index--;
-          show.style.left = -index * 850 + "px";
-          changeColor(index);          
-      }
-  }
-}
-
-var left = 0;
-changeLeft();
-run();
-
-//定时器的回调函数
-function run() {
-    clearInterval(timer);
-    if (left <= -2551) {
-        show.style.left = "0px";
-        left = 0;
-    }
-    var n = 15;
-    if (left % 850 == 0) {
-        n = 2000;
-    }
-    let index = 0;
-    index = Math.floor(-left / 850);
-    changeColor(index);
-    changeImg();
-    changeLeft();
-    left -= 10;
-    timer = setInterval(run, n);
-
-}
-
-//设置圆点颜色的变化
-function changeColor(index) {
-  for (var i = 0; i < liList.length; i++) {
-    liList[i].firstChild.style.backgroundColor = "";
-  }
-  liList[index].firstChild.style.backgroundColor = "#1140e3";
-}
-
-//设置点击圆点事件
-function changeImg() {
-    for (let i = 0; i < liList.length; i++) {
-        liList[i].onclick = function() {
-            clearInterval(timer);
-            left = -i * 850;
-            changeColor(i);
-            changeLeft();
-            run();
-        }
-    }
-}
-
-//改变位置
-function changeLeft() {
-    show.style.left = left + "px";
-}
+});
+jQuery("#changeLang").mouseout(function () {
+  jQuery("#changeLangBox").children().hide();
+});
+jQuery("#changeLangBox").mouseover(function () {
+  jQuery("#changeLangBox").children().show();
+});
+jQuery("#changeLangBox").mouseout(function () {
+  jQuery("#changeLangBox").children().hide();
+});

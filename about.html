@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-cmn-hans">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +10,8 @@
 <link rel="stylesheet" href="/static/kico.css">
 <link rel="stylesheet" href="/static/style.css">
 <link rel="stylesheet" href="/static/spacing.css">
+<link rel="stylesheet" href="/static/slick/slick-theme.css">
+<link rel="stylesheet" href="/static/slick/slick.css">
 
 </head>
 
@@ -22,18 +24,55 @@
       </a>
     </div>
     <nav class="head-menu">
-      <a href="/">首页</a>
-      <a href="service">服务</a>
-      <a href="solution">方案</a>
-      <a href="about" class="active">关于</a>
+      <a href="/" >首页</a>
+      <a href="service" >服务</a>
+      <a href="solution" >方案</a>
+      <a href="about"  class="active" >关于</a>
     </nav>
     <div class="head-toggle">
-      <span></span>
+      <button style="border:none; outline:none;background-color:inherit; cursor: pointer;">
+        <span></span>
+      </button>
     </div>
+    <div id="changeLang" style="  position: absolute;top: 0;right: 0;" >
+      <span  class="ant-dropdown-trigger action___LP4_P"
+        style="cursor: pointer;padding:0 0.5em; font-size: 20px; vertical-align: middle;">
+        <i class="anticon">
+          <svg viewBox="0 0 24 24" focusable="false" width="1em" height="1em" fill="currentColor" aria-hidden="true">
+            <path d="M0 0h24v24H0z" fill="none"></path>
+            <path
+              d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z "
+              class="css-c4d79v"></path>
+          </svg></i></span>
+    </div>
+    <div id="changeLangBox"> </div>
+  </div>
+  <div style="
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;">
+    <nav class="head-menu-s" style="
+            padding-top: 0;
+            text-align: center;
+            width: 100%;">
+      <li class="application-nav__item">
+        <a href="/" >首页</a>
+      </li>
+      <li class="application-nav__item">
+        <a href="service" >服务</a>
+      </li>
+      <li class="application-nav__item">
+        <a href="solution" >方案</a>
+      </li>
+      <li class="application-nav__item">
+        <a href="about"  class="active" >关于</a>
+      </li>
+    </nav>
   </div>
 </header>
-
 <main class="q-main">
+  <!-- 首页 -->
   
 <section class="section-item ">
   <div class="wrap pb-5">
@@ -87,47 +126,47 @@
     <div class="flex flexWrap">
       <div class="flex">
         <div class="teamBoss">
-          <img src="/static/images/@3严哥.png" />
+          <img src="/static/images/@BossYan.png" />
         </div>
         <div>
           <div class="teammate mb-1px">
-            <div><img src="/static/images/组 7.png" /></div>
-            <div><img src="/static/images/组 8.png" /></div>
-            <div><img src="/static/images/组 9.png" /></div>
-            <div><img src="/static/images/组 10.png" /></div>
-            <div><img src="/static/images/组 11.png" /></div>
-            <div><img src="/static/images/组 12.png" /></div>
+            <div><img src="/static/images/emp7.png" /></div>
+            <div><img src="/static/images/emp8.png" /></div>
+            <div><img src="/static/images/emp9.png" /></div>
+            <div><img src="/static/images/emp10.png" /></div>
+            <div><img src="/static/images/emp11.png" /></div>
+            <div><img src="/static/images/emp12.png" /></div>
           </div>
           <div class="teammate">
-            <div><img src="/static/images/组 13.png" /></div>
-            <div><img src="/static/images/组 14.png" /></div>
-            <div><img src="/static/images/组 15.png" /></div>
-            <div><img src="/static/images/组 16.png" /></div>
-            <div><img src="/static/images/组 20.png" /></div>
-            <div><img src="/static/images/员工占位图.png" /></div>
+            <div><img src="/static/images/emp13.png" /></div>
+            <div><img src="/static/images/emp14.png" /></div>
+            <div><img src="/static/images/emp15.png" /></div>
+            <div><img src="/static/images/emp16.png" /></div>
+            <div><img src="/static/images/emp17.png" /></div>
+            <div><img src="/static/images/emp20.png" /></div>
           </div>
         </div>
       </div>
       <div class="flex">
         <div class="teamBoss">
-          <img src="/static/images/@3大妈.png" />
+          <img src="/static/images/@BossDama.png" />
         </div>
         <div>
           <div class="teammate mb-1px">
-            <div><img src="/static/images/员工占位图.png" /></div>
-            <div><img src="/static/images/员工占位图.png" /></div>
-            <div><img src="/static/images/员工占位图.png" /></div>
-            <div><img src="/static/images/员工占位图.png" /></div>
-            <div><img src="/static/images/员工占位图.png" /></div>
-            <div><img src="/static/images/员工占位图.png" /></div>
+            <div><img src="/static/images/emp23.png" /></div>
+            <div><img src="/static/images/emp25.png" /></div>
+            <div><img src="/static/images/emp26.png" /></div>
+            <div><img src="/static/images/emp27.png" /></div>
+            <div><img src="/static/images/emp28.png" /></div>
+            <div><img src="/static/images/emp29.png" /></div>
           </div>
           <div class="teammate">
-            <div><img src="/static/images/员工占位图.png" /></div>
-            <div><img src="/static/images/员工占位图.png" /></div>
-            <div><img src="/static/images/员工占位图.png" /></div>
-            <div><img src="/static/images/员工占位图.png" /></div>
-            <div><img src="/static/images/员工占位图.png" /></div>
-            <div><img src="/static/images/员工占位图.png" /></div>
+            <div><img src="/static/images/emp30.png" /></div>
+            <div><img src="/static/images/emp31.png" /></div>
+            <div><img src="/static/images/emp32.png" /></div>
+            <div><img src="/static/images/emp34.png" /></div>
+            <div><img src="/static/images/emp35.png" /></div>
+            <div><img src="/static/images/empOccupy.png" /></div>
           </div>
         </div>
       </div>
@@ -233,6 +272,9 @@
 
 
 <script src="/static/jquery-1.11.0.min.js"></script>
+
+
+<script src="/static/slick/slick.min.js"></script>
 
 
 <script src="/static/main.js"></script>

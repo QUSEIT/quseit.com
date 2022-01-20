@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-cmn-hans">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +10,8 @@
 <link rel="stylesheet" href="/static/kico.css">
 <link rel="stylesheet" href="/static/style.css">
 <link rel="stylesheet" href="/static/spacing.css">
+<link rel="stylesheet" href="/static/slick/slick-theme.css">
+<link rel="stylesheet" href="/static/slick/slick.css">
 
 </head>
 
@@ -22,24 +24,61 @@
       </a>
     </div>
     <nav class="head-menu">
-      <a href="/" class="active">首页</a>
-      <a href="service">服务</a>
-      <a href="solution">方案</a>
-      <a href="about">关于</a>
+      <a href="/"  class="active" >首页</a>
+      <a href="service" >服务</a>
+      <a href="solution" >方案</a>
+      <a href="about" >关于</a>
     </nav>
     <div class="head-toggle">
-      <span></span>
+      <button style="border:none; outline:none;background-color:inherit; cursor: pointer;">
+        <span></span>
+      </button>
     </div>
+    <div id="changeLang" style="  position: absolute;top: 0;right: 0;" >
+      <span  class="ant-dropdown-trigger action___LP4_P"
+        style="cursor: pointer;padding:0 0.5em; font-size: 20px; vertical-align: middle;">
+        <i class="anticon">
+          <svg viewBox="0 0 24 24" focusable="false" width="1em" height="1em" fill="currentColor" aria-hidden="true">
+            <path d="M0 0h24v24H0z" fill="none"></path>
+            <path
+              d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z "
+              class="css-c4d79v"></path>
+          </svg></i></span>
+    </div>
+    <div id="changeLangBox"> </div>
+  </div>
+  <div style="
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;">
+    <nav class="head-menu-s" style="
+            padding-top: 0;
+            text-align: center;
+            width: 100%;">
+      <li class="application-nav__item">
+        <a href="/"  class="active" >首页</a>
+      </li>
+      <li class="application-nav__item">
+        <a href="service" >服务</a>
+      </li>
+      <li class="application-nav__item">
+        <a href="solution" >方案</a>
+      </li>
+      <li class="application-nav__item">
+        <a href="about" >关于</a>
+      </li>
+    </nav>
   </div>
 </header>
-
 <main class="q-main">
+  <!-- 首页 -->
   <section class="section-item">
   <div class="wrap">
     <div class="row between">
       <div class="col-m-5 ">
         <div class="left center mt-5">
-          <h1 class="title">电子商务系统专家</h1>
+          <h1 class="title">首页</h1>
           <p class="left center spacing-article"> 无论是用各种开放资源定制一个在线网店，还是根据您的业务特点来构建一个与众不同的电子商务平台，我们丰富的经验、
             一流的服务、和深厚的行业资源都可以帮助您高效出色的完成目标。</p>
           <a href="#" class="btn blue spacing">联系我们</a>
@@ -85,42 +124,81 @@
 <section class="section-item">
   <div class="wrap">
     <h2 class="text-center subTitle">我们的方案</h2>
-    <div class="row between">
-      <div id="all">
-        <div id="next">
-          <p class="p1"></p>
+    <div class="ourService">
+      <div class="single-item">
+        <div>
+          <div class="server-item">
+            <div class="cover"><img src="/static/images/index@3-2.png" /></div>
+            <div class="content">
+              <div class="left center">
+                <p class="pTitle spacing-p mb-4">优趣云商电子商务系统</p>
+                <ul class="wide-list">
+                  <li>供应商管理系统</li>
+                  <li>零售商自助网店系统</li>
+                  <li>网店OEM定制系统</li>
+                  <li>网店Coupon / 限购插件</li>
+                  <li>网店Facebook直播下单助手</li>
+                </ul>
+                <a class="arrow-btn mt-4" href="">了解相关案例</a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div id="pre">
-          <p class="p2"></p>
+        <div>
+          <div class="server-item">
+            <div class="cover"><img src="/static/images/index@3-3.png" /></div>
+            <div class="content">
+              <div class="left center">
+                <p class="pTitle spacing-p mb-4">优趣云达物流系统</p>
+                <ul class="wide-list">
+                  <li>一站式物流统一下单系统</li>
+                  <li>国外配送集成</li>
+                  <li>国内配送集成 </li>
+                  <li>本地即时配送集成</li>
+                  <li>电商平台集成扩展</li>
+                </ul>
+                <a class="arrow-btn mt-4" href="">了解相关案例</a>
+              </div>
+            </div>
+          </div>
         </div>
-        <ul id="show">
-          <li>
-            <img src="/static/images/index3-1.png" width="33%" />
-          </li>
-          <li><img src="/static/images/index@3-3.png" width="33%" /></li>
-          <li><img src="/static/images/index@3-2.png" width="33%" /></li>
-          <li><img src="/static/images/index@3-4.png" width="33%" /></li>
-        </ul>
-        <ul id="pot">
-          <li><span></span></li>
-          <li><span></span></li>
-          <li><span></span></li>
-          <li><span></span></li>
-        </ul>
-      </div>
-      <div class="col-m-3 left center">
-        <p class="pTitle spacing-p mb-4">优趣云达物流系统</p>
-        <ul class="wide-list">
-          <li>一站式物流统一下单系统</li>
-          <li>国外配送集成</li>
-          <li>国内配送集成 </li>
-          <li>本地即时配送集成</li>
-          <li>电商平台集成扩展</li>
-        </ul>
-        <a class="arrow-btn mt-4" href="">了解相关案例</a>
+        <div>
+          <div class="server-item">
+            <div class="cover"><img src="/static/images/index3-1.png" /></div>
+            <div class="content">
+              <div class="left center">
+                <p class="pTitle spacing-p mb-4">优趣云货Dropshipping系统</p>
+                <ul class="wide-list">
+                  <li>供应链管理</li>
+                  <li>支持Shopify/WooCoomerce销售渠道</li>
+                  <li>支持自建货源/Shopify货源/速卖通货源</li>
+                  <li>SAAS服务</li>
+                </ul>
+                <a class="arrow-btn mt-4" href="">了解相关案例</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="server-item">
+            <div class="cover"><img src="/static/images/index@3-4.png" /></div>
+            <div class="content">
+              <div class="left center">
+                <p class="pTitle spacing-p mb-4">优趣云客服务管理系统</p>
+                <ul class="wide-list">
+                  <li>用户售后支持App</li>
+                  <li>服务师傅接单App</li>
+                  <li>即时聊天</li>
+                  <li>在线支付服务费</li>
+                  <li>客户支持管理后台</li>
+                </ul>
+                <a class="arrow-btn mt-4" href="">了解相关案例</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
   </div>
 </section>
 <section class="section-item section-home-partners">
@@ -152,12 +230,6 @@
     <img class="mt-5" src="/static/images/index@4-1.png" />
   </div>
 </section>
-<!-- <section class="section-item">
-  <div class="wrap">
-      <img  src="/static/images/index@4-1.png" />
-  </div>
-
-</section> -->
 </main>
 <footer class="q-footer">
   <div class="sub-footer">
@@ -221,6 +293,9 @@
 
 
 <script src="/static/jquery-1.11.0.min.js"></script>
+
+
+<script src="/static/slick/slick.min.js"></script>
 
 
 <script src="/static/main.js"></script>
