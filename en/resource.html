@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-cmn-hans">
+<html lang="zh">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +9,9 @@
   
 <link rel="stylesheet" href="/static/kico.css">
 <link rel="stylesheet" href="/static/style.css">
+<link rel="stylesheet" href="/static/spacing.css">
+<link rel="stylesheet" href="/static/slick/slick-theme.css">
+<link rel="stylesheet" href="/static/slick/slick.css">
 
 </head>
 
@@ -21,19 +24,55 @@
       </a>
     </div>
     <nav class="head-menu">
-      <a href="/">首页</a>
-      <a href="service">服务</a>
-      <a href="solution">方案</a>
-      <a href="resource">资源</a>
-      <a href="about">关于优趣</a>
+      <a href="/" >首页</a>
+      <a href="service" >服务</a>
+      <a href="solution" >方案</a>
+      <a href="about" >关于</a>
     </nav>
     <div class="head-toggle">
-      <span></span>
+      <button style="border:none; outline:none;background-color:inherit; cursor: pointer;">
+        <span></span>
+      </button>
     </div>
+    <div id="changeLang" style="  position: absolute;top: 0;right: 0;" >
+      <span  class="ant-dropdown-trigger action___LP4_P"
+        style="cursor: pointer;padding:0 0.5em; font-size: 20px; vertical-align: middle;">
+        <i class="anticon">
+          <svg viewBox="0 0 24 24" focusable="false" width="1em" height="1em" fill="currentColor" aria-hidden="true">
+            <path d="M0 0h24v24H0z" fill="none"></path>
+            <path
+              d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z "
+              class="css-c4d79v"></path>
+          </svg></i></span>
+    </div>
+    <div id="changeLangBox"> </div>
+  </div>
+  <div style="
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;">
+    <nav class="head-menu-s" style="
+            padding-top: 0;
+            text-align: center;
+            width: 100%;">
+      <li class="application-nav__item">
+        <a href="/" >首页</a>
+      </li>
+      <li class="application-nav__item">
+        <a href="service" >服务</a>
+      </li>
+      <li class="application-nav__item">
+        <a href="solution" >方案</a>
+      </li>
+      <li class="application-nav__item">
+        <a href="about" >关于</a>
+      </li>
+    </nav>
   </div>
 </header>
-
 <main class="q-main">
+  <!-- Home -->
   
 <section class="section-item section-home-banner">
   <div class="wrap">
@@ -119,6 +158,7 @@
             <li>跨境物流</li>
             <li>小程序商店</li>
             <li>Shopify 应用程序</li>
+            <li>小程序应用</li>
           </ul>
         </div>
         <div class="col-s-6 col-l-auto">
@@ -136,7 +176,7 @@
             <li>麻木</li>
             <li>熊猫</li>
             <li>火花</li>
-            <li>火苗</li>
+            <li>火炬</li>
           </ul>
         </div>
         <div class="col-s-6 col-l-auto">
@@ -151,18 +191,30 @@
         <div class="col-s-6 col-l-auto">
           <p>联系我们</p>
           <p>邮箱：ceo@quseit.com</p>
+          <div class="col-m-10 between">
+            <i class="fas fa-camera"></i>
+            <img />
+            <img />
+            <img />
+            <img />
+          </div>
         </div>
       </div>
     </div>
   </div>
   <div class="bottom-footer">
-    <p>版权所有 ©️ 2021 QUSEIT</p>
+    <p class="lineHeight-init">版权所有 ©️ 2022 QUSEIT</p>
   </div>
 </footer>
 
 
-<script src="/static/main.js"></script>
+<script src="/static/jquery-1.11.0.min.js"></script>
 
+
+<script src="/static/slick/slick.min.js"></script>
+
+
+<script src="/static/main.js"></script>
 
 </body>
 </html>
