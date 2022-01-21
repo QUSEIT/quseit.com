@@ -5,252 +5,6 @@
     --darker-background: #101010;
 }
 
-@media screen and (max-width: 900px) {
-
-    /* index */
-    .section-home-skills .row {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 0 -1em -2em;
-    }
-
-    .section-home-skills .row>.center {
-        display: flex;
-        flex-direction: column;
-        width: 50%;
-    }
-
-    .section-home-skills .wrap .row .center img {
-        width: 90%;
-    }
-
-    .arrow-btn {
-        color: var(--blue);
-        font-size: 1.5em !important;
-        display: inline-block;
-        letter-spacing: .15em;
-    }
-
-
-
-}
-
-@media screen and (max-width: 900px) {
-    .section-home-skills .wrap {
-        padding: 1.25em;
-    }
-}
-
-.section-home-banner img {
-    width: 33%;
-}
-
-@media screen and (max-width: 900px) {
-
-    /* service */
-    .section-home-banner img {
-        width: 100%;
-    }
-
-    .py-5 .row {
-        text-align: center;
-        display: block;
-    }
-
-    #serviceP1 {
-        padding-left: 0.5em;
-    }
-
-    #serviceP3 {
-        padding-left: 0.5em;
-    }
-}
-
-@media screen and (max-width: 900px) {
-    .section-home-feat .feat-image {
-        margin-bottom: -5em;
-    }
-
-    .section-home-feat .feat-box {
-        margin-bottom: 5em;
-    }
-}
-
-@media screen and (max-width: 900px) {
-    .ftsz-20 {
-        font-size: 16px;
-    }
-}
-
-@media screen and (min-width: 901px) {
-    .head-toggle {
-        display: none;
-    }
-}
-
-@media screen and (min-width: 901px) {
-    #all {
-        width: 100%;
-        position: relative;
-        overflow: hidden;
-        margin-bottom: 10px;
-    }
-
-
-}
-
-@media screen and (max-width: 900px) {
-    .section-card .card-block {
-        margin: 0 -1.25em;
-        padding: 2em 1.25em;
-    }
-
-    .section-card .card-image {
-        margin-top: 0;
-    }
-
-    .server-item {
-        display: flex;
-        gap: 40px;
-        flex-direction: column;
-        align-items: flex-start !important;
-    }
-
-    .content {
-        width: 80% !important;
-    }
-
-    #changeLang {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 900px) {
-    header.q-header .head-menu {
-        order: 1;
-        max-height: 0;
-        flex: 0 0 100%;
-        position: static;
-        overflow: hidden;
-        transition: max-height .3s;
-    }
-
-    header.q-header.active .head-menu {
-        max-height: 20em;
-    }
-
-    header.q-header .head-menu a {
-        display: block;
-    }
-}
-
-@media screen and (max-width: 900px) {
-    .application-nav__item {
-        margin-right: 0;
-        display: block;
-        line-height: 3em;
-        width: 100%;
-        left: 50%;
-        background: var(--darker-background);
-        opacity: 0.9;
-    }
-
-    header.q-header .head-menu-s {
-        padding-top: 0;
-        text-align: center;
-        width: 100%;
-        display: none;
-
-    }
-}
-
-header.q-header .head-menu-s {
-    padding-top: 10em;
-    text-align: center;
-    width: 100%;
-    position: fixed;
-    top: 4em;
-    display: none;
-    height: 0;
-}
-
-@media screen and (max-width: 900px) {
-    main.q-main .section-item {
-        padding: 3em 0 !important;
-    }
-
-    .section-home-skills main.q-main .section-item {
-        padding: 5em 0em;
-    }
-}
-
-@media screen and (max-width: 900px) {
-    .section-home-team .team-image {
-        margin-top: -2em;
-    }
-}
-
-@font-face {
-    font-family: 'Regular';
-    src: url('./font/Montserrat/Montserrat-Regular-8.otf')
-}
-
-@media screen and (min-width: 320px) {
-    .title {
-        font-size: 40px !important;
-        letter-spacing: 0.17em;
-        margin-bottom: 1em;
-    }
-
-    .subTitle {
-        font-size: 30px !important;
-        margin-bottom: 1em;
-        letter-spacing: 0.1em;
-    }
-}
-
-@media screen and (min-width: 376px) {
-    .title {
-        font-size: 42px !important;
-        letter-spacing: 0.17em;
-        margin-bottom: 1em;
-    }
-
-    .subTitle {
-        font-size: 32px !important;
-        margin-bottom: 1em;
-        letter-spacing: 0.1em;
-    }
-}
-
-@media screen and (min-width: 400px) {
-    .title {
-        font-size: 44px !important;
-        letter-spacing: 0.17em;
-        margin-bottom: 1em;
-    }
-
-    .subTitle {
-        font-size: 34px !important;
-        margin-bottom: 1em;
-        letter-spacing: 0.1em;
-    }
-}
-
-@media screen and (min-width: 640px) {
-    .title {
-        font-size: 45px !important;
-        letter-spacing: 0.17em;
-        margin-bottom: 1em;
-    }
-
-    .subTitle {
-        font-size: 35px !important;
-        margin-bottom: 1em;
-        letter-spacing: 0.1em;
-    }
-}
-
 
 html {
     color: #353535;
@@ -843,4 +597,253 @@ footer .bottom-footer {
 
 .lineHeight-init {
     line-height: initial;
+}
+
+@media screen and (max-width: 900px) {
+
+    /* index */
+    .section-home-skills .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -1em -2em;
+    }
+
+    .section-home-skills .row>.center {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .section-home-skills .wrap .row .center img {
+        width: 86%;
+    }
+
+    .arrow-btn {
+        color: var(--blue);
+        font-size: 1.5em !important;
+        display: inline-block;
+        letter-spacing: .15em;
+    }
+
+
+
+}
+
+@media screen and (max-width: 900px) {
+    .section-home-skills .wrap {
+        padding: 1.25em;
+    }
+}
+
+.section-home-banner img {
+    width: 33%;
+}
+
+@media screen and (max-width: 900px) {
+
+    /* service */
+    .section-home-banner img {
+        width: 100%;
+    }
+
+    .py-5 .row {
+        text-align: center;
+        display: block;
+    }
+
+    #serviceP1 {
+        padding-left: 0.5em;
+    }
+
+    #serviceP3 {
+        padding-left: 0.5em;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .section-home-feat .feat-image {
+        margin-bottom: -5em;
+    }
+
+    .section-home-feat .feat-box {
+        margin-bottom: 5em;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .ftsz-20 {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 901px) {
+    .head-toggle {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 901px) {
+    #all {
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 10px;
+    }
+
+
+}
+
+@media screen and (max-width: 900px) {
+    .section-card .card-block {
+        margin: 0 -1.25em;
+        padding: 2em 1.25em;
+    }
+
+    .section-card .card-image {
+        margin-top: 0;
+    }
+
+    .server-item {
+        display: flex;
+        gap: 40px;
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
+
+    .content {
+        width: 80% !important;
+    }
+
+    #changeLang {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    header.q-header .head-menu {
+        order: 1;
+        max-height: 0;
+        flex: 0 0 100%;
+        position: static;
+        overflow: hidden;
+        transition: max-height .3s;
+    }
+
+    header.q-header.active .head-menu {
+        max-height: 20em;
+    }
+
+    header.q-header .head-menu a {
+        display: block;
+    }
+}
+
+.head-menu-s {
+    display: none;
+    position: fixed;
+    top: 4em;
+    width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+    .application-nav__item {
+        margin-right: 0;
+        display: block;
+        width: 100%;
+        left: 50%;
+        background: var(--darker-background);
+        opacity: 0.9;
+    }
+
+    .head-menu-s {
+        display: block;
+        position: fixed;
+        top: 4em;
+        width: 100%;
+        z-index: 100;
+    }
+
+    .head-menu-s ul li a {
+        font-size: 1.2em;
+        letter-spacing: 0.13em;
+        line-height: 3em;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    main.q-main .section-item {
+        padding: 3em 0 !important;
+    }
+
+    .section-home-skills main.q-main .section-item {
+        padding: 5em 0em;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .section-home-team .team-image {
+        margin-top: -2em;
+    }
+}
+
+@font-face {
+    font-family: 'Regular';
+    src: url('./font/Montserrat/Montserrat-Regular-8.otf')
+}
+
+@media screen and (min-width: 320px) {
+    .title {
+        font-size: 40px !important;
+        letter-spacing: 0.17em;
+        margin-bottom: 1em;
+    }
+
+    .subTitle {
+        font-size: 28px !important;
+        margin-bottom: 1em;
+        letter-spacing: 0.1em;
+    }
+}
+
+@media screen and (min-width: 376px) {
+    .title {
+        font-size: 38px !important;
+        letter-spacing: 0.15em;
+        margin-bottom: 1em;
+    }
+
+    .subTitle {
+        font-size: 30px !important;
+        margin-bottom: 1em;
+        letter-spacing: 0.1em;
+    }
+}
+
+@media screen and (min-width: 400px) {
+    .title {
+        font-size: 44px !important;
+        letter-spacing: 0.17em;
+        margin-bottom: 1em;
+    }
+
+    .subTitle {
+        font-size: 34px !important;
+        margin-bottom: 1em;
+        letter-spacing: 0.1em;
+    }
+}
+
+@media screen and (min-width: 640px) {
+    .title {
+        font-size: 45px !important;
+        letter-spacing: 0.17em;
+        margin-bottom: 1em;
+    }
+
+    .subTitle {
+        font-size: 35px !important;
+        margin-bottom: 1em;
+        letter-spacing: 0.1em;
+    }
 }

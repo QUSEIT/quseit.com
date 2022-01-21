@@ -36,17 +36,13 @@ let a = true
 jQuery('.head-toggle').click(function () {
   console.log("aaaa", a)
   if (!a) {
-    jQuery('.section-item').css({ "marginTop": "0" })
-    jQuery('.head-menu-s').css({ "display": "none", "positon": "static" })
+    jQuery('.q-main').css({ "marginTop": "0" })
     jQuery('.main').css({ "display": "none" })
     a = true
   }
   else {
-    jQuery('.head-menu-s').css({ "display": "block", "position": "fixed", "top": "4em", "width": "100%" })
-    jQuery('.section-item').css({ "marginTop": "180px" })
+    jQuery('.q-main').css({ "marginTop": "12em" })
     jQuery('.main').css({ "display": "flex" })
-
-
     a = false
   }
 })
