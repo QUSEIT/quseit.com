@@ -57,11 +57,11 @@ section {
     display: block
 }
 
-/* html {
+html {
     color: #353535;
     scroll-behavior: smooth;
     font: 16px/1.5 'Microsoft Yahei', 'PingFang SC', 'Hiragino Sans GB', sans-serif;
-} */
+}
 
 html.font-s {
     font-size: 14px
