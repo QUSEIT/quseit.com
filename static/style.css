@@ -6,6 +6,8 @@
 }
 
 @media screen and (max-width: 900px) {
+
+    /* index */
     .section-home-skills .row {
         display: flex;
         flex-wrap: wrap;
@@ -31,8 +33,15 @@
 }
 
 @media screen and (max-width: 900px) {
+
+    /* service */
     .section-home-banner img {
         width: 100%;
+    }
+
+    .py-5 .row {
+        text-align: center;
+        display: block;
     }
 }
 
