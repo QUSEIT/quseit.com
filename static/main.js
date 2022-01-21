@@ -19,7 +19,7 @@ jQuery("#changeLang").mouseover(function () {
   } else {
     jQuery("#changeLangBox").append('<ul id="changeLangUl"><li id="en"><span>English</span></li><li id="zh"><span>Chinese</span></li></ul>');
     jQuery("#changeLangBox ul li").click(function () {
-      console.log(jQuery(this).attr('id'))
+      window.location.pathname = `en${window.location.pathname}`
     })
   }
 });
