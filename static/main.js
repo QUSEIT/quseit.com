@@ -46,4 +46,21 @@ jQuery('.head-toggle').click(function () {
     a = false
   }
 })
-
+//监听窗口大小变化
+jQuery(window).resize(function () {
+  if (jQuery(window).width() > 900) {
+    jQuery('.q-main').css({ "marginTop": "0" })
+    jQuery('.main').css({ "display": "none" })
+  }
+  //监听首页移动端
+  else {
+    if (!a) {
+      jQuery('.q-main').css({ "marginTop": "0" })
+      a = true
+    }
+    else {
+      jQuery('.q-main').css({ "marginTop": "12em" })
+      a = false
+    }
+  }
+})
