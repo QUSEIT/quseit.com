@@ -33,6 +33,7 @@ jQuery("#changeLangBox").mouseout(function () {
   jQuery("#changeLangBox").children().hide();
 });
 let a = true
+let isExtend = true
 jQuery('.head-toggle').click(function () {
   console.log("aaaa", a)
   if (!a) {
@@ -41,6 +42,7 @@ jQuery('.head-toggle').click(function () {
     a = true
   }
   else {
+
     jQuery('.q-main').css({ "marginTop": "12em" })
     jQuery('.main').css({ "display": "flex" })
     a = false
@@ -48,19 +50,31 @@ jQuery('.head-toggle').click(function () {
 })
 //监听窗口大小变化
 jQuery(window).resize(function () {
-  if (jQuery(window).width() > 900) {
-    jQuery('.q-main').css({ "marginTop": "0" })
-    jQuery('.main').css({ "display": "none" })
-  }
+  // if (jQuery(window).width() > 900) {
+  jQuery('.q-main').css({ "marginTop": "0" })
+  jQuery('.main').css({ "display": "none" })
+  a = true
+
+  // }
   //监听首页移动端
-  else {
-    if (!a) {
-      jQuery('.q-main').css({ "marginTop": "0" })
-      a = true
-    }
-    else {
-      jQuery('.q-main').css({ "marginTop": "12em" })
-      a = false
-    }
-  }
+  // else {
+  //   a = true
+  //   jQuery('.q-main').css({ "marginTop": "0" })
+  //   jQuery('.main').css({ "display": "none" })
+  //   console.log("屏幕缩小")
+  // jQuery('.q-main').css({ "marginTop": "12em" })
+  // jQuery('.main').css({ "display": "flex" })
+  // if (!a && !isExtend) {
+  //   console.log("收起")
+  //   jQuery('.q-main').css({ "marginTop": "0" })
+  //   a = true
+  // }
+  // else if (isExtend) {
+  //   console.log("伸展")
+
+  //   jQuery('.q-main').css({ "marginTop": "12em" })
+  //   a = false
+  // }
+
+  // }
 })

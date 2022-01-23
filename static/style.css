@@ -135,6 +135,7 @@ li {
 
 p {
     letter-spacing: 0.13em;
+    text-align: justify;
 }
 
 .row .spacing-article {
@@ -529,6 +530,10 @@ main.q-main .section-item.section-blue {
     width: 86%
 }
 
+.indexImg {
+    width: 87%;
+}
+
 /* Partners */
 .section-home-partners img {
     width: 15em;
@@ -654,12 +659,22 @@ footer .bottom-footer {
         margin-bottom: 3em;
     }
 
+    .indexImg {
+        width: 100%;
+    }
+
+    .cover img {
+        width: 100%;
+    }
+
 }
 
 @media screen and (max-width: 900px) {
     .section-home-skills .wrap {
         padding: 1.25em;
     }
+
+
 }
 
 .section-home-banner img {
@@ -685,6 +700,12 @@ footer .bottom-footer {
     #serviceP3 {
         padding-left: 0.5em;
     }
+
+    #service-cooperation {
+        width: 6%;
+        transform: rotate(90deg);
+        /* margin-bottom: 1.8em; */
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -699,6 +720,10 @@ footer .bottom-footer {
     /*solution*/
     .solutionImg {
         width: 100%
+    }
+
+    #solution-bt {
+        margin: 0.5em 0 0 1em !important;
     }
 }
 
@@ -788,7 +813,7 @@ footer .bottom-footer {
         width: 100%;
         left: 50%;
         background: var(--darker-background);
-        opacity: 0.9;
+        background-color: rgba(16, 16, 16, .9);
     }
 
     .head-menu-s {
@@ -814,7 +839,10 @@ footer .bottom-footer {
         content: "";
         background: url(data:image/png;base64,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) 40%/contain no-repeat;
         position: absolute;
-        z-index: 80;
+        z-index: 180;
+        margin-top: 3em;
+        opacity: 1 !important;
+
 
     }
 }
@@ -829,14 +857,23 @@ footer .bottom-footer {
         padding: 5em 0em;
     }
 
+    #about-pt2 {
+        margin-top: 2.1em !important;
+    }
+
     #about-section2 {
-        margin: 1.5em 1em;
+        margin: 0.9em 1em;
     }
 }
 
 @media screen and (max-width: 900px) {
     .section-home-team .team-image {
         margin-top: -2em;
+    }
+
+    footer .sub-footer p {
+        font-size: 18px;
+        margin-bottom: 0.5em;
     }
 
     footer .sub-footer li {
