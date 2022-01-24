@@ -133,7 +133,7 @@ li {
     letter-spacing: 0.13em;
 }
 
-p {
+.wrap .row p {
     letter-spacing: 0.13em;
     text-align: justify;
 }
@@ -527,7 +527,7 @@ main.q-main .section-item.section-blue {
 
 /*solution*/
 .solutionImg {
-    width: 86%
+    width: 89%
 }
 
 .indexImg {
