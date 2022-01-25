@@ -20,8 +20,18 @@ jQuery("#requestShow").click(function () {
     jQuery(".index-iframe").css({ "visibility": "hidden" })
     isRequest = false
   }
-
 })
+jQuery("#iframeXButton").click(function () {
+  if (!isRequest) {
+    jQuery(".index-iframe").css({ "visibility": "visible" })
+    isRequest = true;
+  } else {
+    jQuery(".index-iframe").css({ "visibility": "hidden" })
+    isRequest = false
+  }
+})
+
+
 jQuery("#changeLang").mouseover(function () {
   const ul = document.querySelector('#changeLangUl');
   if (ul) {

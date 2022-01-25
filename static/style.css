@@ -325,6 +325,31 @@ main.q-main .section-item.section-blue {
     left: 15%;
 }
 
+#iframeXButton {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    color: black;
+    border: none;
+    background-color: transparent;
+    width: 2.5em;
+    height: 2.5em;
+    line-height: 2.5em;
+    cursor: pointer;
+}
+
+#iframeXButton:hover {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    color: rgb(134, 104, 104);
+    border: none;
+    background-color: transparent;
+    width: 2.5em;
+    height: 2.5em;
+    line-height: 2.5em;
+}
+
 /* Skills */
 .section-home-skills img {
     max-height: 20em;
@@ -675,14 +700,31 @@ footer .bottom-footer {
         width: 100%;
     }
 
+    .index-iframe {
+        visibility: hidden;
+        color: #fff;
+        position: absolute;
+        z-index: 1;
+        left: 0%;
+        top: 510%;
+        right: 0;
+    }
+
+    iframe {
+        border-radius: 10px;
+    }
+
+    #iframeShow iframe {
+        width: 30em !important;
+        height: 33em !important;
+    }
+
 }
 
 @media screen and (max-width: 900px) {
     .section-home-skills .wrap {
         padding: 1.25em;
     }
-
-
 }
 
 .section-home-banner img {
