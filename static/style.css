@@ -328,7 +328,7 @@ main.q-main .section-item.section-blue {
 #iframeXButton {
     position: absolute;
     top: 0%;
-    left: 0%;
+    right: 2%;
     color: black;
     border: none;
     background-color: transparent;
@@ -341,7 +341,7 @@ main.q-main .section-item.section-blue {
 #iframeXButton:hover {
     position: absolute;
     top: 0%;
-    left: 0%;
+    right: 2%;
     color: rgb(134, 104, 104);
     border: none;
     background-color: transparent;

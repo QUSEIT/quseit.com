@@ -38,8 +38,18 @@ jQuery("#changeLang").mouseover(function () {
     jQuery("#changeLangBox").children().show();
   } else {
     jQuery("#changeLangBox").append('<ul id="changeLangUl"><li id="en"><span>English</span></li><li id="zh"><span>Chinese</span></li></ul>');
-    jQuery("#changeLangBox ul li").click(function () {
+    // jQuery("#changeLangBox ul li").click(function () {
+    //   window.location.pathname = `en${window.location.pathname}`
+    // })
+    jQuery("#en").click(function () {
+      jQuery("#en").css("background-color: #f1e0da; ")
+      jQuery("#zh").css("background-color: black; ")
       window.location.pathname = `en${window.location.pathname}`
+    })
+    jQuery("#zh").click(function () {
+      jQuery("#zh").css("background-color: #f1e0da; ")
+      jQuery("#en").css("background-color: black; ")
+      window.location.pathname = `${window.location.pathname}`
     })
   }
 });
@@ -55,7 +65,6 @@ jQuery("#changeLangBox").mouseout(function () {
 let a = true
 let isExtend = true
 jQuery('.head-toggle').click(function () {
-  console.log("aaaa", a)
   if (!a) {
     jQuery('.q-main').css({ "marginTop": "0" })
     jQuery('.main').css({ "display": "none" })
