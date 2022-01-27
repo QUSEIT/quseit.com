@@ -50,7 +50,7 @@ jQuery("#changeLang").mouseover(function () {
     jQuery("#changeLangActive").empty()
     console.log("#changeLangActive", jQuery("#changeLangActive"))
     jQuery("#changeLangActive").append('<img alt = "US" width="20%" src = "http://purecatamphetamine.github.io/country-flag-icons/3x2/US.svg" /><span style="color: #fff;">English</span><img style = "width: 10%; margin-left: 19%;" src = "/static/images/changeLanIcon.svg" />');
-    if (!window.location.pathname.includes('en')) window.location.pathname = `${window.location.pathname}`
+    if (!window.location.pathname.includes('en')) window.location.pathname = `en${window.location.pathname}`
     else window.location.pathname = `${window.location.pathname}`
   })
   jQuery("#zh").click(function () {

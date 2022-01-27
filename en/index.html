@@ -24,33 +24,42 @@
       </a>
     </div>
     <nav class="head-menu">
-      <a href="/"  class="active" >首页</a>
-      <a href="service" >服务</a>
-      <a href="solution" >方案</a>
-      <a href="about" >关于</a>
+      <a href="/"  class="active" >Home</a>
+      <a href="service" >Service</a>
+      <a href="solution" >Solution</a>
+      <a href="about" >About</a>
     </nav>
     <div class="head-toggle">
       <button style="border:none; outline:none;background-color:inherit; cursor: pointer;">
         <span></span>
       </button>
     </div>
-    <div id="changeLang" style="  position: absolute;top: 0;right: 0;">
-      <span class="ant-dropdown-trigger action___LP4_P"
-        style="cursor: pointer;padding:0 0.5em; font-size: 20px; vertical-align: middle;">
-        <i class="anticon">
-          <svg viewBox="0 0 24 24" focusable="false" width="1em" height="1em" fill="currentColor" aria-hidden="true">
-            <path d="M0 0h24v24H0z" fill="none"></path>
-            <path
-              d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z "
-              class="css-c4d79v"></path>
-          </svg></i></span>
+    <div id="changeLang">
+      <div id="changeLangActive" style="margin: -0.4em 0.8em;">
+        <!-- <img alt = "China" width="20%" src = "http://purecatamphetamine.github.io/country-flag-icons/3x2/CN.svg" />
+        <span>Chinese</span> -->
+        <!-- <img style="width: 10%; margin-left: 15%;" src="/static/images/changeLanIcon.svg"/> -->
+      </div>
     </div>
-    <div id="changeLangBox"> </div>
+    <div id="changeLangBox">
+      <ul id="changeLangUl" style="display: none;">
+        <li id="zh"  style="background-color: #3f4042;">
+          <img alt = "CN" width="20%" src = "http://purecatamphetamine.github.io/country-flag-icons/3x2/CN.svg" />
+          <span style="color: #fff;">Chinese</span>
+        </li>
+        <li id="en">
+          <img alt = "US" width="20%" src = "http://purecatamphetamine.github.io/country-flag-icons/3x2/US.svg" />
+          <span>English</span>
+        </li>
+      </ul>
+    </div>
+    <div id="iframeShow" class="index-iframe">
+      <iframe height="850" width="800" src="https://wj.qq.com/s2/9649836/1682/" frameborder="0"
+        allowfullscreen PyTouch></iframe>
+      <button id="iframeXButton" ><img src="/static/images/guanbi-01.svg"/></button>
+    </div>
   </div>
-
-
 </header>
-
 <div class="main" style="
     align-items: center;
     display: none;
@@ -59,34 +68,33 @@
   <nav class="head-menu-s" style="">
     <ul style="text-align: center; margin-left: 0;">
       <li class="application-nav__item">
-        <a href="/"  class="active" >首页</a>
+        <a href="/"  class="active" >Home</a>
       </li>
       <li class="application-nav__item">
-        <a href="service" >服务</a>
+        <a href="service" >Service</a>
       </li>
       <li class="application-nav__item">
-        <a href="solution" >方案</a>
+        <a href="solution" >Solution</a>
       </li>
       <li class="application-nav__item">
-        <a href="about" >关于</a>
-      </li>     
+        <a href="about" >About</a>
+      </li>
     </ul>
-
   </nav>
 </div>
 <main class="q-main">
-  <!-- E-commerce Systems Expert -->
+  <!-- Expert in the cross-border e-commerce system -->
   <section class="section-item">
   <div class="wrap">
     <div class="row between">
       <div class="col-m-5 ">
         <div class="left center">
           <h1 class="title">
-            E-commerce Systems Expert
+            Expert in the cross-border e-commerce system
           </h1>
-          <p class="left center spacing-article"> 无论是用各种开放资源定制一个在线网店，还是根据您的业务特点来构建一个与众不同的电子商务平台，我们丰富的经验、
-            一流的服务、和深厚的行业资源都可以帮助您高效出色的完成目标。</p>
-          <a href="#" class="btn blue spacing">联系我们</a>
+          <p class="left center spacing-article">We are a start-up company focusing on providing Research and Development services and solutions for customers in the cross-border e-commerce industry. Whether it is customizing an online store with various open resources, or building a distinctive e-commerce platform according to your business characteristics, our rich experience, first-class service, and deep industry resources can help you to be efficient and outstanding completion goal.</p>
+          <div id="requestShow" class="btn blue spacing">Request a demo</div>
+
         </div>
       </div>
       <div class="col-m-4 mt-4">
@@ -97,30 +105,30 @@
 </section>
 <section class="section-item section-home-skills">
   <div class="wrap">
-    <h2 class="text-center subTitle">我们的服务</h2>
+    <h2 class="text-center subTitle">Our Service</h2>
     <div class="row between nowrap">
       <div class="center">
         <img width="51%" src="/static/images/index@3-2.1.png" />
         <div class="skills-item-bottom">
-          <p class="ftsz-20 spacing-p">在线网店定制</p>
+          <p class="ftsz-20 spacing-p">Online shop customization</p>
         </div>
       </div>
       <div class="center">
         <img width="51%" src="/static/images/index@3-2.2.png" />
         <div class="skills-item-bottom">
-          <p class="ftsz-20 spacing-p">出海渠道拓展</p>
+          <p class="ftsz-20 spacing-p">Overseas channel expansion</p>
         </div>
       </div>
       <div class="center">
         <img width="51%" src="/static/images/index@3-2.3.png" />
         <div class="skills-item-bottom">
-          <p class="ftsz-20 spacing-p">电商平台定制</p>
+          <p class="ftsz-20 spacing-p">E-commerce platform customization</p>
         </div>
       </div>
       <div class="center">
         <img width="51%" src="/static/images/index@3trafficGrowth.png" />
         <div class="skills-item-bottom">
-          <p class="ftsz-20 spacing-p">流量获取增长</p>
+          <p class="ftsz-20 spacing-p">Traffic growth</p>
         </div>
       </div>
     </div>
@@ -128,7 +136,7 @@
 </section>
 <section class="section-item">
   <div class="wrap">
-    <h2 class="text-center subTitle">我们的方案</h2>
+    <h2 class="text-center subTitle">Our solution</h2>
     <div class="ourService">
       <div class="single-item">
         <div>
@@ -136,15 +144,15 @@
             <div class="cover"><img src="/static/images/index@3-2.png" /></div>
             <div class="content">
               <div class="left center">
-                <p class="pTitle spacing-p mb-4">优趣云商电子商务系统</p>
+                <p class="pTitle spacing-p mb-4">Youqu Cloud Business E-commerce System</p>
                 <ul class="wide-list">
-                  <li>供应商管理系统</li>
-                  <li>零售商自助网店系统</li>
-                  <li>网店OEM定制系统</li>
-                  <li>网店Coupon / 限购插件</li>
-                  <li>网店Facebook直播下单助手</li>
+                  <li>Supplier Management System</li>
+                  <li>Retailer self-service online store system</li>
+                  <li>Online shop OEM customization system</li>
+                  <li>Online Shop Coupon / Purchase Restriction Plugin</li>
+                  <li>Online Shop Facebook Live Order Assistant</li>
                 </ul>
-                <a class="arrow-btn mt-4" href="solution">了解相关案例</a>
+                <a class="arrow-btn mt-4" href="solution">Learn about related cases</a>
               </div>
             </div>
           </div>
@@ -154,15 +162,15 @@
             <div class="cover"><img src="/static/images/index@3-3.png" /></div>
             <div class="content">
               <div class="left center">
-                <p class="pTitle spacing-p mb-4">优趣云达物流系统</p>
+                <p class="pTitle spacing-p mb-4">Youqu Cloud Delivery Logistics System</p>
                 <ul class="wide-list">
-                  <li>一站式物流统一下单系统</li>
-                  <li>国外配送集成</li>
-                  <li>国内配送集成 </li>
-                  <li>本地即时配送集成</li>
-                  <li>电商平台集成扩展</li>
+                  <li>One-stop logistics unified order system</li>
+                  <li>Overseas delivery integration</li>
+                  <li>Domestic delivery integration</li>
+                  <li>Local instant delivery integration</li>
+                  <li>E-commerce platform integration extension</li>
                 </ul>
-                <a class="arrow-btn mt-4" href="solution">了解相关案例</a>
+                <a class="arrow-btn mt-4" href="solution">Learn about related cases</a>
               </div>
             </div>
           </div>
@@ -172,14 +180,14 @@
             <div class="cover"><img src="/static/images/index3-1.png" /></div>
             <div class="content">
               <div class="left center">
-                <p class="pTitle spacing-p mb-4">优趣云货供应商系统</p>
+                <p class="pTitle spacing-p mb-4">Cloud Cargo Supplier System</p>
                 <ul class="wide-list">
-                  <li>供应链管理</li>
-                  <li>支持Shopify/WooCoomerce销售渠道</li>
-                  <li>支持自建货源/Shopify货源/速卖通货源</li>
-                  <li>SAAS服务</li>
+                  <li>Supply Chain Management</li>
+                  <li>Support Shopify/WooCoomerce sales channel</li>
+                  <li>Support self-built source/Shopify source/AliExpress source</li>
+                  <li>SAAS service</li>
                 </ul>
-                <a class="arrow-btn mt-4" href="solution">了解相关案例</a>
+                <a class="arrow-btn mt-4" href="solution">Learn about related cases</a>
               </div>
             </div>
           </div>
@@ -189,15 +197,15 @@
             <div class="cover"><img src="/static/images/index@3-4.png" /></div>
             <div class="content">
               <div class="left center">
-                <p class="pTitle spacing-p mb-4">优趣云客服务管理系统</p>
+                <p class="pTitle spacing-p mb-4">Youqu Clound Custom Service Management System</p>
                 <ul class="wide-list">
-                  <li>用户售后支持App</li>
-                  <li>服务师傅接单App</li>
-                  <li>即时聊天</li>
-                  <li>在线支付服务费</li>
-                  <li>客户支持管理后台</li>
+                  <li>Support User after-sales App</li>
+                  <li>Service Master Ordering App</li>
+                  <li>live chat</li>
+                  <li>Service of Pay fee online</li>
+                  <li>Support Customer backstage management</li>
                 </ul>
-                <a class="arrow-btn mt-4" href="solution">了解相关案例</a>
+                <a class="arrow-btn mt-4" href="solution">Learn about related cases</a>
               </div>
             </div>
           </div>
@@ -208,8 +216,8 @@
 </section>
 <section class="section-item section-home-partners">
   <div class="wrap">
-    <h2 class="text-center subTitle">我们的客户</h2>
-    <p class="text-center spacing-p">秉承用心服务的理念，我们为客户提供一流的服务</p>
+    <h2 class="text-center subTitle">Our Client</h2>
+    <p class="text-center spacing-p">Adhering to the concept of attentive service, we provide customers with first-class service</p>
     <div class="col-m-8 mt-4">
       <div class="row s">
         <div class="col-3">
@@ -230,8 +238,8 @@
 </section>
 <section class="section-item section-home-team text-center">
   <div class="wrap">
-    <h2 class="text-center subTitle">用心服务 追求卓越 开放自律</h2>
-    <p class="col-2 mb-1 text-center spacing-p">我们是一个有使命感和价值观驱动的团队；我们努力为客户提供一流的服务，努力超越自己，保持开放且又能自律和勤奋地工作。</p>
+    <h2 class="text-center subTitle">Attentive Service, Pursuit Of Excellence, Openness And Self-discipline</h2>
+    <p class="col-2 mb-1 text-center spacing-p">We are a mission-driven and values-driven team; we strive to provide first-class service to our clients, strive to surpass ourselves, remain open and work disciplined and hard-working.</p>
     <img class="mt-5" id="indexP1" src="/static/images/index@4-1.png" />
   </div>
 </section>
