@@ -33,20 +33,19 @@ jQuery("#iframeXButton").click(function () {
 
 let first = true;
 if (first && !window.location.pathname.includes('en')) {
-  first = false
-  jQuery("#changeLangActive").append('<img alt = "China" width="20%" src = "http://purecatamphetamine.github.io/country-flag-icons/3x2/CN.svg" /><span>Chinese</span><img style="width: 10%; margin-left: 15%;" src="/static/images/changeLanIcon.svg"/>');
+  first = false;
+  jQuery("#changeLangActive").append('<img alt = "China" width="20%" src = "http://purecatamphetamine.github.io/country-flag-icons/3x2/CN.svg" /><span> Chinese</span><img style="width: 10%; margin-left: 15%;" src="/static/images/changeLanIcon.svg"/>');
 }
 else {
-  first = false
-  jQuery("#changeLangActive").append('<img alt = "US" width="20%" src = "http://purecatamphetamine.github.io/country-flag-icons/3x2/US.svg" /><span style="color: #fff;">English</span><img style = "width: 10%; margin-left: 19%;" src = "/static/images/changeLanIcon.svg" />');
+  first = false;
+  jQuery("#changeLangActive").append('<img alt = "US" width="20%" src = "http://purecatamphetamine.github.io/country-flag-icons/3x2/US.svg" /><span style="color: #fff;"> English</span><img style = "width: 10%; margin-left: 19%;" src = "/static/images/changeLanIcon.svg" />');
 }
 jQuery("#changeLang").mouseover(function () {
   const ul = document.querySelector('#changeLangUl');
-  // if (ul) {
   jQuery("#changeLangBox").children().show();
-  // } else {
-  // jQuery("#changeLangBox").append('');empty()
   jQuery("#en").click(function () {
+    console.log("aaa")
+
     jQuery("#en").css({ "background-color": "#3f4042" })
     jQuery("#changeLangBox #en span").css({ "color": "#fff" })
     jQuery("#zh").css({ "background-color": "#292a2d" })
@@ -55,6 +54,7 @@ jQuery("#changeLang").mouseover(function () {
     jQuery("#changeLangActive").append('<img alt = "US" width="20%" src = "http://purecatamphetamine.github.io/country-flag-icons/3x2/US.svg" /><span style="color: #fff;">English</span><img style = "width: 10%; margin-left: 19%;" src = "/static/images/changeLanIcon.svg" />');
     if (!window.location.pathname.includes('en')) window.location.pathname = `en${window.location.pathname}`
     else window.location.pathname = `${window.location.pathname}`
+    jQuery('#enP').css({ "background-color": "#3f4042" })
   })
   jQuery("#zh").click(function () {
     jQuery("#zh").css({ "background-color": "#3f4042" })
@@ -65,7 +65,6 @@ jQuery("#changeLang").mouseover(function () {
     if (!window.location.pathname.includes('en')) window.location.pathname = `${window.location.pathname}`
     else window.location.pathname = `${window.location.pathname.split('en/').join("")}`
   })
-  // }
 });
 jQuery("#changeLang").mouseout(function () {
   jQuery("#changeLangBox").children().hide();
@@ -87,7 +86,6 @@ jQuery('.head-toggle').click(function () {
     a = true
   }
   else {
-
     jQuery('.q-main').css({ "marginTop": "12em" })
     jQuery('.main').css({ "display": "flex" })
     a = false

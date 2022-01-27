@@ -144,6 +144,11 @@ li {
     text-align: justify;
 }
 
+.en-p {
+    letter-spacing: 0.13em;
+    text-align: justify;
+}
+
 .row .spacing-article {
     letter-spacing: 0.13em;
 }
@@ -364,6 +369,7 @@ main.q-main .section-item.section-blue {
 .section-home-skills .skills-item-bottom {
     padding: 1em 0;
     text-align: center;
+    width: 17em;
 }
 
 /* Feat */
@@ -729,7 +735,7 @@ footer .bottom-footer {
     #changeLangBox {
         position: absolute;
         top: 80%;
-        right: 15%;
+        right: 17%;
         width: 10em;
         min-width: 40px;
     }
@@ -830,7 +836,7 @@ footer .bottom-footer {
     top: 0;
     right: 0;
     color: #cccccc;
-    background-color: #505154;
+    background-color: #101010;
     width: 10em;
 }
 
@@ -858,7 +864,7 @@ footer .bottom-footer {
     #changeLang {
         position: absolute;
         top: 0;
-        right: 15%;
+        right: 17%;
         color: #bebebe;
         background-color: #505154;
         width: 10em;
@@ -914,6 +920,13 @@ footer .bottom-footer {
         font-size: 1.2em;
         letter-spacing: 0.13em;
         line-height: 3em;
+    }
+
+    .head-menu-s ul li a:hover {
+        font-size: 1.2em;
+        letter-spacing: 0.13em;
+        line-height: 3em;
+        color: #fff;
     }
 
     .head-menu-s ul li .active:after {
