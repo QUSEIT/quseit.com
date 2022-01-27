@@ -34,24 +34,29 @@ jQuery("#iframeXButton").click(function () {
 
 jQuery("#changeLang").mouseover(function () {
   const ul = document.querySelector('#changeLangUl');
-  if (ul) {
-    jQuery("#changeLangBox").children().show();
-  } else {
-    jQuery("#changeLangBox").append('<ul id="changeLangUl"><li id="en"><span>English</span></li><li id="zh"><span>Chinese</span></li></ul>');
-    // jQuery("#changeLangBox ul li").click(function () {
-    //   window.location.pathname = `en${window.location.pathname}`
-    // })
-    jQuery("#en").click(function () {
-      jQuery("#en").css("background-color: #f1e0da; ")
-      jQuery("#zh").css("background-color: black; ")
-      window.location.pathname = `en${window.location.pathname}`
-    })
-    jQuery("#zh").click(function () {
-      jQuery("#zh").css("background-color: #f1e0da; ")
-      jQuery("#en").css("background-color: black; ")
-      window.location.pathname = `${window.location.pathname}`
-    })
-  }
+  // if (ul) {
+  jQuery("#changeLangBox").children().show();
+  // } else {
+  // jQuery("#changeLangBox").append('');empty()
+  jQuery("#en").click(function () {
+    jQuery("#en").css({ "background-color": "#3f4042" })
+    jQuery("#changeLangBox #en span").css({ "color": "#fff" })
+    jQuery("#zh").css({ "background-color": "#292a2d" })
+    jQuery("#changeLangActive").empty()
+    jQuery("#changeLangActive").append(' <span style="color: #fff;">English</span><img style = "width: 10%; margin-left: 19%;" src = "/static/images/changeLanIcon.svg" />');
+    if (!window.location.pathname.includes('en')) window.location.pathname = `en${window.location.pathname}`
+    else window.location.pathname = `${window.location.pathname}`
+  })
+  jQuery("#zh").click(function () {
+    jQuery("#zh").css({ "background-color": "#3f4042" })
+    jQuery("#changeLangBox #zh span").css({ "color": "#fff" })
+    jQuery("#en").css({ "background-color": "#292a2d" })
+    jQuery("#changeLangActive").empty()
+    jQuery("#changeLangActive").append('<span>Chinese</span><img style = "width: 10%; margin-left: 19%;" src = "/static/images/changeLanIcon.svg" />');
+    if (!window.location.pathname.includes('en')) window.location.pathname = `${window.location.pathname}`
+    else window.location.pathname = `${window.location.pathname.split('en').join()}`
+  })
+  // }
 });
 jQuery("#changeLang").mouseout(function () {
   jQuery("#changeLangBox").children().hide();
@@ -62,6 +67,8 @@ jQuery("#changeLangBox").mouseover(function () {
 jQuery("#changeLangBox").mouseout(function () {
   jQuery("#changeLangBox").children().hide();
 });
+
+
 let a = true
 let isExtend = true
 jQuery('.head-toggle').click(function () {

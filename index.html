@@ -34,22 +34,29 @@
         <span></span>
       </button>
     </div>
-    <div id="changeLang" style="  position: absolute; top: 0; right: 0;">
-      <span class="ant-dropdown-trigger action___LP4_P"
-        style="cursor: pointer;padding:0 0.5em; font-size: 20px; vertical-align: middle;">
-        <i class="anticon">
-          <svg viewBox="0 0 24 24" focusable="false" width="1em" height="1em" fill="currentColor" aria-hidden="true">
-            <path d="M0 0h24v24H0z" fill="none"></path>
-            <path
-              d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z "
-              class="css-c4d79v"></path>
-          </svg></i></span>
+    <div id="changeLang">
+      <div id="changeLangActive" style="margin: -0.4em 0.8em;">
+      <img alt = "China" width="20%" src = "http://purecatamphetamine.github.io/country-flag-icons/3x2/CN.svg" />
+          <span>Chinese</span>
+          <img style="width: 10%; margin-left: 15%;" src="/static/images/changeLanIcon.svg"/>
+      </div>
     </div>
-    <div id="changeLangBox"> </div>
+    <div id="changeLangBox">
+      <ul id="changeLangUl" style="display: none;">
+        <li id="zh"  style="background-color: #3f4042;">
+          <img alt = "CN" width="20%" src = "http://purecatamphetamine.github.io/country-flag-icons/3x2/CN.svg" />
+          <span style="color: #fff;">Chinese</span>
+        </li>
+        <li id="en">
+          <img alt = "US" width="20%" src = "http://purecatamphetamine.github.io/country-flag-icons/3x2/US.svg" />
+          <span>English</span>
+        </li>
+      </ul>
+    </div>
     <div id="iframeShow" class="index-iframe">
       <iframe height="850" width="800" src="https://wj.qq.com/s2/9649836/1682/" frameborder="0"
-        allowfullscreen></iframe>
-      <button id="iframeXButton">X</button>
+        allowfullscreen PyTorch></iframe>
+      <button id="iframeXButton" ><img src="/static/images/guanbi-01.svg"/></button>
     </div>
   </div>
 </header>
@@ -76,16 +83,16 @@
   </nav>
 </div>
 <main class="q-main">
-  <!-- 电子商务系统专家 -->
+  <!-- 跨境电商系统专家 -->
   <section class="section-item">
   <div class="wrap">
     <div class="row between">
       <div class="col-m-5 ">
         <div class="left center">
           <h1 class="title">
-            电子商务系统专家
+            跨境电商系统专家
           </h1>
-          <p class="left center spacing-article">我们是一家专注为电商行业客户提供研发服务及解决方案的创业公司。无论是用各种开放资源定制一个在线网店，还是根据您的业务特点来构建一个与众不同的电子商务平台，我们丰富的经验、 一流的服务、和深厚的行业资源都可以帮助您高效出色的完成目标。</p>
+          <p class="left center spacing-article">我们是一家专注为跨境电商行业客户提供研发服务及解决方案的创业公司。无论是用各种开放资源定制一个在线网店，还是根据您的业务特点来构建一个与众不同的电子商务平台，我们丰富的经验、 一流的服务、和深厚的行业资源都可以帮助您高效出色的完成目标。</p>
           <div id="requestShow" class="btn blue spacing">请求演示</div>
 
         </div>
@@ -109,19 +116,19 @@
       <div class="center">
         <img width="51%" src="/static/images/index@3-2.2.png" />
         <div class="skills-item-bottom">
-          <p class="ftsz-20 spacing-p">在线网店定制</p>
+          <p class="ftsz-20 spacing-p">出海渠道拓展</p>
         </div>
       </div>
       <div class="center">
         <img width="51%" src="/static/images/index@3-2.3.png" />
         <div class="skills-item-bottom">
-          <p class="ftsz-20 spacing-p">在线网店定制</p>
+          <p class="ftsz-20 spacing-p">电商平台定制</p>
         </div>
       </div>
       <div class="center">
         <img width="51%" src="/static/images/index@3trafficGrowth.png" />
         <div class="skills-item-bottom">
-          <p class="ftsz-20 spacing-p">在线网店定制</p>
+          <p class="ftsz-20 spacing-p">流量获取增长</p>
         </div>
       </div>
     </div>
@@ -179,7 +186,6 @@
                   <li>支持Shopify/WooCoomerce销售渠道</li>
                   <li>支持自建货源/Shopify货源/速卖通货源</li>
                   <li>SAAS服务</li>
-                  <li>index.section3-server-item3-li5</li>
                 </ul>
                 <a class="arrow-btn mt-4" href="solution">了解相关案例</a>
               </div>

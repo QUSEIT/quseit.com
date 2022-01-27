@@ -69,6 +69,12 @@ li {
     justify-content: flex-start;
 }
 
+.progress-bar {
+    position: relative;
+    height: 0px !important;
+    background-color: #ebf3fd;
+}
+
 /*ul li*/
 .wide-list li {
     margin-bottom: 0.8em
@@ -274,10 +280,8 @@ main.q-main .section-item.section-blue {
     position: absolute;
     top: 80%;
     right: 0px;
-    width: 7em;
+    width: 10em;
     min-width: 42px;
-    /*  left: 827px;
-        top: 53px; */
 }
 
 #changeLangBox ul {
@@ -286,7 +290,7 @@ main.q-main .section-item.section-blue {
     padding: 4px 0;
     text-align: left;
     list-style-type: none;
-    background-color: #fff;
+    background-color: #292a2d;
     background-clip: padding-box;
     border-radius: 2px;
     outline: none;
@@ -296,7 +300,7 @@ main.q-main .section-item.section-blue {
 #changeLangBox ul li {
     clear: both;
     margin: 0;
-    padding: 5px 12px;
+    padding: 9px 12px;
     color: rgba(0, 0, 0, .85);
     font-weight: 400;
     font-size: 14px;
@@ -307,7 +311,7 @@ main.q-main .section-item.section-blue {
 }
 
 #changeLangBox ul li span {
-    color: rgba(0, 0, 0, .85);
+    color: #bebebe;
     font-weight: 400;
     font-size: 14px;
     line-height: 22px;
@@ -328,26 +332,27 @@ main.q-main .section-item.section-blue {
 #iframeXButton {
     position: absolute;
     top: 0%;
-    right: 2%;
+    right: 4%;
     color: black;
     border: none;
     background-color: transparent;
-    width: 2.5em;
-    height: 2.5em;
-    line-height: 2.5em;
+    /* width: 2.5em; */
+    /* height: 2.5em; */
+    line-height: 1.8em;
     cursor: pointer;
+    width: 2.2em;
 }
 
 #iframeXButton:hover {
     position: absolute;
     top: 0%;
-    right: 2%;
+    right: 4%;
     color: rgb(134, 104, 104);
     border: none;
     background-color: transparent;
-    width: 2.5em;
-    height: 2.5em;
-    line-height: 2.5em;
+    cursor: pointer;
+    width: 2.2em;
+    line-height: 1.8em;
 }
 
 /* Skills */
@@ -644,6 +649,7 @@ footer .bottom-footer {
 
 .lineHeight-init {
     line-height: initial;
+    font-size: 14px;
 }
 
 @media screen and (max-width: 900px) {
@@ -717,6 +723,14 @@ footer .bottom-footer {
     #iframeShow iframe {
         width: 30em !important;
         height: 33em !important;
+    }
+
+    #changeLangBox {
+        position: absolute;
+        top: 80%;
+        right: 15%;
+        width: 10em;
+        min-width: 40px;
     }
 
 }
@@ -810,6 +824,15 @@ footer .bottom-footer {
 
 }
 
+#changeLang {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #cccccc;
+    background-color: #505154;
+    width: 10em;
+}
+
 @media screen and (max-width: 900px) {
     .section-card .card-block {
         margin: 0 -1.25em;
@@ -832,7 +855,12 @@ footer .bottom-footer {
     }
 
     #changeLang {
-        display: none;
+        position: absolute;
+        top: 0;
+        right: 15%;
+        color: #bebebe;
+        background-color: #505154;
+        width: 10em;
     }
 }
 
