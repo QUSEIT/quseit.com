@@ -321,6 +321,7 @@ main.q-main .section-item.section-blue {
 
 .index-iframe {
     visibility: hidden;
+    /* visibility: visible; */
     color: #fff;
     position: absolute;
     z-index: 1;
