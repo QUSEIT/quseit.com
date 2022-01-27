@@ -369,7 +369,15 @@ main.q-main .section-item.section-blue {
 .section-home-skills .skills-item-bottom {
     padding: 1em 0;
     text-align: center;
-    width: 17em;
+    /* width: 17em; */
+}
+
+#last-center {
+    justify-content: initial;
+}
+
+.section-item .wrap .center .imgList {
+    max-height: 30em;
 }
 
 /* Feat */
@@ -746,6 +754,7 @@ footer .bottom-footer {
     .section-home-skills .wrap {
         padding: 1.25em;
     }
+
 }
 
 .section-home-banner img {
@@ -802,6 +811,10 @@ footer .bottom-footer {
     #solution-bt {
         margin: 0.5em 0 0 1em !important;
     }
+
+    #last-center {
+        justify-content: initial;
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -836,8 +849,9 @@ footer .bottom-footer {
     top: 0;
     right: 0;
     color: #cccccc;
-    background-color: #101010;
+    background-color: transparent;
     width: 10em;
+    line-height: 5.2em;
 }
 
 @media screen and (max-width: 900px) {
@@ -866,8 +880,9 @@ footer .bottom-footer {
         top: 0;
         right: 17%;
         color: #bebebe;
-        background-color: #505154;
+        background-color: transparent;
         width: 10em;
+        line-height: 5.2em;
     }
 }
 
