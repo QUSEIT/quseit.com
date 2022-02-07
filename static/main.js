@@ -36,13 +36,13 @@ if (first && !window.location.pathname.includes('en')) {
   jQuery("#zh").css({ "background-color": "#3f4042" })
   jQuery("#en").css({ "background-color": "#292a2d" })
   first = false;
-  jQuery("#changeLangActive").append('<img alt = "China" width="20%" src = "http://purecatamphetamine.github.io/country-flag-icons/3x2/CN.svg" /><span> 中文</span><img style="width: 10%; margin-left: 15%;" src="/static/images/changeLanIcon.svg"/>');
+  jQuery("#changeLangActive").append('<img alt = "China" width="20%" src = "http://purecatamphetamine.github.io/country-flag-icons/3x2/CN.svg" /><span> 中文</span><img style="width: 10%; margin-left: 10%;" src="/static/images/changeLanIcon.svg"/>');
 }
 else {
   first = false;
   jQuery("#en").css({ "background-color": "#3f4042" })
   jQuery("#zh").css({ "background-color": "#292a2d" })
-  jQuery("#changeLangActive").append('<img alt = "US" width="20%" src = "http://purecatamphetamine.github.io/country-flag-icons/3x2/US.svg" /><span style="color: #fff;"> English</span><img style = "width: 10%; margin-left: 13%;" src = "/static/images/changeLanIcon.svg" />');
+  jQuery("#changeLangActive").append('<img alt = "US" width="20%" src = "http://purecatamphetamine.github.io/country-flag-icons/3x2/US.svg" /><span style="color: #fff;"> English</span><img style = "width: 10%; margin-left: 8%;" src = "/static/images/changeLanIcon.svg" />');
 }
 jQuery("#changeLang").mouseover(function () {
   jQuery("#changeLangBox").children().show();
@@ -52,7 +52,7 @@ jQuery("#changeLang").mouseover(function () {
     jQuery("#changeLangBox #en span").css({ "color": "#fff" })
     jQuery("#zh").css({ "background-color": "#292a2d" })
     jQuery("#changeLangActive").empty()
-    jQuery("#changeLangActive").append('<img alt = "US" width="20%" src = "http://purecatamphetamine.github.io/country-flag-icons/3x2/US.svg" /><span style="color: #fff;"> English</span><img style = "width: 10%; margin-left: 13%;" src = "/static/images/changeLanIcon.svg" />');
+    jQuery("#changeLangActive").append('<img alt = "US" width="20%" src = "http://purecatamphetamine.github.io/country-flag-icons/3x2/US.svg" /><span style="color: #fff;"> English</span><img style = "width: 10%; margin-left: 8%;" src = "/static/images/changeLanIcon.svg" />');
     if (!window.location.pathname.includes('en')) window.location.pathname = `en${window.location.pathname}`
     else window.location.pathname = `${window.location.pathname}`
     jQuery('#enP').css({ "background-color": "#3f4042" })
@@ -64,7 +64,7 @@ jQuery("#changeLang").mouseover(function () {
     jQuery("#changeLangBox #zh span").css({ "color": "#fff" })
     jQuery("#en").css({ "background-color": "#292a2d" })
     jQuery("#changeLangActive").empty()
-    jQuery("#changeLangActive").append('<img alt = "China" width="20%" src = "http://purecatamphetamine.github.io/country-flag-icons/3x2/CN.svg" /><span> 中文</span><img style="width: 10%; margin-left: 15%;" src="/static/images/changeLanIcon.svg"/>');
+    jQuery("#changeLangActive").append('<img alt = "China" width="20%" src = "http://purecatamphetamine.github.io/country-flag-icons/3x2/CN.svg" /><span> 中文</span><img style="width: 10%; margin-left: 10%;" src="/static/images/changeLanIcon.svg"/>');
     if (!window.location.pathname.includes('en')) window.location.pathname = `${window.location.pathname}`
     else window.location.pathname = `${window.location.pathname.split('en/').join("")}`
   })
@@ -96,7 +96,6 @@ jQuery('.head-toggle').click(function () {
 })
 //监听窗口大小变化
 jQuery(window).resize(function () {
-  // if (jQuery(window).width() > 900) {
   jQuery('.q-main').css({ "marginTop": "0" })
   jQuery('.main').css({ "display": "none" })
   a = true

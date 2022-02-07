@@ -119,6 +119,7 @@ li {
     height: 2em;
     display: block;
     background: url(images/arrow.svg) left no-repeat;
+    transform: rotate(180deg);
 }
 
 .arrow-btn.center:after {
@@ -289,7 +290,7 @@ main.q-main .section-item.section-blue {
     position: absolute;
     top: 80%;
     right: 0px;
-    width: 10em;
+    width: 9em;
     min-width: 42px;
 }
 
@@ -747,7 +748,7 @@ footer .bottom-footer {
     #changeLangBox {
         position: absolute;
         top: 80%;
-        right: 17%;
+        right: 18%;
         width: 8em;
         min-width: 40px;
     }
