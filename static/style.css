@@ -309,7 +309,7 @@ main.q-main .section-item.section-blue {
 #changeLangBox ul li {
     clear: both;
     margin: 0;
-    padding: 9px 12px;
+    padding: 9px 13px;
     color: rgba(0, 0, 0, .85);
     font-weight: 400;
     font-size: 14px;
@@ -748,7 +748,7 @@ footer .bottom-footer {
         position: absolute;
         top: 80%;
         right: 17%;
-        width: 10em;
+        width: 8em;
         min-width: 40px;
     }
 
@@ -885,7 +885,7 @@ footer .bottom-footer {
         right: 17%;
         color: #bebebe;
         background-color: transparent;
-        width: 10em;
+        width: 9em;
         line-height: 5.2em;
     }
 }
