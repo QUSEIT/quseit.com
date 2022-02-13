@@ -37,12 +37,14 @@ if (first && !window.location.pathname.includes('en')) {
   jQuery("#en").css({ "background-color": "#292a2d" })
   first = false;
   jQuery("#changeLangActive").append('<img alt = "China" width="16%" src = "http://purecatamphetamine.github.io/country-flag-icons/3x2/CN.svg" /><span style="font-size: 14px;"></span><img style="width: 8%; margin-left: 10%;" src="/static/images/changeLanIcon.svg"/>');
+  jQuery(".lang").toggleClass("cn")
 }
 else {
   first = false;
   jQuery("#en").css({ "background-color": "#3f4042" })
   jQuery("#zh").css({ "background-color": "#292a2d" })
   jQuery("#changeLangActive").append('<img alt = "US" width="16%" src = "http://purecatamphetamine.github.io/country-flag-icons/3x2/US.svg" /><span style="color: #fff; font-size: 14px;"></span><img style = "width: 8%; margin-left: 8%;" src = "/static/images/changeLanIcon.svg" />');
+  jQuery(".lang").toggleClass("en")
 }
 jQuery("#changeLang").mouseover(function () {
   jQuery("#changeLangBox").children().show();
@@ -53,18 +55,18 @@ jQuery("#changeLang").mouseover(function () {
     jQuery("#zh").css({ "background-color": "#292a2d" })
     jQuery("#changeLangActive").empty()
     jQuery("#changeLangActive").append('<img alt = "US" width="16%" src = "http://purecatamphetamine.github.io/country-flag-icons/3x2/US.svg" /><span style="color: #fff; font-size: 14px;"></span><img style = "width: 8%; margin-left: 8%;" src = "/static/images/changeLanIcon.svg" />');
+    jQuery(".lang").toggleClass("en")
     if (!window.location.pathname.includes('en')) window.location.pathname = `en${window.location.pathname}`
     else window.location.pathname = `${window.location.pathname}`
     jQuery('#enP').css({ "background-color": "#3f4042" })
   })
   jQuery("#zh").click(function () {
     jQuery("#zh").css({ "background-color": "#3f4042" })
-    // jQuery("#zh").css({ "background-color": "#ffffff" })
-
     jQuery("#changeLangBox #zh span").css({ "color": "#fff" })
     jQuery("#en").css({ "background-color": "#292a2d" })
     jQuery("#changeLangActive").empty()
     jQuery("#changeLangActive").append('<img alt = "China" width="16%" src = "http://purecatamphetamine.github.io/country-flag-icons/3x2/CN.svg" /><span style="font-size: 14px;></span><img style="width: 8%; margin-left: 10%;" src="/static/images/changeLanIcon.svg"/>');
+    jQuery(".lang").toggleClass("cn")
     if (!window.location.pathname.includes('en')) window.location.pathname = `${window.location.pathname}`
     else window.location.pathname = `${window.location.pathname.split('en/').join("")}`
   })

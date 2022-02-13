@@ -29,13 +29,20 @@ html.font-l {
     font-size: 18px
 }
 
-li {
+.cn li {
     letter-spacing: 0.13em;
 }
 
-.title {
+
+.cn .title {
     font-size: 46px;
     letter-spacing: 0.17em;
+    margin-bottom: 1em;
+}
+
+.en .title {
+    font-size: 42px;
+    letter-spacing: 0.1em;
     margin-bottom: 1em;
 }
 
@@ -43,6 +50,7 @@ li {
     font-size: 36px;
     margin-bottom: 1em;
     letter-spacing: 0.1em;
+    word-spacing: 0.1em;
 }
 
 .pTitle {
@@ -132,26 +140,31 @@ li {
     flex-direction: column;
 }
 
-.spacing-title {
+.cn .spacing-title {
     letter-spacing: 0.2em;
 }
 
-.spacing-p {
+.cn .spacing-p {
     letter-spacing: 0.13em;
 }
 
-.wrap .row p {
+.cn .wrap .row p {
     letter-spacing: 0.13em;
     text-align: justify;
 }
 
-.en-p {
+.cn .en-p {
     letter-spacing: 0.13em;
     text-align: justify;
 }
 
-.row .spacing-article {
+.cn .row .spacing-article {
     letter-spacing: 0.13em;
+}
+
+.en p {
+    font-size: 17px;
+    letter-spacing: 0.06em;
 }
 
 .ftsz-20 {
@@ -1007,13 +1020,13 @@ footer .bottom-footer {
 }
 
 @media screen and (min-width: 300px) {
-    .title {
+    .cn .title {
         font-size: 30px !important;
         letter-spacing: 0.17em;
         margin-bottom: 0.5em;
     }
 
-    .subTitle {
+    .cn .subTitle {
         font-size: 24px !important;
         margin-bottom: 0.5em;
         letter-spacing: 0.1em;
@@ -1021,13 +1034,13 @@ footer .bottom-footer {
 }
 
 @media screen and (min-width: 376px) {
-    .title {
+    .cn .title {
         font-size: 38px !important;
         letter-spacing: 0.15em;
         margin-bottom: 0.5em;
     }
 
-    .subTitle {
+    .cn .subTitle {
         font-size: 28px !important;
         margin-bottom: 0.5em;
         letter-spacing: 0.1em;
@@ -1035,13 +1048,13 @@ footer .bottom-footer {
 }
 
 @media screen and (min-width: 394px) {
-    .title {
+    .cn .title {
         font-size: 40px !important;
         letter-spacing: 0.15em;
         margin-bottom: 0.5em;
     }
 
-    .subTitle {
+    .cn .subTitle {
         font-size: 30px !important;
         margin-bottom: 0.5em;
         letter-spacing: 0.1em;
@@ -1050,13 +1063,14 @@ footer .bottom-footer {
 }
 
 @media screen and (min-width: 640px) {
-    .title {
+    .cn .title {
         font-size: 44px !important;
         letter-spacing: 0.17em;
+        word-spacing: 0.1em;
         margin-bottom: 0.5em;
     }
 
-    .subTitle {
+    .cn .subTitle {
         font-size: 34px !important;
         margin-bottom: 0.5em;
         letter-spacing: 0.1em;
