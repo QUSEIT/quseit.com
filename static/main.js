@@ -11,6 +11,7 @@ jQuery('.single-item').slick({
   autoplay: true,
   autoplaySpeed: 10000
 });
+
 let isRequest = false
 jQuery("#requestShow").click(function () {
   if (!isRequest) {
@@ -18,7 +19,34 @@ jQuery("#requestShow").click(function () {
     isRequest = true;
   } else {
     jQuery(".index-iframe").css({ "visibility": "hidden" })
-    isRequest = false
+    isRequest = false;
+  }
+})
+jQuery("#requestShow1").click(function () {
+  if (!isRequest) {
+    jQuery(".index-iframe").css({ "visibility": "visible" })
+    isRequest = true;
+  } else {
+    jQuery(".index-iframe").css({ "visibility": "hidden" })
+    isRequest = false;
+  }
+})
+jQuery("#requestShow2").click(function () {
+  if (!isRequest) {
+    jQuery(".index-iframe").css({ "visibility": "visible" })
+    isRequest = true;
+  } else {
+    jQuery(".index-iframe").css({ "visibility": "hidden" })
+    isRequest = false;
+  }
+})
+jQuery("#requestShow3").click(function () {
+  if (!isRequest) {
+    jQuery(".index-iframe").css({ "visibility": "visible" })
+    isRequest = true;
+  } else {
+    jQuery(".index-iframe").css({ "visibility": "hidden" })
+    isRequest = false;
   }
 })
 jQuery("#iframeXButton").click(function () {

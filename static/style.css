@@ -119,6 +119,7 @@ html.font-l {
     font-size: 1.25em;
     display: inline-block;
     letter-spacing: .15em;
+    cursor: pointer;
 }
 
 .arrow-btn:after {
