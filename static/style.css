@@ -600,6 +600,7 @@ main.q-main .section-item.section-blue {
 /*retail*/
 .retailp {
     width: 89%;
+    margin-top: -0.4em;
 }
 /*solution*/
 .solutionImg {
