@@ -597,6 +597,10 @@ main.q-main .section-item.section-blue {
     background-position: center;
 }
 
+/*retail*/
+.retailp {
+    width: 89%;
+}
 /*solution*/
 .solutionImg {
     width: 89%
@@ -836,6 +840,13 @@ footer .bottom-footer {
     }
 }
 
+/*retail*/
+@media screen and (max-width: 900px) {
+    .retailp {
+        width: 100%;
+    }
+
+}
 @media screen and (max-width: 900px) {
     .ftsz-20 {
         font-size: 16px;
